@@ -1230,6 +1230,13 @@ h1 {
     width:100%;
 }
 #scr8 .indoor {
+    height:820px;
+    margin:0 auto -490px;
+    width:1010px;
+}
+#scr8 .indoor2 {
+    height:420px;
+    margin:0 auto;
     width:1010px;
 }
 #scr8 h1 {
@@ -1254,18 +1261,14 @@ h1 {
     margin-bottom:-150px;
     width:640px;
 }
-.backplane {
-    background:linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
-    height:435px;
-    margin-bottom:-435px;
-    width:100%;
-}
+
 #plane {
     background:#fff;
     height:400px;
+    float:right;
     overflow:hidden;
     padding:35px 0 0 40px;
-    width:1127px;
+    width:calc(467px + 50%);
 }
 #plane .weeks {
     height:54px;
@@ -1510,7 +1513,7 @@ h1 {
 }
 /*---------------------------------------- SCR 10 1366+ --------------------------------*/
 #scr10 {
-    height:670px;
+    height:1496px;
     width:100%;
 }
 #scr10 .indoor{
@@ -1569,11 +1572,67 @@ h1 {
     box-shadow:3px 5px 24px 6px rgba(0, 102, 204, 1);
 }
 
+
+/*------------------------------------------- SCR 12 -------------------------------------------*/
+#scr12 {
+    background:#06f;
+    height:865px;
+    margin:0 0 -1000px 0;
+    width:100%;
+}
+#scr12 .indoor {
+    background:#fff;
+    border-radius:0 0 5px 0;
+    color:#333;
+    float:left;
+    height:100%;
+    width:calc(620px + 50%);
+}
+#scr12 .indoor2 {
+    background:url("../img/shape.png")no-repeat 10% 90%;
+    float:right;
+    height:713px;
+    margin: 99px 190px 0px 0px;
+    width:930px;
+}
+#scr12 h1 {
+    font-family: akrobatlight;
+    font-size: 240%;
+    font-weight: lighter;
+    margin-bottom: 109px;
+}
+.s12div {
+    color:#666;
+    font-family:latoregular;
+    font-size:80%;
+    height:113px;
+    margin:0 0 0 515px;
+    padding:37px 0 0 105px;
+    width:300px;
+}
+#scr12 .indoor2 .s12div:nth-child(2){
+    background:url("../img/1g.png")no-repeat left top;
+}
+#scr12 .indoor2 .s12div:nth-child(3){
+    background:url("../img/2g.png")no-repeat left top;
+}
+#scr12 .indoor2 .s12div:nth-child(4){
+    background:url("../img/3g.png")no-repeat left top;
+}
+#flyphone {
+    background:url("../img/mokupbig2.png")no-repeat right 50%;
+    height:570px;
+    margin: -547px 0px 0px -385px;
+    width:830px;
+}
+
+
+
+
+
 /*-------------------------------------------------------- SCR 11 ------------------------*/
 #scr11 {
-    background:linear-gradient(180deg, #06f 0%, #06f 820px, #fff 820px, #fff 100%);
-    height:900px;
-    width:100%;
+
 }
 #scr11 .indoor {
     background: #06c;
@@ -1581,7 +1640,8 @@ h1 {
     box-shadow: 40px -5px 50px 18px rgba(0,102,255,0.3);
     height:860px;
     float:right;
-    margin:0;
+    position:relative;
+    margin: -1690px 0 0 0;
     width: -webkit-calc(618px + 50%);
     width: -moz-calc(618px + 50%);
     width: calc(618px + 50%);
@@ -1640,15 +1700,14 @@ h1 {
 
 
 
+
+
 /************************************************************ 1261 - 1340 *************************************/
 @media only screen and (max-width: 1340px){
 #whatseo .lineright {
     width: 177px;
 }
 
-#plane {
-    width:1087px;
-}
 
 }
 
@@ -2441,6 +2500,13 @@ h1 {
     height:994px;
 }
 #scr8 .indoor {
+    height:812px;
+    margin: 0px auto -605px;
+    width: 754px;
+}
+#scr8 .indoor2 {
+    height:350px;
+    margin: 0px auto;
     width: 754px;
 }
 #scr8 h1 {
@@ -2464,7 +2530,7 @@ h1 {
 #plane {
     height: 300px;
     padding: 27px 0 0 30px;
-    width: 850px;
+    width: calc(348px + 50%);
 }
 #plane .weeks div {
     font-size: 65%;
@@ -2612,7 +2678,7 @@ h1 {
 }
 /*---------------------------------------- SCR 10 1024 --------------------------------*/
 #scr10 {
-    height:485px;
+    height:1163px;
 }
 #scr10 .indoor {
     width: 762px;
@@ -2646,14 +2712,49 @@ h1 {
     width: -moz-calc(388px + 50%);
     width: calc(388px + 50%);
 }
+/*---------------------------------------- SCR 12 1024 --------------------------------*/
+#scr12 {
+    height: 645px;
+    margin: 0 0 0 0;
+}
+#scr12 .indoor {
+    width: -webkit-calc(467px + 50%);
+    width: -moz-calc(467px + 50%);
+    width: calc(467px + 50%);
+}
+#scr12 .indoor2 {
+    background-size:25%;
+    background-position:left 47%;
+    margin: 100px 24px 0 0;
+    width: 820px;
+}
+#scr12 h1 {
+    font-size:180%;
+    margin: 0 0 84px 0;
+}
+.s12div {
+    background-size: 13%!important;
+    height: 93px;
+    margin-left:384px;
+    padding: 20px 0 0 80px;
+}
+
+#flyphone {
+    background: url("../img/mokuptable1024.png")no-repeat right 50%;
+    height: 470px;
+    margin: -470px 0px 0px -237px;
+    width: 500px;
+}
+
+
+
 
 /*---------------------------------------- SCR 11 1024 --------------------------------*/
 #scr11 {
-    height:730px;
-    background:linear-gradient(180deg, #06f 0%, #06f 674px, #fff 674px, #fff 100%);
 }
 #scr11 .indoor {
     height: 685px;
+    margin: -1304px 0 0 0;
     width: -webkit-calc(465px + 50%);
     width: -moz-calc(465px + 50%);
     width: calc(465px + 50%);
@@ -3436,6 +3537,11 @@ body {
     height:1316px;
 }
 #scr8 .indoor {
+    height:870px;
+    width: 654px;
+}
+#scr8 .indoor2 {
+    height:370px;
     width: 654px;
 }
 #scr8 h1 {
@@ -3456,7 +3562,7 @@ body {
 #plane {
     height:400px;
     padding:35px 0 0 40px;
-    width:662px;
+    width: calc(287px + 50%);
 }
 #plane .weeks {
     height:54px;
@@ -3630,7 +3736,7 @@ body {
 }
 /*---------------------------------------- SCR 10 770 --------------------------------*/
 #scr10 {
-    height:590px;
+    height:1452px;
 }
 #scr10 .indoor {
     width: 650px;
@@ -3663,6 +3769,37 @@ body {
     height:410px;
     width:260px;
 }
+/*----------------------------------------  SCR 12  770 -----------------------------*/
+#scr12 {
+    height: 730px;
+}
+#scr12 .indoor {
+    height: 685px;
+    width: -webkit-calc(359px + 50%);
+    width: -moz-calc(359px + 50%);
+    width: calc(359px + 50%);
+}
+#scr12 .indoor2 {
+    background-size:28%;
+    height: 630px;
+    margin: 80px 24px 0 0;
+    width: 660px;
+}
+#scr12 h1 {
+    font-size:175%;
+    margin:0 0 65px 0;
+}
+.s12div {
+    background-size: 19%!important;
+    height: 130px;
+    margin-left: 310px;
+    width: 234px;
+    padding: 20px 0 0 103px;
+}
+
+
+
+
 /*---------------------------------------- SCR 11 770 --------------------------------*/
 #scr11 {
     height: 920px;
@@ -3670,6 +3807,7 @@ body {
 }
 #scr11 .indoor {
     height:900px;
+    margin: -1595px 0 0 0;
     width: calc(324px + 50%);
 }
 #scr11 h1 {
@@ -4330,6 +4468,13 @@ body {
     height: 1217px;
 }
 #scr8 .indoor {
+    height:730px;
+    margin:0 auto -430px;
+    width: 246px;
+}
+#scr8 .indoor2 {
+    height:350px;
+    margin:0 auto;
     width: 246px;
 }
 #scr8 h1 {
@@ -4344,15 +4489,10 @@ body {
     width: 270px;
     margin: 0 0 37px 0;
 }
-.backplane {
-    height: 327px;
-    margin-bottom: -327px;
-}
-
 #plane {
     height: 300px;
     padding: 27px 0 0 18px;
-    width: 255px;
+    width: calc(105px + 50%);
 }
 #plane .weeks div {
     font-size: 65%;
@@ -4502,7 +4642,7 @@ body {
 }   
 /*------------------------------------------ SCR 10  320 --------------------------*/
 #scr10 {
-    height: 540px;
+    height: 1242px;
 }
 #scr10 h1 {
     font-size: 150%;
@@ -4523,6 +4663,43 @@ body {
     width: calc(135px + 50%);
 }
 #s10slider .s10slide:nth-child(2){ left:275px; }
+
+/*----------------------------------------------  SCR 12  320 -------------------*/
+#scr12 {
+    height: 943px;
+}
+#scr12 .indoor {
+    border-radius:0;
+    height: 100%;
+    width: -webkit-calc(151px + 50%);
+    width: -moz-calc(151px + 50%);
+    width: calc(151px + 50%);
+}
+#scr12 .indoor2 {
+    background-size:66%;
+    height: 630px;
+    margin: 80px 7px 0 0;
+    width: 280px;
+}
+#scr12 h1 {
+    font-size:150%;
+    margin:-30px 0 393px 0;
+}
+.s12div {
+    background-size: 20%!important;
+    height: 109px;
+    font-size: 73%;
+    margin-left: 0;
+    width: 190px;
+    padding: 20px 0 0 85px;
+}
+#flyphone {
+    background: url("../img/mokupsmart2.png")no-repeat right 50%;
+    height: 470px;
+    margin: -860px 0px 0px -237px;
+    width: 500px;
+}
+
  /*---------------------------------------------  SCR 11  320 -------------------*/
 #scr11 {
     background: linear-gradient(180deg, #06f 0%, #06f 677px, #fff 677px, #fff 100%);
@@ -4532,6 +4709,7 @@ body {
     border-radius:0px;
     box-shadow:0 0 0 0 #000;
     height: 700px;
+    margin: -1645px 0 0 0;
     width: calc(151px + 50%);
 }
 #scr11 .indoor2 {
