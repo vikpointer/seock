@@ -31,7 +31,11 @@ header {
     padding:60px 0px 0px 0px;
     width:100%;
 }
-
+h1 {
+    font-family:akrobatlight;
+    font-size:240%;
+    font-weight:lighter;
+}
 
 #logo {
     background:url("../img/logobig.png")no-repeat center center;
@@ -304,12 +308,9 @@ header {
     border-radius:5px;
     color:#000;
     height:100%;
-    
+    margin:0 auto -700px;
 }
 #scr3 h1 {
-    font-family:akrobatlight;
-    font-size:253%;
-    font-weight:lighter;
     margin:0;
     padding:124px 0 0 96px;
 }
@@ -328,11 +329,11 @@ header {
 }
 
 .sliderdiv2 {
+    float:right;
     height:520px;
-    margin:10px 0 0 100px;
-    overflow-x:hidden;
-    overflow-y:hidden;
-    width:1180px;
+    margin:10px 0 0px 100px;
+    overflow:hidden;
+    width:calc(550px + 50%);
 }
 .sliderdiv2 .graph {
     background:url("../img/graphbig.png") no-repeat center center;
@@ -375,14 +376,7 @@ header {
     left:5420px;
     top:-2597px;
 }
-.slidemask2 {
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
-    height: 100%;
-    position: relative;
-    left: 1090px;
-    top: -3158px;
-    width: 90px;
-}
+
 .graphinfo {
     margin:30px 0px 0px 675px;
     height:400px;
@@ -509,9 +503,7 @@ header {
     height:100%;
 }
 #scr2 h1 {
-    font-family:akrobatlight;
     font-size:244%;
-    font-weight:lighter;
     padding: 83px 0 4px 0;
 }
 #whyweb>p {
@@ -646,10 +638,6 @@ header {
 #scr4 .indoor {
     background:url("../img/shape7.png")no-repeat 29% 60%;
 }
-#scr4 h1 {
-    font-family:akrobatlight;
-    font-size:240%;
-}
 #scr4 h2 {
     font-family:akrobatbold;
     font-size:100%;
@@ -691,9 +679,6 @@ header {
 }
 #scr5 h1 {
     color:#000;
-    font-family:akrobatlight;
-    font-weight:lighter;
-    font-size:240%;
     margin:0 0 20px 0;
     padding:1px 0 1px;
     width:100%;
@@ -736,7 +721,7 @@ header {
 /*------------------------------------- Абонентская плата -------------------------*/
 #payabonent, #payhours {
     background:#fff;
-    display:none;
+    display:block;
     height:1400px;
     margin:-135px auto;
     padding-top:1px;
@@ -916,7 +901,7 @@ header {
 /*-----------------------------------Почасовая оплата--------------------------*/
 #payhours {
     color:#000;
-    display:block;
+    display:none;
     height:1406px;
 }
 #phours {
@@ -930,7 +915,6 @@ header {
 }
 #payhours>.indoor>h1 {
     color:#000;
-    font-family:akrobatbold;
     font-size: 150%;
     margin: 59px 0 30px 116px;
     width:420px;
@@ -1153,14 +1137,13 @@ header {
     top:-21px;
 }
 #scr7 h1 {
-    font-family: akrobatlight;
-    font-size: 240%;
-    font-weight: lighter;
     margin: 86px 0 -32px 116px;
 }
 #scr7scroll {
+    margin: 250px 0 -380px 0;
     width:100%;
 }
+
 #scr7 .paginator {
     margin-left: 1052px;
 }
@@ -1172,11 +1155,11 @@ header {
     width:100px;
 }
 #scr7slider {
-    height:180px;
-    margin:60px 0 0 96px;
-    overflow:hidden;
-    width:1146px;
-    
+    height: 180px;
+    float: right;
+    margin: 60px 0 0 96px;
+    overflow: hidden;
+    width: calc(526px + 50%);
 }
 .scr7sliderinfo {
     height:180px;
@@ -1250,9 +1233,6 @@ header {
     width:1010px;
 }
 #scr8 h1 {
-    font-family:akrobatlight;
-    font-size:240%;
-    font-weight:lighter;
     margin:95px 0 32px 0;
 }
 #scr8 h3 {
@@ -1404,7 +1384,7 @@ header {
 #report{
     background:url("../img/bill.png")no-repeat 8% 0%;
 }
-/*----------------------------------------------------- SCR 9 1366 ------------------------------------------*/
+/*----------------------------------------------------- SCR 9 1366+ ------------------------------------------*/
 #scr9 {
     background:linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 100%);
     color:#333;
@@ -1423,9 +1403,6 @@ header {
     width:1010px;
 }
 #scr9 h1{
-    font-family:akrobatlight;
-    font-size:240%;
-    font-weight:lighter;
     margin:83px 0 32px 0;
 }
 #scr9 p {
@@ -1531,24 +1508,148 @@ header {
     text-align:center;
     width:88px;
 }
+/*---------------------------------------- SCR 10 1366+ --------------------------------*/
+#scr10 {
+    height:670px;
+    width:100%;
+}
+#scr10 .indoor{
+    width:1010px;
+}
+#scr10 h1{
+    margin:83px 0 -32px 0;
+}
+#scr10 .paginator {
+    margin-left: 934px;
+    margin-bottom:70px;
+}
+#s10slider {
+    float:right;
+    height: 480px;
+    margin:0 0 50px -10px;
+    overflow:hidden;
+    padding:1px;
+    width: -webkit-calc(511px + 50%);
+    width: -moz-calc(511px + 50%);
+    width: calc(511px + 50%);
+}
+#scr10 .s10slide {
+    height:410px;
+    margin:10px 0 -420px 10px;
+    position:relative;
+    width:260px;
+}
+#s10slider .s10slide:nth-child(1){ left:0px; }
+#s10slider .s10slide:nth-child(2){ left:320px; }
+#s10slider .s10slide:nth-child(3){ left:640px; }
+#s10slider .s10slide:nth-child(4){ left:960px; }
+#s10slider .s10slide:nth-child(5){ left:1280px; }
+#s10slider .s10slide:nth-child(6){ left:1600px; }
+#s10slider .s10slide:nth-child(7){ left:1920px; }
+#s10slider .s10slide:nth-child(8){ left:2240px; }
+#s10slider .s10slide:nth-child(9){ left:2560px; }
+#s10slider .s10slide:nth-child(10){ left:2880px; }
+#s10slider .s10slide:nth-child(11){ left:3200px; }
+#s10slider .s10slide:nth-child(12){ left:3200px; }
+#s10slider .s10slide:nth-child(13){ left:3200px; }
+#s10slider .s10slide:nth-child(14){ left:3200px; }
+#s10slider .s10slide:nth-child(15){ left:3200px; }
+#s10slider .s10slide:nth-child(16){ left:3200px; }
+#s10slider .s10slide:nth-child(17){ left:3200px; }
+#s10slider .s10slide:nth-child(18){ left:3200px; }
+#s10slider .s10slide:nth-child(19){ left:3200px; }
+#s10slider .s10slide:nth-child(20){ left:3200px; }
+
+#scr10 .s10slide img{
+    height:410px;
+    object-fit: cover;
+    width:260px;
+}
+#scr10 .active, .s10slide:hover {
+    box-shadow:3px 5px 24px 6px rgba(0, 102, 204, 1);
+}
+
+/*-------------------------------------------------------- SCR 11 ------------------------*/
+#scr11 {
+    background:linear-gradient(180deg, #06f 0%, #06f 820px, #fff 820px, #fff 100%);
+    height:900px;
+    width:100%;
+}
+#scr11 .indoor {
+    background: #06c;
+    border-radius:5px 0 0 5px;
+    box-shadow: 40px -5px 50px 18px rgba(0,102,255,0.3);
+    height:860px;
+    float:right;
+    margin:0;
+    width: -webkit-calc(618px + 50%);
+    width: -moz-calc(618px + 50%);
+    width: calc(618px + 50%);
+}
+#scr11 .indoor2 {
+    height:750px;
+    margin:67px 0 0 116px;
+    width:940px;
+}
+#scr11 h1 {
+    margin:0 0 20px 0;
+}
+#scr11 .question {
+    background:url("../img/question48.png")no-repeat left center, url("../img/corndown.png")no-repeat right center;
+    color:#76B9FF;
+    font-family:akrobatbold;
+    font-size:100%;
+    padding:17px 0 17px 73px;
+    width:92%;
+}
+#scr11 .question span {
+    cursor:pointer;
+    display:inline-block;
+    float:right;
+    height:20px;
+    margin-top:5px;
+    width:20px;
+}
+#scr11 .question.active {
+    background:url("../img/questionactive48.png")no-repeat left center, url("../img/cornup.png")no-repeat right center;
+    color:#fff;
+}
+#scr11 .answer {
+    color:#76B9FF;
+    display:none;
+    font-family:latoregular;
+    font-size:70%;
+    font-weight:400;
+    line-height:1.8;
+    margin:-7px 0 27px 0;
+    padding:0 0 0 73px;
+    width:67%;
+}
+#scr11 .answer.active {
+    display:block;
+}
+#scr11 .question b{
+    display:none;
+}
+#scr11 h2 {
+    font-family:akrobatbold;
+    font-size:150%;
+    margin-top:85px;
+}
+
+
+
 
 /************************************************************ 1261 - 1340 *************************************/
 @media only screen and (max-width: 1340px){
 #whatseo .lineright {
     width: 177px;
 }
-.sliderdiv2 {
-    width: 1140px;
-}
-.slidemask2 {
-    position: relative;
-    left: 1053px;
-    top: -3158px;
-    width: 90px;
-}
+
 #plane {
     width:1087px;
 }
+
 }
 
 /************************************************************ 1023 - 1260 *************************************/
@@ -1564,6 +1665,9 @@ body {
 }
 .indoor {
     width:930px;
+}
+h1 {
+    font-size: 180%;
 }
 #logo {
     background:url("../img/logotab.png")no-repeat center center;
@@ -1627,6 +1731,7 @@ body {
 .cpr {
     margin:0 0 0 -8px;
 }
+/*---------------------------------------- SCR 1 1024 --------------------------------*/
 #scr1 {
     height:800px;
 }
@@ -1753,6 +1858,7 @@ body {
     margin: -25px 0 27px 251px;
     width: 160px;
 }
+/*---------------------------------------- SCR 2 1024 --------------------------------*/
 #scr2 {
     height: 522px;
     margin: -1206px auto 586px;
@@ -1836,12 +1942,15 @@ body {
     top: -164px;
     width: 200px;
 }
+/*---------------------------------------- SCR 3 1024 --------------------------------*/
 #scr3 {
     height: 675px;
     margin: 465px auto -433px;
 }
+#scr3 .indoor {
+    margin:0 auto -500px;
+}
 #scr3 h1 {
-    font-size: 180%;
     margin: 0;
     padding: 88px 0 0 77px;
 }
@@ -1879,10 +1988,12 @@ body {
 .sliderdiv2 {
     height: 520px;
     margin: -3px 0 0 76px;
-    width: 891px;
+    width: -webkit-calc(392px + 50%);
+    width: -moz-calc(392px + 50%);
+    width: calc(392px + 50%);
 }
 .sliderdiv2 .graph {
-    background: url(../img/graphtab.png) no-repeat center center;
+    background: url("../img/graphtab.png") no-repeat center center;
     height: 342px;
     padding: 1px;
     margin-left: -6px;
@@ -1893,14 +2004,7 @@ body {
     font-size: 74%;
     margin: 10px 0 0 2px;
 }
-.slidemask2 {
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
-    height: 100%;
-    position: relative;
-    left: 804px;
-    top: -3158px;
-    width: 90px;
-}
+
 .want {
     font-size: 71%;
     margin: -12px 0 0px 590px;
@@ -1938,10 +2042,8 @@ body {
 .slidegraph{
     width:764px;
 }
-.sliderdiv2 {
-    width: 892px;
-}
 
+/*---------------------------------------- SCR 4 1024 --------------------------------*/
 #scr4 {
     height:613px;
 }
@@ -1950,7 +2052,6 @@ body {
     background-size: 25%;
 }
 #scr4 h1 {
-    font-size:180%;
     width:410px;
 }
 #scr4 h2 {
@@ -1979,7 +2080,7 @@ body {
 .scr4sect {
     width:300px;
 }
-
+/*---------------------------------------- SCR 5 1024 --------------------------------*/
 #scr5 {
     height:372px;
     margin:100px auto;
@@ -1992,7 +2093,6 @@ body {
     width:670px;
 }
 #scr5 h1 {
-    font-size:180%;
     margin:0 0 20px 0;
     padding:1px 0 1px;
     width:100%;
@@ -2109,7 +2209,6 @@ body {
     height: 570px;
 }
 #avantsa h1, #avantsh h1 {
-    font-size: 180%;
     margin-left: 96px;
     padding-top: 51px;
     width: 670px;
@@ -2273,7 +2372,6 @@ body {
     height:476px;
 }
 #scr7 h1 {
-    font-size: 180%;
     margin: 58px 0 -32px 89px
 }
 #scr7 .paginator {
@@ -2281,7 +2379,11 @@ body {
 }
 #scr7slider {
     margin: 60px 0 0 67px;
-    width: 900px;
+    width: calc(392px + 50%);
+}
+#scr7scroll {
+    margin: 264px 0 -285px 0;
+    width: 100%;
 }
 #scr7 .bignumber {
     font-size: 750%;
@@ -2508,6 +2610,83 @@ body {
     font-size:90%;
     width:68px;
 }
+/*---------------------------------------- SCR 10 1024 --------------------------------*/
+#scr10 {
+    height:485px;
+}
+#scr10 .indoor {
+    width: 762px;
+}
+#scr10 h1 {
+    font-size: 175%;
+    margin: 82px 0 -28px 0;
+}
+#scr10 .paginator {
+    margin:0 0 53px 708px;
+}
+#scr10 .s10slide {
+    height: 306px;
+    margin: 10px 0 -316px 10px;
+    width: 194px;
+}
+#scr10 .s10slide img {
+    height: 306px;
+    width: 194px;
+}
+#s10slider .s10slide:nth-child(1){ left:0px; }
+#s10slider .s10slide:nth-child(2){ left:240px; }
+#s10slider .s10slide:nth-child(3){ left:480px; }
+#s10slider .s10slide:nth-child(4){ left:720px; }
+#s10slider .s10slide:nth-child(5){ left:960px; }
+#s10slider .s10slide:nth-child(6){ left:1200px; }
+#s10slider {
+    height: 360px;
+    margin: 0 0 50px -10px;
+    width: -webkit-calc(388px + 50%);
+    width: -moz-calc(388px + 50%);
+    width: calc(388px + 50%);
+}
+
+/*---------------------------------------- SCR 11 1024 --------------------------------*/
+#scr11 {
+    height:730px;
+    background:linear-gradient(180deg, #06f 0%, #06f 674px, #fff 674px, #fff 100%);
+}
+#scr11 .indoor {
+    height: 685px;
+    width: -webkit-calc(465px + 50%);
+    width: -moz-calc(465px + 50%);
+    width: calc(465px + 50%);
+}
+#scr11 .indoor2 {
+    height: 570px;
+    margin: -30px 0 0 87px;
+    width: 686px;
+}
+#scr11 h1 {
+    font-size: 175%;
+    margin: 82px 0 40px 0;
+}
+#scr11 h2 {
+    font-size: 112%;
+    margin-top: 60px;
+}
+#scr11 .question {
+    background:url("../img/question30.png")no-repeat left center, url("../img/corndown.png")no-repeat right center;
+    font-size: 76%;
+    padding: 12px 0 13px 58px;
+    width: 93%;
+}
+
+#scr11 .answer {
+    font-size: 53%;
+    margin: -7px 0 20px 0;
+    padding: 0 0 0 58px;
+}
+#scr11 .question.active {
+    background:url("../img/questionactive30.png")no-repeat left center, url("../img/cornup.png")no-repeat right center;
+}
+
 
 
 }
@@ -2568,6 +2747,7 @@ body {
     margin:6px auto;padding-top:1px;
     width:156px;
 }
+/*---------------------------------------- SCR 1 770 --------------------------------*/
 #seoback {
     background: url("../img/seobig.png")no-repeat center center;
     font-size: 400%;
@@ -2823,13 +3003,9 @@ body {
     height: 1314px;
     margin: 913px auto -913px;
 }
-.slidemask2 {
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
-    height: 100%;
-    position: relative;
-    left: 802px;
-    top: -3283px;
-    width: 90px;
+#scr3 .indoor {
+    height:100%;
+    margin:0 auto -1112px;
 }
 #scr3 h1 {
     font-size: 175%;
@@ -2850,9 +3026,10 @@ body {
 }
 .sliderdiv2 {
     height: 980px;
-    padding: 1px;
     margin:0 0 0 57px;
-    width: 615px;
+    width: -webkit-calc(268px + 50%);
+    width: -moz-calc(268px + 50%);
+    width: calc(268px + 50%);
 }
 .sliderdiv2 .graph {
     background: url("../img/graph720.png") no-repeat center center;
@@ -3205,7 +3382,10 @@ body {
 #scr7slider {
     height: 180px;
     margin: 68px 0 0 0px;
-    width: 698px;
+    width: calc(347px + 50%);
+}
+#scr7scroll {
+    margin: 245px 0 -350px 0;
 }
 #scr7 .bignumber {
     font-size: 1000%;
@@ -3370,7 +3550,7 @@ body {
     height:775px;
 }
 #scr9 .indoor2 {
-    width: 740px;
+    width: 650px;
 }
 #scr9 h1 {
     margin: 84px 0 24px 0;
@@ -3378,7 +3558,7 @@ body {
 #scr9 p {
     font-size: 81%;
     margin:0 0 52px 0;
-    width:81%
+    width:98%
 }
 #scr9 h3 {
     font-size: 100%;
@@ -3448,8 +3628,80 @@ body {
     font-size:123%;
     width:88px;
 }
+/*---------------------------------------- SCR 10 770 --------------------------------*/
+#scr10 {
+    height:590px;
+}
+#scr10 .indoor {
+    width: 650px;
+}
+#scr10 h1 {
+    margin: 84px 0 -35px 0;
+}
+#scr10 .paginator {
+    margin: 0 0 80px 576px;
+}
+#s10slider {
+    height: 480px;
+    margin:0 0 0px -10px;
+    width: -webkit-calc(332px + 50%);
+    width: -moz-calc(332px + 50%);
+    width: calc(332px + 50%);
+}
+#scr10 .s10slide {
+    height:410px;
+    margin:10px 0 -420px 10px;
+    width:260px;
+}
+#s10slider .s10slide:nth-child(2){ left:320px; }
+#s10slider .s10slide:nth-child(3){ left:640px; }
+#s10slider .s10slide:nth-child(4){ left:960px; }
+#s10slider .s10slide:nth-child(5){ left:1280px; }
 
 
+#scr10 .s10slide img{
+    height:410px;
+    width:260px;
+}
+/*---------------------------------------- SCR 11 770 --------------------------------*/
+#scr11 {
+    height: 920px;
+    background: linear-gradient(180deg, #06f 0%, #06f 874px, #fff 874px, #fff 100%);
+}
+#scr11 .indoor {
+    height:900px;
+    width: calc(324px + 50%);
+}
+#scr11 h1 {
+    margin: 0px 0 68px 0;
+}
+#scr11 .indoor2 {
+    height: 570px;
+    margin: 77px 0 0 58px;
+    width: 570px;
+}
+#scr11 .question {
+    background:url("../img/question40.png")no-repeat left 33%, url("../img/corndown.png")no-repeat right 33%;
+    font-size: 99%;
+    padding: 15px 0 14px 58px;
+}
+#scr11 .answer {
+    font-size: 70%;
+    margin-top:-4px;
+    width:80%;
+}
+#scr11 .question.active {
+    background:url("../img/questionactive44.png")no-repeat left 33%, url("../img/cornup.png")no-repeat right 33%;
+}
+#scr11 .question span {
+    margin-top: -20px;
+}
+#scr11 h2 {
+    font-size: 150%;
+}
+#scr11 .question b{
+    display:inline;
+}
 
 }
 
@@ -3463,6 +3715,7 @@ body {
 .indoor {
     width:284px;
 }
+
 #logo {
     background:url("../img/logosmart.png")no-repeat center center;
     margin: -30px 0 0 21px;
@@ -3508,7 +3761,7 @@ body {
     padding-top: 1px;
     margin: -43px 19px 20px 0;
 }
-
+/*---------------------------------------- SCR 1 320 --------------------------------*/
 #seoback {
     background: url("../img/seosmart.png")no-repeat center center;
     font-size: 230%;
@@ -3650,7 +3903,7 @@ body {
     margin: -23px 0 27px 201px;
     width: 16px;
 }
-
+/*---------------------------------------- SCR 2 320 --------------------------------*/
 #scr2 {
     background: linear-gradient(90deg, rgba(0, 102, 204, 1) 0%, rgba(0, 102, 204, 1) 100%);
     height: 600px;
@@ -3703,12 +3956,15 @@ body {
     margin: 7px 0 27px 94px;
     width: 192px;
 }
-
+/*---------------------------------------- SCR 3 320 --------------------------------*/
 #scr3 {
-    background: #fff;
     height: 980px;
     margin: 525px auto -913px;
     width: 100%;
+}
+#scr3 .indoor {
+    height:100%;
+    margin:0 auto -800px;
 }
 #scr3 h1 {
     font-size: 150%;
@@ -3728,10 +3984,7 @@ body {
     font-size: 70%;
     margin: 4px 15px 0 0;
 }
-.sliderdiv2 {
-    height: 980px;
-    width: 265px;
-}
+
 .graphinfo {
     margin: 39px 0 0 20px;
     height: 259px;
@@ -3758,9 +4011,8 @@ body {
 }
 .sliderdiv2 {
     height: 760px;
-    padding: 1px;
     margin: -45px 0 0 3px;
-    width: 280px;
+    width: calc(100px + 50%);
 }
 .slidegraph {
     width: 280px;
@@ -3799,7 +4051,7 @@ body {
     margin: 0 0 0 7px;
 }
 
-
+/*---------------------------------------- SCR 4 320 --------------------------------*/
 #scr4 {
     height:1130px;
 }
@@ -3838,7 +4090,7 @@ body {
 .scr4sect {
     width:280px;
 }
-
+/*---------------------------------------  SCR 5   320 --------------------------*/
 #scr5 {
     height:350px;
     margin:57px auto;
@@ -4017,7 +4269,7 @@ body {
 #avantsh .avantscontent .avantsdiv:nth-child(3){
     height:130px;
 }
-/*--------------------------------------------  SCR7  320 ------------------------*/
+/*--------------------------------------------  SCR 7  320 ------------------------*/
 #scr7 {
     height: 440px;
 }
@@ -4040,7 +4292,10 @@ body {
 #scr7slider {
     height: 200px;
     margin: 43px 0 0 20px;
-    width: 268px;
+    width: calc(115px + 50%);
+}
+#scr7scroll {
+    margin: 248px 0 -280px 0;
 }
 .scr7sliderinfo {
     margin-left: 68px;
@@ -4245,6 +4500,75 @@ body {
     margin: 0 0 0 0px;
     padding: 10px 66px 6px 66px;
 }   
+/*------------------------------------------ SCR 10  320 --------------------------*/
+#scr10 {
+    height: 540px;
+}
+#scr10 h1 {
+    font-size: 150%;
+    margin:50px 0 -27px 0;
+    width: 195px;
+}
+
+#scr10 .indoor {
+    width: 250px;
+}
+#scr10 .paginator {
+    margin:0px 0 26px 200px;
+    width:71px;
+}
+#s10slider {
+    width: -webkit-calc(135px + 50%);
+    width: -moz-calc(135px + 50%);
+    width: calc(135px + 50%);
+}
+#s10slider .s10slide:nth-child(2){ left:275px; }
+ /*---------------------------------------------  SCR 11  320 -------------------*/
+#scr11 {
+    background: linear-gradient(180deg, #06f 0%, #06f 677px, #fff 677px, #fff 100%);
+    height: 725px;
+}
+#scr11 .indoor {
+    border-radius:0px;
+    box-shadow:0 0 0 0 #000;
+    height: 700px;
+    width: calc(151px + 50%);
+}
+#scr11 .indoor2 {
+    height: 620px;
+    margin: 57px 0 0 15px;
+    width: 277px;
+}
+#scr11 h1 {
+    font-size: 150%;
+    margin:50px 0 45px 0;
+    width: 240px;
+}
+#scr11 h2 {
+    font-size: 102%;
+    width: 210px;
+}
+
+#scr11 .question {
+    background: url("../img/question30.png")no-repeat left 33%, url("../img/corndown.png")no-repeat right 33%;
+    font-size: 75%;
+    padding: 8px 0 8px 40px;
+    width:88%;
+}
+#scr11 .question.active {
+    background: url("../img/questionactive30.png")no-repeat left 33%, url("../img/cornup.png")no-repeat right 33%;
+}
+#scr11 .answer {
+    font-size: 50%;
+    margin-top: -4px;
+    padding: 0 0 0 40px;
+    width: 85%;
+}
+#scr11 .question b {
+    display:none;
+}
+
+
 
 
 }
