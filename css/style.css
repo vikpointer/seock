@@ -730,7 +730,7 @@ h2 {
 #payabonent, #payhours {
     background:#fff;
     display:block;
-    height:1400px;
+    height:1430px;
     margin:-135px auto;
     padding-top:1px;
     width:100%;
@@ -840,16 +840,22 @@ h2 {
     text-align:center;
     width:76px;
 }
-#backavantsa, #backavantsh {
-    background:linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0, 102, 255, 1) 50%, rgba(0, 102, 255, 1) 100%);
-    height:746px;
+#backavantsa {
+    /*background:linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0, 102, 255, 1) 50%, rgba(0, 102, 255, 1) 100%);*/
+    height:810px;
     margin-top:76px;
     width:100%;
 }
+#backavantsa .indoor {
+    margin: 0;
+    float: right;
+    width: calc(620px + 50%);
+}
 #avantsa, #avantsh {
-    border-radius:5px;
+    border-radius:5px 0 0 5px;
+    box-shadow: 39px 22px 69px -12px rgba(0,102,255,0.3);
     background:#06f;
-    height:746px;
+    height:775px;
     width:100%;
 }
 #avantsa h2, #avantsh h2 {
@@ -1115,12 +1121,20 @@ h2 {
     width:170px;
 }
 
-#backavantsh, #avantsh {
+#avantsh {
+    box-shadow: 39px 22px 69px -12px rgba(0,102,255,0.3);
     color:#fff;
-    height:510px;
+    height:540px;
 }
 #backavantsh {
-    margin-top:100px;
+    color:#fff;
+    height:590px;
+    margin-top:60px;
+}
+#backavantsh .indoor {
+    float:right;
+    height:620px;
+    width: calc(620px + 50%);
 }
 #avantsh .avantsdiv {
     height: 147px;
@@ -1136,7 +1150,7 @@ h2 {
     background:url("../img/scalendar48.png") no-repeat 0% 20%;
 }
 #avantsh .avantscontent .avantsdiv:nth-child(3){
-    background:url("../img/sgraph58.png") no-repeat 0% 20%;
+    background:url("../img/sgraph48.png") no-repeat 0% 20%;
 }
 
 /*------------------------------------------------------------- SCR 7 1366 ---------------------------------*/
@@ -1146,6 +1160,7 @@ h2 {
     height:632px;
     width:100%;
 }
+/*
 #topscr7 {
     background:#06f;
     border-radius:0 0 0 5px;
@@ -1154,6 +1169,7 @@ h2 {
     position:relative;
     top:-21px;
 }
+*/
 #scr7 h2 {
     margin: 86px 0 -32px 116px;
 }
@@ -2275,7 +2291,7 @@ h2 {
 }
 #payabonent {
     height:1029px;
-    margin:-100 auto;
+    margin:-100px auto;
 }
 #variants {
     height:315px;
@@ -2361,13 +2377,17 @@ h2 {
     height: 570px;
     margin-top: 66px;
 }
-
+#backavantsa .indoor {
+    width: calc(464px + 50%);
+}
 #avantsa  {
-    height: 570px;
+    height: 536px;
 }
 #avantsa h2, #avantsh h2 {
     font-size: 180%;
+    height: 74px;
     margin-left: 96px;
+    padding-bottom: 10px;
     padding-top: 51px;
     width: 670px;
 }
@@ -2387,6 +2407,16 @@ h2 {
     padding-left: 56px;
     width: 310px;
 }
+
+#backavantsh .indoor {
+    height: 610px;
+    width: calc(467px + 50%);
+}
+#avantsh {
+    height: 480px;
+}
+
+
 #payhours>.indoor>h2 {
     margin-left:96px;
 }
@@ -3533,6 +3563,9 @@ body {
 #backavantsa {
     height: 1100px;
 }
+#backavantsa .indoor {
+    width: calc(383px + 50%);
+}
 .avantscontent {
     margin:20px 0 10px 57px;
     width:80%;
@@ -3572,6 +3605,14 @@ body {
 /* ------------------------------------ pay hours 770 ------------------------------------*/
 #payhours {
     height: 1933px;
+}
+#avantsa h2, #avantsh h2 {
+    padding-top: 60px;
+}
+
+#backavantsh .indoor {
+    height: 760px;
+    width: calc(383px + 50%);
 }
 #phours {
     font-size: 79%;
@@ -3627,13 +3668,13 @@ body {
 }
 #scr7 h2 {
     font-size: 175%;
-    margin: 116px 0 -32px 0px;
+    margin: 73px 0 -32px 0px;
 }
 #scr7 .paginator {
     margin-left: 585px;
 }
 #scr7slider {
-    height: 180px;
+    height: 190px;
     margin: 68px 0 0 0px;
     width: calc(347px + 50%);
 }
@@ -4488,7 +4529,7 @@ body {
     padding-bottom:15px;
 }
 #payabonent {
-    height:1532px;
+    height:1580px;
     margin:-57px auto;
 }
 #variants {
@@ -4510,11 +4551,11 @@ body {
 }
 
 #backavantsa {
-    height: 940px;
+    height: 990px;
     margin-top: 103px;
 }
 #avantsa {
-    height: 940px;
+    height: 970px;
 }
 #avantsa h2, #avantsh h2 {
     font-size: 152%;
@@ -4546,6 +4587,9 @@ body {
     padding-left: 50px;
     width: 220px;
 }
+#backavantsa .indoor {
+    width: calc(151px + 50%);
+}
 #avantsa .avantscontent .avantsdiv:nth-child(1){
     height:141px;
 }
@@ -4564,7 +4608,10 @@ body {
 
 
 
-
+#backavantsh .indoor {
+    height: 670px;
+    width: calc(152px + 50%);
+}
 
 #payhours{
     height: 1945px;
@@ -4616,8 +4663,12 @@ body {
     margin-top: 253px;
 }
 #backavantsh {
-    height:570px;
-    margin-top: 72px;
+    height: 660px;
+    margin-top: 0px;
+}
+#avantsh, #avantsa {
+    box-shadow:none;
+    border-radius:0;
 }
 #avantsh {
     height:570px;
