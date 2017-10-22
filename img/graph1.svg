@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg class="graph__svg" 
+version = "1.1" 
+baseProfile="full" 
+xmlns = "http://www.w3.org/2000/svg" 
+xmlns:xlink = "http://www.w3.org/1999/xlink"
+xmlns:ev = "http://www.w3.org/2001/xml-events" >
+
+ <style type="text/css">
+	.graph__svg {
+    /*height: 290px;
+    margin: -320px 0 70px 20px;
+    width: 525px;*/
+}
+.graph__svg1{
+    fill:none; 
+    stroke:#e5e5e5;
+    stroke-width:1px;
+}
+.graph__svg2{
+    fill:none; 
+    stroke:#f2f2f2;
+    stroke-width:1px;
+}
+.graph__svg3{
+    fill:none; 
+    stroke:#1777f2;
+    stroke-width:4px;
+}
+
+    
+	</style>
+    <g class="graph__svg2">
+        <path d="M38 0 L38 284 M83 0 L83 284 M128 0 L128 284 M173 0 L173 284 M218 0 L218 284 M263 0 L263 284 M309 0 L309 284 M354 0 L354 284 M399 0 L399 284 M444 0 L444 284 M489 0 L489 284 M0 0 L524 0" />
+    </g>
+    <g class="graph__svg1">
+        <path d="M5 6 L524 6 M5 37 L524 37 M5 68 L524 68 M5 99 L524 99 M5 130 L524 130 M5   161 L524 161 M5 192 L524 192 M5 223 L524 223 M5 254 L524 254 M5 285 L524 285" />
+    </g>
+    <g class="graph__svg3">
+        <path d="M0 254 L128 223 L173 192 L263 161 L309 99 L399 68 L489 6" />
+    </g>
+</svg>
