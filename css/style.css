@@ -3,7 +3,7 @@ html {
     font-family:latoregular;
 }
 .page {
-    background:#117AF7;
+    background:#117af7;
     padding:0;
     margin:0;
 }
@@ -12,15 +12,18 @@ html {
 }
 .page-scr2 {
     color:#fff;
-    margin:0 0 700px 0;
+    margin:0 0 400px 0;
 }
 .page-scr3 {
     margin:720px 0 -1610px 0;
 }
+.page-scr4 {
+    margin:1762px auto 0;
+}
 
 .btn {
     border-radius:5px;
-    background:#127af7;
+    background:#117af7;
     color:#fff;
     display:inline-block;
     padding: 0.8rem 3rem 0.8rem 3rem;
@@ -84,6 +87,82 @@ html {
 .wrap_320 {
     display:none;
 }
+/*-- Indoor --*/
+.indoor {
+    margin:0 auto;
+    width:1240px;
+}
+.inner {
+    margin:7.5rem 0 0 115px;
+    width:63rem;
+}
+.inner_right {
+    float:right;
+    margin:7.5rem 115px 0 0;
+    width:63rem;
+}
+
+/*-- SCR-BACK --*/
+.scr-back-right {
+    border-radius:5px 0 0 5px;
+    float:right;
+    width:calc(50% + 620px);
+}
+.scr-back-left {
+    border-radius:0 5px 5px 0;
+    float:left;
+    width:calc(50% + 620px);
+}
+.scr-back-white {
+    background-color:#fff;
+    color:#313131;
+}
+.scr-back-blue {
+    background-color:#0f69d4;
+    box-shadow: -12px 12px 60px 0px rgba(17, 122, 247, 0.2);
+    color:#fff;
+}
+/*-- Scrhead --*/
+.scrhead {
+    color:#fff;
+    font-family:akrobatlight;
+    font-weight:300;
+    font-size:3rem;
+    line-height: 1.1;
+}
+.scrtxt {
+    font-family:latoregular;
+    font-size:1rem;
+    font-weight:400px;
+    line-height:1.9;
+}
+.scrtxt_light {
+    color:#a8ccf7;
+}
+.scrtxt_black {
+    color:#333;
+}
+.h3 {
+    color:#fff;
+    font-family:akrobatbold;
+    font-size:1.25rem;
+    margin-bottom:0;
+}
+.p2{
+    color:#a8ccf7;
+    font-family:latoregular;
+    font-size:1rem;
+    line-height:1.85;
+}
+.p3{
+    color:#a8ccf7;
+    font-family:latoregular;
+    font-size:0.9rem;
+    line-height:1.8;
+}
+.p3 p{
+    margin:0.1rem 0;
+}
 /* --   Header  -- */
 .header {
     height:40px;
@@ -119,42 +198,6 @@ html {
 .free-consult-expand-txt{
     font-family:akrobatbold;
     font-size:1rem;
-}
-
-/*-- Indoor --*/
-.indoor {
-    margin:0 auto;
-    width:1240px;
-}
-.inner {
-    margin:7.5rem 0 0 115px;
-    width:63rem;
-}
-.inner_right {
-    float:right;
-    margin:7.5rem 115px 0 0;
-    width:63rem;
-}
-
-/*-- SCR-BACK --*/
-.scr-back-right {
-    border-radius:5px 0 0 5px;
-    float:right;
-    width:calc(50% + 620px);
-}
-.scr-back-left {
-    border-radius:0 5px 5px 0;
-    float:left;
-    width:calc(50% + 620px);
-}
-.scr-back-white {
-    background-color:#fff;
-    color:#313131;
-}
-.scr-back-blue {
-    background-color:#0E69D4;
-    box-shadow: -12px 12px 60px 0px rgba(17, 122, 247, 0.2);
-    color:#fff;
 }
 
 
@@ -241,11 +284,7 @@ html {
 
 /*-- Expand-textbox --*/
 .expand-textbox {
-    color:#fff;
-    font-family:latothin;
-    font-size:1rem;
     height:35rem;
-    line-height:1.85;
     overflow-Y:hidden;
     width:35rem;
     
@@ -340,24 +379,7 @@ html {
     font-size:1.1rem;
 }
 
-/*-- Scrhead --*/
-.scrhead {
-    font-family:akrobatlight;
-    font-weight:300;
-    font-size:3rem;
-}
-.scrtxt {
-    font-family:latoregular;
-    font-size:1rem;
-    font-weight:400px;
-    line-height:1.9;
-}
-.scrtxt_light {
-    color:#9cf;
-}
-.scrtxt_black {
-    color:#333;
-}
+
 
 /*------------------------------- Scr 3 ----------------------------*/
 .scr3 {
@@ -484,8 +506,6 @@ html {
 }
 .slide__data {
     color:#2b2b2b;
-    font-family:akrobatbold;
-    font-size: 1.25rem;
     padding: 0;
 }
 .slide-data {
@@ -505,11 +525,10 @@ html {
     margin:0;
     text-align:right;
 }
-.slide__content {
+.dark222 {
     color:#222;
-    font-family:latoregular;
-    font-weight:400;
-    list-style:none;
+}
+.scr3 .slide__content{
     padding:0;
 }
 .slide__content li {
@@ -529,12 +548,15 @@ html {
     height:735px;
     padding-top:1px;
 }
+.scr2 .p3 p {
+    margin: 1.1rem 0;
+}
 .scr2-scrtxt {
     margin:-12px 0 0 0;
     width:58rem;
 }
 .scr2-pager {
-    margin:380px 0 -20px 0;
+    margin:380px 0 -15px 0;
     margin-left:calc(100% - 1122px);
 }
 .scr2 .inner_right {
@@ -584,18 +606,12 @@ html {
     margin:0 0 -9.6rem 2rem;
 }
 .scr2-slide-content {
-    color:#9cf;
-    font-family:latothin;
-    font-size:0.9rem;
-    line-height:1.8;
     margin:0 0 0 5.4rem;
     width:70%;
 }
 
 .scr2_slide-head {
     color:#fff;
-    font-family:akrobatbold;
-    font-size:1.25rem;
     margin: 20px 0 -12px;
 }
 
@@ -616,6 +632,45 @@ html {
     width: 15rem;
 }
 
+/*---------------- Scr 4  ---------------------------------*/
+.scr4 {
+    height:880px;
+    width:99%;
+}
+.scr4-indoor{
+    background: url(../img/shape1.svg) no-repeat 355px 232px;
+    height:100%;
+}
+.scr4-inner {
+    margin: 7rem 10px 0 0;
+    width: 38rem;
+}
+.scr4__mokup {
+    background: url("../img/mokup.png")no-repeat center center;
+    height: 820px;
+    position: relative;
+    top: -70px;
+    left: 100px;
+    width: 400px;
+    margin-bottom: -823px;
+}
+.scr4-scrhead {
+    margin-top: 4.2rem;
+    margin-bottom:-18px;
+}
+.scr4_slide-head {
+    margin-top: 2.4rem;
+}
+.scr4 p {
+    height:3.2rem;
+    overflow:hidden;
+    width:23.5rem;
+}
+
+
+
+
+
 /*****************************************                 ****    *   **   **    *   *************/
 /*****************************************                 ****   **  *  *    *  **   *************/
 /*****************************************                 ****    *  *  *  **  * *   *************/
@@ -628,6 +683,9 @@ html {
 .page-scr3 {
     margin: 530px 0 -1183px 0;
 }
+.page-scr4 {
+    margin: 1340px auto 0;
+}
 .logo {
     background-size:76%;
 }
@@ -635,7 +693,7 @@ html {
     height:40px;
     margin-bottom:-40px;
     padding: 46px 43px 0 17px;
-    width: calc(100% - 57px);
+    width: calc(100% - 60px);
 }
 .indoor{
     width:930px;
@@ -783,7 +841,7 @@ html {
     height: 552px;
 }
 .scr2-pager {
-    margin: 285px 0 -20px 0;
+    margin: 285px 0 -14px 0;
     margin-left: calc(100% - 815px);
 }
 .scr2 .lineright {
@@ -810,6 +868,25 @@ html {
 }
 .scr2_slide-head {
     margin: 14px 0 -12px;
+}
+
+/*------------- SCR 4    1024 -------------------*/
+
+
+.scr4__mokup {
+    background-size: 283px 608px;
+    height: 610px;
+    top: -54px;
+    left: 86px;
+    margin-bottom: -610px;
+    width: 283px;
+    
+}
+.scr4-indoor {
+    background: url("../img/shape1024.svg") no-repeat 267px 170px;
+}
+.scr4 .inner_right {
+    margin-right: 7px;
 }
 
 
@@ -857,8 +934,6 @@ html {
     width:calc(50% + 325px);
 }
 .scrhead {
-    font-family: akrobatregular;
-    font-weight: 500;
     font-size: 2.15rem;
 }
 
@@ -983,7 +1058,39 @@ html {
 .scr2_slide-head {
     margin-top:20px;
 }
+/*--------------- SCR 4   770 -------------------*/
+.page-scr4 {
+    margin: 2174px auto 0;
+}
+.scr4__mokup {
+    background-size: 400px 820px;
+    height: 820px;
+    top: -10px;
+    left: -100px;
+    margin-bottom: -820px;
+    width: 400px;
+}
+.scr4 p {
+    height: 5rem;
+    overflow: hidden;
+    width: 19.5rem;
+}
+.scr4-scrhead {
+    margin-top: 2.2rem;
+}
+.scr4-indoor {
+    background:none;
+}
+.scr4 .inner_right {
+    margin-right: 18px;
+    width: 18rem;
+}
+.scr4_slide-head {
+    margin-top: 2rem;
+}
 
+
+    
 
 
 
@@ -997,7 +1104,7 @@ html {
 /*****************************************     0 - 767         ***  ****  ***       **************/
 @media only screen and (max-width: 767px){
 html {
-    font-size:10px;
+    font-size:12px;
 }
 .page-scr3 {
     margin: 598px 0 -1578px 0;
@@ -1005,10 +1112,10 @@ html {
 
 /*-- Indoor --*/
 .indoor {
-    width:303px;
+    width:296px;
 }
 .inner {
-    margin:4.8rem 0 0 18px;
+    margin:4.8rem 0 0 16px;
     width:285px;
 }
 .inner_right {
@@ -1018,14 +1125,14 @@ html {
 /*-- SCR-BACK --*/
 .scr-back-right {
     border-radius:0;
-    width:calc(50% + 152px);
+    width:calc(50% + 150px);
 }
 .scr-back-left {
     border-radius:0;
-    width:calc(50% + 152px);
+    width:calc(50% + 150px);
 }
 .scrhead {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 .pager {
     font-size: 2rem;
@@ -1075,27 +1182,30 @@ html {
     height: 720px;
 }
 .scr1__ux {
+    font-size: 3.5rem;
     margin: 97px 0 113px 250px;
 }
 .scr1-seotext {
     margin-right: 9px;
 }
+
 .movebtn__arrplay {
     border: 0.9rem solid transparent;
     border-left: 1.4rem solid #fff;
     margin: 1.2rem 0.75rem 0px 1.3rem;
 }
 .movebtn__text {
-    font-size: 1.85rem;
+    font-size: 1.6rem;
     padding: 11px 0 0 0;
 }
 .movebtn {
     height: 4.2rem;
     margin-left: -2px;
-    width: 24rem;
+    width: 21rem;
 }
 
 .seotext p {
+    font-size: 2.0rem;
     padding-bottom:23px;
 }
 .scr1-mouseimg {
@@ -1105,39 +1215,45 @@ html {
     margin: 183px 0px 90px 14px;
 }
 .scr1-expand-textbox  p{
-    padding-left: 5px;
+    padding-left: 0px;
 }
 .expand-textbox {
-    font-size: 1.2rem;
-    width:28rem;
+    width:23.5rem;
 }
 .expand-textbox__collapsed {
     height: 17rem;
 }
 .expand-textbox__collapsed .expand-textbox__mask {
     background: linear-gradient(180deg, rgba(17, 122, 247, 0) 0%, rgba(17, 122, 247, 1) 54%);
-    height: 14rem;
+    height: 12rem;
     margin-top: -500px;
 }
 .scr1 .expand-txt_size_small-115 {
-    font-size: 1.9rem;
+    font-size: 1.45rem;
 }
 .scr1 .expand-txt_length_short {
-    width: 10.5rem;
+    width: 8rem;
 }
+
 .expand-textbox__btn {
     background: url("../img/cornup.png")no-repeat 8% 90%;
     height: 5rem;
 }
 .expand-textbox__collapsed .expand-textbox__btn {
-    background: url("../img/corndown.png")no-repeat 8% 90%;
+    background: url("../img/corndown.png")no-repeat 5% 70%;
 }
 .whatseo {
     margin: 38px 0 124px -213px;
 }
+.whatseo .expand-txt_size_small {
+    font-size: 0.85rem;
+}
+.whatseo .expand-txt_length_longest {
+    width: 17.7rem;
+}
 .whatseo .lineright {
     background: url("../img/ellipse2.png")no-repeat left 1%;
-    background-size: 30%;
+    background-size: 10px 10px;
     width: calc(50% - 230px);
 }
 .whatseo .lineright__hr {
@@ -1172,13 +1288,13 @@ html {
     width: 257px;
 }
 .scr3-slide-graph {
-    margin: 290px 0 -616px 0;
+    margin: 290px 0 -618px 0;
 }
 .graph__legend-v li {
-    margin: 1.15rem 0 0 0;
+    margin: 0.8rem 0 0 0;
 }
 .graph__legend-h li {
-    margin-left: 1.5rem;
+    margin-left: 0.85rem;
 }
 .graph__legend-h {
     margin-left: 0.3rem;
@@ -1206,48 +1322,48 @@ html {
 }
 
 .scr3 .slide__data {
-    font-size: 1.35rem;
     margin-top: 17px;
 }
 .scr .slide-position {
     margin-top: 30px;
 }
 .scr3 .slide__content {
-    width: 23.5rem;
+    width: 20rem;
 }
 .scr3 .slider-link {
     top: 653px;
 }
 .scr3 .slider-btn {
     left: 28px;
-    top: 685px;
+    top: 677px;
 }
-.scr3 .slider .btn .expand-txt {
+/*.scr3 .slider .btn .expand-txt {
     font-size: 1.8rem;
     padding: 5px 18px;
     width: 12.5rem;
+}*/
+.btn .expand-txt {
+    font-size: 1.5rem;
+    padding: 5px 18px;
+    width: 10rem;
 }
-
 
 /*------------- Scr2 320 ------------------*/
 .scr2 {
     height: 597px;
 }
 .scr2 .scrhead {
-    font-size: 2.46rem;
-}
-.scr2 .scrtxt {
-    font-size: 1.08rem;
+    font-size: 2.1rem;
 }
 .scr2-scrtxt {
     margin: 24px 0 0 0;
-    width: 25.4rem;
+    width: 23.5rem;
 }
 .scr2 .inner_right {
     margin-top: 1.7rem;
 }
 .scr2-pager {
-    margin: 343px 0 -15px 0;
+    margin: 343px 0 -17px 0;
     margin-left: calc(100% - 287px);
 }
 .scr2 .lineright {
@@ -1256,33 +1372,50 @@ html {
 .scr2-slider {
     height: 150px;
     margin-top: 26px;
-    width: 297px;
+    width: 305px;
 }
 .scr2-slider-mask {
     display:none;
 }
 .scr2-slide {
-    height: 14rem;
-    width: 30rem;
+    height: 12rem;
+    width: 25.5rem;
 }
 
 .scr2_slide-head {
     margin: 15px 0 -6px;
-    font-size: 1.53rem;
 }
 .slide__picture {
-    background: url(../img/target.png) no-repeat 100% 30%;
+    background: url("../img/target.png") no-repeat 100% 22%;
     background-size:80%;
 }
 .scr2-slide-picture {
-    margin: 0 0 -9.6rem 3rem;
+    margin: 0 0 -9.8rem 2.5rem;
 }
 .scr2-slide-content {
-    font-size: 1rem;
-    margin: 0 0 0 6.5rem;
+    margin: 0 0 0 5.6rem;
 }
 .slide__content {
     width:19rem;
+}
+/*--------------- Scr 4     320  ---------------*/
+.page-scr4 {
+    margin: 2187px auto 0;
+}
+.scr4__mokup {
+    background-size: 285px 620px;
+    height: 620px;
+    top: -542px;
+    left: 12px;
+    margin-bottom: -620px;
+    width: 285px;
+}
+.scr4 .inner_right {
+    margin-right: 53px;
+    width: 19rem;
+}
+.scr4 p {
+    width: 23.5rem;
 }
 
 
