@@ -2,6 +2,9 @@ html {
     color:#fff;
     font-family:latoregular;
 }
+input {
+    outline:none;
+}
 .page {
     background:#117af7;
     padding:0;
@@ -20,7 +23,13 @@ html {
 .page-scr4 {
     margin:1762px auto 0;
 }
-
+.page-scr5 {
+    margin:0 auto;
+}
+.page-scr5-payments{
+    float:right;
+    margin:0 0 0 0;
+}
 .btn {
     border-radius:5px;
     background:#117af7;
@@ -38,6 +47,7 @@ html {
     text-align:center;
     width:7.5rem;
 }
+
 .expand-txt span {
     animation: expand-txt-in 0.3s infinite ease-in-out;
     animation-iteration-count: 1;
@@ -50,6 +60,19 @@ html {
     animation-iteration-count: 1;
     width:90%;
 }
+.expand-txt_length_middle{
+    width:6rem;
+}
+.expand-txt_length_middle  span{
+    animation: expand-txt-in-middle 0.3s infinite ease-in-out;
+    animation-iteration-count: 1;
+    width:75%;
+}
+.expand-txt_length_middle:hover span {
+    animation: expand-txt-out-middle 0.3s infinite ease-in-out;
+    animation-iteration-count: 1;
+    width:85%;
+}
 @keyframes expand-txt-out {
     0% { width:80%; }
     100% { width:90%;}
@@ -59,11 +82,20 @@ html {
     0% { width:90%; }
     100% { width:80%;}
 }
+@keyframes expand-txt-out-middle {
+    0% { width:75%; }
+    100% { width:85%;}
+}
+
+@keyframes expand-txt-in-middle {
+    0% { width:85%; }
+    100% { width:75%;}
+}
 .expand-txt_length_longest {
         width:21rem;
 }
 .expand-txt_length_long {
-    width:12.5rem;
+    width:13.5rem;
 }
 .expand-txt_length_short {
     width:6.5rem;
@@ -87,9 +119,16 @@ html {
 .wrap_320 {
     display:none;
 }
+.wrap_770 {
+    display:none;
+}
+.wrap_1366 {
+    display:inline;
+}
 /*-- Indoor --*/
 .indoor {
     margin:0 auto;
+    padding-top:1px;
     width:1240px;
 }
 .inner {
@@ -119,9 +158,13 @@ html {
 }
 .scr-back-blue {
     background-color:#0f69d4;
-    box-shadow: -12px 12px 60px 0px rgba(17, 122, 247, 0.2);
+    box-shadow: -48px 6px 60px 0px rgba(17, 122, 247, 0.4);
     color:#fff;
 }
+.scr-back-right .scr-back-blue, .scr-back-right.scr-back-blue {
+    box-shadow: 48px 6px 60px 0px rgba(17, 122, 247, 0.4);
+}
+
 /*-- Scrhead --*/
 .scrhead {
     color:#fff;
@@ -142,6 +185,13 @@ html {
 .scrtxt_black {
     color:#333;
 }
+.blue-caption {
+    color:#2d76d5;
+    font-family:akrobatregular;
+    font-size: 1.9rem;
+    padding: 0;
+}
+
 .h3 {
     color:#fff;
     font-family:akrobatbold;
@@ -154,6 +204,9 @@ html {
     font-size:1rem;
     line-height:1.85;
 }
+.p2 p{
+    margin:-0.5rem 0 0;
+}
 .p3{
     color:#a8ccf7;
     font-family:latoregular;
@@ -163,6 +216,18 @@ html {
 .p3 p{
     margin:0.1rem 0;
 }
+.dark222 {
+    color:#222;
+}
+.dark333 {
+    color:#333;
+}
+.circles-row{
+    display:none;
+}
+
+
+
 /* --   Header  -- */
 .header {
     height:40px;
@@ -215,7 +280,7 @@ html {
     text-transform:uppercase;
 }
 .scr1-seotext {
-    margin:0px 60px 0px 0px;
+    margin:5px 60px 0px 0px;
 }
 .scr1-mouseimg {
     margin: 114px 0px -231px 742px;
@@ -486,12 +551,7 @@ html {
     padding:0px 0 0 0px;
     width:285px;
 }
-.slide__caption {
-    color:#2d76d5;
-    font-family:akrobatregular;
-    font-size: 1.9rem;
-    padding: 0;
-}
+
 .slide-caption {
     margin:0;
 }
@@ -525,9 +585,7 @@ html {
     margin:0;
     text-align:right;
 }
-.dark222 {
-    color:#222;
-}
+
 .scr3 .slide__content{
     padding:0;
 }
@@ -634,11 +692,10 @@ html {
 
 /*---------------- Scr 4  ---------------------------------*/
 .scr4 {
-    height:880px;
-    width:99%;
+    height:883px;
 }
 .scr4-indoor{
-    background: url(../img/shape1.svg) no-repeat 355px 232px;
+    background: url("../img/shape1.svg") no-repeat 355px 232px;
     height:100%;
 }
 .scr4-inner {
@@ -668,6 +725,431 @@ html {
 }
 
 
+/*--------------- Scr 5 ---------------------------*/
+.scr5 {
+    height:390px;
+}
+.scr5-inner{
+    margin-top:7rem;
+    width: 42rem;
+}
+.scr5a-indoor {
+    height:100%;
+    overflow:hidden;
+}
+.scr5-abonent, .scr6-abonent {/* //////////// Abonent vs Hours /////////// */              /* ////////////// */
+    display:block;
+    display:none;/*      */
+}
+.scr5-hours, .scr6-hours {
+    display:none;
+    display:block;/*      */
+}
+
+.scr5-abonent{
+    height:585px;
+    width:100%;
+}
+.scr5a-inner{
+    margin-top:4.5rem;
+}
+.scr5-hours{
+    height:800px;
+    width:100%;
+}
+/*-------------- Payments ----------------------*/
+.scr5-payments {
+    height:58px;
+    width:calc(50% + 504px);
+}
+.scr5_lineright {
+    border-color:#ccc;
+    height: 1px;
+    margin-top: 103px;
+    margin-bottom: -48px;
+    width: 100%;
+}
+.payment {
+    border-bottom: 3px solid transparent;
+    color: #999;
+    cursor:pointer;
+    padding-bottom: 1.2rem;
+    width: 9rem;
+}
+.payment_active, .payment:hover, .payment:focus {
+    border-bottom:3px solid #06f;
+    color:#333;
+}
+.scr5-payment {
+    margin-bottom:-68px;
+}
+.scr5-payments .scr5-payment:nth-child(3){
+    margin-left:12rem
+}
+/*----------- Abonents ----------------- */
+.scr5-rate{
+    font-size:1rem;
+    margin-bottom:-26.28em;
+}
+.scr5 .inner {
+    font-size:1rem;
+}
+.inner .scr5-rate:nth-child(1) { margin-left:0; }
+.inner .scr5-rate:nth-child(2) { margin-left:16.4em; }
+.inner .scr5-rate:nth-child(3) { margin-left:32.8em; }
+.inner .scr5-rate:nth-child(4) { margin-left:49.2em; }
+
+.rate {
+    background:url("../img/rectshtrihxx.png")no-repeat center top;
+    background-size: 14.4em 22.4em;
+    height:26.25em;
+    width:14.4em;
+}
+.rate .h3 {
+    font-size:1.25em;
+}
+.rate .p3 {
+    font-size:0.9em;
+}
+.rate .blue-caption {
+    font-size:2em;
+}
+.ratecontent {
+    height:20.4em;
+    padding:2em 0 0 1.56em;
+    width:12em;
+}
+.ratecontent-caption{
+    margin:0 0 0 0;
+}
+.ratecontent__context{
+    color:#ccc;
+    font-family:akrobatbold;
+    font-size:1.5em;
+    margin:0;
+    
+}
+.ratecontent__subhead {
+    margin-top:1em;
+}
+.ratecontent__txt {
+    height:9.4em;
+    margin-top:0;
+    overflow:hidden;
+}
+.ratecontent-cost {
+    margin:0;
+}
+.rate-btn{
+    margin:1em 0 0 0.5em;
+    padding: 0.8em 3.8em 0.8em 3.8em;
+}
+
+/*--------------- Scr 6  ------------------------- */
+.scr6-abonent {
+    height:52rem;
+}
+.scr6-abonent-indoor {
+    height:48.75rem;
+}
+.scr6-abonent-inner{
+    margin:10px 0 0 115px;
+}
+.scr6-abonent-scrhead{
+    margin:4.3rem 0 0 0;
+    width:57rem;
+}
+.advantage-card{
+    overflow:hidden;
+    width:30rem;
+}
+.scr6-abonent-card{
+    margin:4rem 0 0 0;
+}
+.scr6-abonent-inner .advantage-card:nth-child(2) .card__img {
+    background:url("../img/smartdesk.png") no-repeat left top;
+}
+.scr6-abonent-inner .advantage-card:nth-child(3) .card__img {
+    background:url("../img/money48.png") no-repeat left top;
+}
+.scr6-abonent-inner .advantage-card:nth-child(4) .card__img {
+    background:url("../img/like48.png") no-repeat left top;
+}
+.scr6-abonent-inner .advantage-card:nth-child(5) .card__img {
+    background:url("../img/smartrotate.png") no-repeat left top;
+}
+.scr6-abonent-inner .advantage-card:nth-child(6) .card__img {
+    background:url("../img/target48.png") no-repeat left top;
+}
+.card__img{
+    height:48px;
+    width:48px;
+}
+.advantage-card-img{
+    margin:0 0 -3rem;
+}
+.card__head{
+    
+}
+.advantage-card-head{
+    margin:0 0 0 4.7rem;
+}
+.card__content{
+    
+}
+.advantage-card-content{
+    margin:1rem 0 0 4.7rem;
+}
+.scr6-abonent-inner .scr6-abonent-card:nth-child(4){ height:7.5rem; margin-bottom:-33.5rem;}
+.scr6-abonent-inner .scr6-abonent-card:nth-child(5){ margin-left:31.2rem;}
+.scr6-abonent-inner .scr6-abonent-card:nth-child(6){ margin-left:31.2rem;}
+
+/* ------------------- Scr5 - Hours -------------------------*/
+.scr5-hours{
+    height:826px;
+}
+.page-scr5h{
+    margin:0 auto;
+}
+.scr5h-indoor{
+    height:100%;
+}
+.scr5h-inner{
+    height:700px;
+    margin-top:3.7rem;
+}
+.scr5-hours__txt{
+    color:#333;
+    width:98%;
+}
+.scr5-hours-txt{
+    margin:0 0 0 0;
+}
+.scr5-hours-caption{
+    margin:3.7rem 0 0 0;
+}
+
+.hours-item{
+    font-size:16px;
+    height:5.6rem;
+    padding-top:1px;
+    width:16.9rem;
+}
+.range-bar{
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0066ff', endColorstr='#cccccc',GradientType=1 );
+}
+
+.scr5h-inner  .hours-item:nth-child(3) { margin:3.75rem 0 -5.7rem 0;}
+.scr5h-inner  .hours-item:nth-child(4) { margin:0 0 -5.7rem 22.75rem;}
+.scr5h-inner  .hours-item:nth-child(5) { margin:0 0 0 45.5rem;}
+.scr5h-inner  .hours-item:nth-child(6) { margin:3.25rem 0 -5.6rem 0;}
+
+.scr5h-inner  .hours-item:nth-child(5) .hours-item-divinput{   margin-left:12.5rem; }
+.scr5h-inner  .hours-item:nth-child(5) .hours-item__divinput input{  width:58px; }
+
+
+.scr5h-inner  .hours-item:nth-child(3) .range-bar{ 
+    background: linear-gradient(to right, #06f 0%,#06f 50%,#ccc 50%,#ccc 100%);
+}
+.scr5h-inner  .hours-item:nth-child(4) .range-bar{ 
+    background: linear-gradient(to right, #06f 0%,#06f 15%,#ccc 15%,#ccc 100%);
+}
+.scr5h-inner  .hours-item:nth-child(5) .range-bar{ 
+    background: linear-gradient(to right, #06f 0%,#06f 75%,#ccc 75%,#ccc 100%);
+}
+.scr5h-inner  .hours-item:nth-child(6) .range-bar{ 
+    background: linear-gradient(to right, #06f 0%,#06f 1%,#ccc 1%,#ccc 100%);
+}
+
+.hours-item__head{
+    color:#333;
+    width:12.2rem;
+}
+.hours-item-head{
+    margin:0.3em 0 -1.6em 0;
+}
+.hours-item__divinput{
+    border:1px solid #e8e8e8;
+    border-radius:5px;
+    padding:0.6em 0.3em 0.6em 0.3em;
+}
+.hours-item-divinput{
+    margin-left:13.75rem;
+}
+.hours-item__divinput input{
+    border:none;
+    color:#06f;
+    font-family:latoregular;
+    font-size:1em;
+    text-align:center;
+    width:2.4rem;
+}
+.competitors{
+    
+}
+.hours-item__range{
+    
+}
+.hours-item__range input{
+    -webkit-appearance: none;
+    -moz-apperance: none;
+    width: 100%;
+    height: 4px;
+    padding: 0 0px;
+    margin: 30px 0 0 0;
+}
+
+.hours-item__range input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #06f;
+    border-radius:2px;
+    cursor:pointer;
+    height: 15px;
+    width: 15px;
+}
+
+.cms {
+    color:#333;
+    height:5rem;
+    padding:1px 0 0 0;
+    width:39.8rem;
+    
+}
+.scr5-hours-cms{
+    margin:0 0 0 22.5rem;
+}
+.cms__head{
+    color:#333;
+}
+.cms-head{
+    margin:0 0 -2rem 0;
+}
+.cms__item{
+    height:4.5rem;
+    padding:0;
+    width:7.1rem;
+}
+.cms__item  label {
+    color:#999;
+    display:inline-block;
+    font-family:latomedium;
+    margin-right:10px;
+    padding:0;
+    width:100%;
+}
+.cms__item  label:nth-child(1){
+    margin:0.56rem 0 0 10px;
+}
+.cms__item  label:nth-child(2) {
+    margin:2rem 0 0 10px;
+}
+
+
+.cms .cms-item:nth-child(2){
+    margin:0 0 -4.6rem 6.3rem;
+}
+.cms .cms-item:nth-child(3){
+    margin:0 0 -4.5rem 14.9rem;    
+}
+.cms .cms-item:nth-child(4){
+    margin:0 0 -4.5rem 23.3rem;   
+}
+.cms .cms-item:nth-child(5){
+    margin:0 0 -4.5rem 32rem;   
+}
+.withoutcms{
+}
+.modx{
+    
+}
+
+.cms-item input + span {
+	background: url("../img/chkbtn.png") no-repeat 49% 100%;
+    display: inline-block;
+    height: 16px;
+    margin: 3px 6px -2px -16px;
+    width:16px;
+}
+.cms-item input:checked + span {
+	background-position: 0 0px;
+}
+.cms-item input:checked + span  + span {
+	color: #000;
+}
+.hr{
+    border-bottom:1px solid #e8e8e8;
+    height:1px;
+    width:100%;
+}
+.cms-hr {
+    margin-top:3.75rem;
+}
+.robotcount {
+    color:#b9b9b9;
+}
+.cms-robotcount{
+    margin-top:2.2rem;
+}
+
+.scr5h-footer{
+    margin:0 auto;
+}
+.scr5h-footer .scr5h-hourscard:nth-child(1){     margin: 1.38rem 0 -2.85rem 0;}
+.scr5h-footer .scr5h-hourscard:nth-child(2){     margin: 0 0 -2.7rem 19.2rem;}
+
+.scr5h-hourscard{}
+.hourscard__title{
+    color:#333;
+    display:inline-block;
+    font-family: latobold;
+    font-size: 0.88rem;
+    padding:0.4rem 1rem 0.4rem 0;
+    margin:0 0 0 0;
+}
+.hourscard__rect{
+    background:#e8e8e8;
+    border-radius:5px;
+    color:#000;
+    display:inline-block;
+    font-family:latobold;
+    font-size:1rem;
+    padding: 1rem 1.1rem 0.8rem 1.1rem;
+}
+
+.scr5h-btn{
+    margin: 0px 0 0 46rem;
+    padding: 0.8rem 1.8rem 0.8rem 1.8rem;
+    /*width:270px;*/
+}
+/* ----------------------- Scr6   Hours --------------------*/
+.scr6-hours {
+    height:39.5rem;
+}
+.scr6-hours-indoor {
+    height:36.5rem;
+}
+.scr6-hours-inner{
+    margin:10px 0 0 115px;
+}
+.scr6-hours-scrhead{
+    margin:4.3rem 0 0 0;
+    width:57rem;
+}
+.scr6-hours-card{
+    margin:4rem 0 0 0;
+}
+.scr6-hours-inner .advantage-card:nth-child(2) .card__img {
+    background:url("../img/tvset48.png") no-repeat left top;
+}
+.scr6-hours-inner .advantage-card:nth-child(3) .card__img {
+    background:url("../img/sgraph48.png") no-repeat left top;
+}
+.scr6-hours-inner .advantage-card:nth-child(4) .card__img {
+    background:url("../img/scalendar48.png") no-repeat left top;
+}
+
+.scr6-hours-inner .scr6-hours-card:nth-child(3){ height:7.5rem; margin-bottom:-21.2rem;}
+.scr6-hours-inner .scr6-hours-card:nth-child(4){ margin-left:31.2rem;}
 
 
 
@@ -872,7 +1354,9 @@ html {
 
 /*------------- SCR 4    1024 -------------------*/
 
-
+.scr4 {
+    height: 657px;
+}
 .scr4__mokup {
     background-size: 283px 608px;
     height: 610px;
@@ -888,6 +1372,72 @@ html {
 .scr4 .inner_right {
     margin-right: 7px;
 }
+
+/*---------------- Scr 5  1024 -------------------*/
+.scr5 {
+    height: 296px;
+}
+.scr5-inner {
+    width:42rem;
+}
+.scr5-payments {
+    height: 59px;
+    width: calc(50% + 350px);
+}
+.scr5_lineright {
+    border-color: #ccc;
+    height: 1px;
+    margin-top: 80px;
+    margin-bottom: -37px;
+    width: 100%;
+}
+.scr5-abonent {
+    height: 439px;
+}
+
+/*--------------- Scr 6 1024 ------------------------------*/
+.scr6-abonent-card {
+    margin-top: 3.7rem;
+}
+.scr6-abonent .card__img{
+    transform:scale(0.75);
+}
+.scr6-abonent .advantage-card-img {
+    margin-bottom:-3.7rem;
+}
+.scr6-abonent-inner .scr6-abonent-card:nth-child(4) {
+    margin-bottom: -34.8rem;
+}
+
+/*-------------Scr5 1024            Hours-----------------*/
+.scr5-hours {
+    height: 600px;
+}
+.scr5h-inner {
+    height: 555px;
+}
+.scr5h-inner .hours-item:nth-child(5) .hours-item-divinput {
+    margin-left: 11.5rem;
+}
+.cms__item label {
+    width: 110%;
+}
+/*--------------- Scr 6 1024           Hours--------------*/
+.scr6-hours-card {
+    margin-top: 3.7rem;
+}
+.scr6-hours .card__img{
+    transform:scale(0.75);
+}
+.scr6-hours .advantage-card-img {
+    margin-bottom:-3.7rem;
+}
+.scr6-hours-inner .scr6-hours-card:nth-child(3) {
+    margin-bottom: -20.8rem;
+}
+
+
+
 
 
 } 
@@ -936,7 +1486,9 @@ html {
 .scrhead {
     font-size: 2.15rem;
 }
-
+.wrap_770 {
+    display:inline;
+}
 /*--------- Scr 1    770 ---------------------*/
 .scr1 {
     background: url("../img/seogrid770.png") no-repeat 19% 0%;
@@ -1062,6 +1614,9 @@ html {
 .page-scr4 {
     margin: 2174px auto 0;
 }
+.scr4 {
+    height: 953px;
+}
 .scr4__mokup {
     background-size: 400px 820px;
     height: 820px;
@@ -1090,7 +1645,129 @@ html {
 }
 
 
-    
+/*------------------ Scr5     770 -------------------- */
+.scr5 {
+    height: 280px;
+}
+.scr5-inner {
+    margin-top: 5.1rem;
+    margin-left: 0;
+    width: 41rem;
+}
+.scr5 {
+    height: 350px;
+}
+.scr5-payments {
+    width: calc(50% + 324px);
+}   
+.scr5_lineright {
+    margin-top: 120px;
+    margin-bottom: -48px;
+}
+.scr5a-inner {
+    margin-left:0;
+}
+.scr5a-indoor{
+    width: calc(50% + 325px);
+    margin-right: 0;
+}
+.scr5-abonent {
+    height: 553px;
+}
+
+
+/*--------------- Scr 6 770 ------------------------------*/
+.scr6-abonent {
+    height: 75rem;
+}
+.scr6-abonent-indoor {
+    height: 71.3rem;
+}
+.scr6-abonent-inner {
+    margin-left:57px;
+}
+.scr6-abonent-card {
+    margin-top: 4rem;
+}
+.advantage-card {
+    width: 30.7rem;
+}
+.scr6-abonent-scrhead {
+   /* margin: 4.3rem 0 0 0;*/
+    /*width: 23rem;*/
+}
+.scr6-abonent .card__img{
+    transform:scale(1.0);
+}
+.scr6-abonent .advantage-card-img {
+    margin-bottom:-3.2rem;
+}
+.scr6-abonent-inner .scr6-abonent-card:nth-child(4){ margin-bottom: 0rem;}
+.scr6-abonent-inner .scr6-abonent-card:nth-child(5){ margin-left:0rem;}
+.scr6-abonent-inner .scr6-abonent-card:nth-child(6){ height:7.5rem; margin-left:0rem;}
+
+/*-------------Scr5h 770            Hours-----------------*/
+
+.scr5-hours {
+    height: 1100px;
+}
+.scr5h-inner {
+    margin-left:0;
+    height:955px;
+    width:692px;
+}
+
+.scr5h-inner .hours-item:nth-child(4) {
+    margin: 0 0 3.2rem 22.75rem;
+}
+.scr5h-inner .hours-item:nth-child(5) {
+    margin: 0 0 -9rem 22.75rem;
+}
+.scr5h-inner .hours-item:nth-child(6) {
+    margin: 3.25rem 0 0rem 0;
+}
+.scr5-hours-cms {
+    margin: -3rem 0 0 0rem;
+}
+.scr5h-btn {
+    margin: 11rem 0 0 0rem;
+}
+.cms-head {
+    margin: 6.6rem 0 -2rem 0;
+}
+.cms-hr {
+    margin-top: 9.75rem;
+}
+.cms-robotcount {
+    margin: 7.7rem 0 -10rem;
+}
+/*--------------- Scr 6 770       Hours -------------------*/
+.scr6-hours {
+    height: 50rem;
+}
+.scr6-hours-indoor {
+    height: 47rem;
+}
+.scr6-hours-inner {
+    margin-left:57px;
+}
+.scr6-hours-card {
+    margin-top: 4rem;
+}
+.advantage-card {
+    width: 30.7rem;
+}
+.scr6-hours-scrhead {
+    width: 36rem;
+}
+.scr6-hours .card__img{
+    transform:scale(1.0);
+}
+.scr6-hours .advantage-card-img {
+    margin-bottom:-3.2rem;
+}
+.scr6-hours-inner .scr6-hours-card:nth-child(3){ margin-bottom: 0rem;}
+.scr6-hours-inner .scr6-hours-card:nth-child(4){ height:7.5rem; margin-left:0rem;}
 
 
 
@@ -1131,8 +1808,18 @@ html {
     border-radius:0;
     width:calc(50% + 150px);
 }
+.scr-back-blue {
+    box-shadow:none;
+}
+.scr-back-right .scr-back-blue, .scr-back-right.scr-back-blue {
+    box-shadow:none;
+}
+
 .scrhead {
     font-size: 2.5rem;
+}
+.blue-caption {
+    font-size: 2rem;
 }
 .pager {
     font-size: 2rem;
@@ -1146,6 +1833,16 @@ html {
 .scr3-pager {
     margin: -5.9rem 1.6rem 0 0;
 }
+.wrap_320 {
+    display:inline;
+}
+.wrap_770{
+    display:none;
+}
+.wrap_1366 {
+    display:none;
+}
+
 /*---------------- Header 320 -------------*/
 .logo {
     background:url("../img/logosmart.png")no-repeat center center;
@@ -1158,7 +1855,7 @@ html {
     width: calc(100% - 30px);
 }
 .header-free-consult {
-    margin: 27px 0 -27px;
+    margin: 23px 0 0px;
 }
 .subclear {
     clear:both;
@@ -1182,8 +1879,8 @@ html {
     height: 720px;
 }
 .scr1__ux {
-    font-size: 3.5rem;
-    margin: 97px 0 113px 250px;
+    font-size: 3.7rem;
+    margin: 105px 0 113px 250px;
 }
 .scr1-seotext {
     margin-right: 9px;
@@ -1221,7 +1918,7 @@ html {
     width:23.5rem;
 }
 .expand-textbox__collapsed {
-    height: 17rem;
+    height: 10rem;
 }
 .expand-textbox__collapsed .expand-textbox__mask {
     background: linear-gradient(180deg, rgba(17, 122, 247, 0) 0%, rgba(17, 122, 247, 1) 54%);
@@ -1266,9 +1963,7 @@ html {
 .scr3 {
     height: 980px;
 }
-.wrap_320 {
-    display:inline;
-}
+
 .scr3-slider {
     height: 750px;
     margin-top: -18px;
@@ -1314,9 +2009,7 @@ html {
 .scr3 .slide-info {
     width: 237px;
 }
-.scr3 .slide__caption {
-    font-size: 2rem;
-}
+
 .scr3 .slide-theme {
     font-size: 1.32rem;
 }
@@ -1337,11 +2030,6 @@ html {
     left: 28px;
     top: 677px;
 }
-/*.scr3 .slider .btn .expand-txt {
-    font-size: 1.8rem;
-    padding: 5px 18px;
-    width: 12.5rem;
-}*/
 .btn .expand-txt {
     font-size: 1.5rem;
     padding: 5px 18px;
@@ -1402,6 +2090,9 @@ html {
 .page-scr4 {
     margin: 2187px auto 0;
 }
+.scr4 {
+    height: 657px;
+}
 .scr4__mokup {
     background-size: 285px 620px;
     height: 620px;
@@ -1418,8 +2109,218 @@ html {
     width: 23.5rem;
 }
 
+/*---------------- Scr 5             320 ---------------*/
+.scr5 {
+    height: 320px;
+}
+.scr5-inner {
+    margin: 3.3rem 0 0 13px;
+    width: 280px;
+}
+.scr5-scrhead {
+    width: 20rem;
+}
+.scr5-payments {
+    width: calc(50% + 135px);
+}
+.scr5_lineright {
+    margin-top:84px;
+    margin-bottom: -38px;
+}
+.scr5a-indoor {
+    width: calc(50% + 150px);
+}
+.scr5-rate{
+    font-size:1.333rem;
+    margin-bottom:-26.28em;
+}
+.scr5 .inner {
+    font-size:1.333rem;
+}
+.scr5 .p2 p {
+    font-size: 1rem;
+}
+.scr5-abonent {
+    height: 670px;
+}
+.rate-btn {
+    margin-top:0.8em;
+    padding: 0.5em 2.2em 0.5em 2.2em;
+}
+.rate-btn  .expand-txt {
+    width: 8rem;
+}
+.circles-row{
+    display:block;
+    height:10px;
+    padding:0;
+    width:80px;
+}
+.scr5a-circles-row {
+    margin: 453px 0 0 0px;
+}
+.circle {
+    background:#ebebeb;
+    border-radius:50%;
+    content:' ';
+    cursor:pointer;
+    height:10px;
+    width:10px;
+}
+.circle_active {
+    background:#06f;
+    cursor:default;
+}
+.circles-row-circle {
+    float:left;
+    margin-left:10px;
+}
 
 
+/*--------------- Scr 6 320 ------------------------------*/
+.scr6-abonent {
+    height: 92rem;
+}
+.scr6-abonent-indoor {
+    height: 91rem;
+}
+.scr6-abonent-card {
+    margin-top: 4rem;
+}
+.advantage-card {
+    width: 23.7rem;
+}
+.scr6-abonent-scrhead {
+    margin-top: -1rem;
+    width: 23rem;
+}
+.scr6-abonent .advantage-card-img {
+    margin-bottom:-4.2rem;
+}
+.scr6-abonent-inner .scr6-abonent-card:nth-child(4){ height:10rem; margin-bottom: 0rem;}
+.scr6-abonent-inner .scr6-abonent-card:nth-child(5){ margin-left:0rem;}
+.scr6-abonent-inner .scr6-abonent-card:nth-child(6){ height:10rem; margin-left:0rem;}
+
+
+/*-------------Scr5h 320            Hours-----------------*/
+.scr5-hours {
+    height: 1200px;
+}
+.scr5-hours-txt {
+    display:none;
+}
+.scr5-hours-caption {
+    font-size: 1.7rem;
+}
+.hours-item {
+    width: 22.4rem;
+}
+.hours-item-divinput {
+    margin-left: 18.4rem;
+}
+.scr5h-inner {
+    width:282px;
+}
+.scr5h-inner .hours-item:nth-child(5) .hours-item-divinput{
+    margin-left: 16.5rem;
+}
+.scr5h-inner .hours-item:nth-child(3) {
+    margin: 3.75rem 0 0 0;
+}
+.scr5h-inner .hours-item:nth-child(4) {
+    margin: 3.5rem 0 0 0;
+}
+.scr5h-inner .hours-item:nth-child(5) {
+    margin: 3.5rem 0 0 0;
+}
+.scr5h-inner .hours-item:nth-child(6) {
+    margin: 3.5rem 0 0 0;
+}
+
+.scr5-hours-cms {
+    margin: -1rem 0 0 0rem;
+}
+.cms {
+    height: 19rem;
+    width: 22.5rem;
+}
+.cms-head {
+    margin: 6.6rem 0 0 0;
+}
+.cms__item label {
+    font-size: 1.2rem;
+    width: 125%;
+}
+.cms .cms-item:nth-child(2) {
+    margin: 2.17rem 0 -4.6rem -13px;
+}
+.cms .cms-item:nth-child(3) {
+    margin: 0 0 0 10rem;
+}
+.cms .cms-item:nth-child(4) {
+    margin: 3.333rem 0 -4.5rem -1rem;
+}
+.cms .cms-item:nth-child(5) {
+    margin: 0 0 0 10rem;
+}
+.cms-hr {
+    display:none;
+}
+.hourscard  {
+    padding-top:1px;
+}
+.hourscard__title {
+    font-size: 1.17rem;
+}
+.hourscard__rect {
+    float:right;
+    font-size:1.33rem;
+}
+.cms-robotcount {
+    font-size:0.88rem;
+    margin: 21.7rem 0 -18rem;
+}
+.scr5h-footer .scr5h-hourscard:nth-child(1) {
+    margin: 1.7rem 0 0 0;
+}
+.scr5h-footer .scr5h-hourscard:nth-child(2) {
+    margin: 3rem 0 0 0;
+}
+.scr5h-footer .scr5h-hourscard:nth-child(1) .hourscard__rect {
+    margin: -0.5rem 1rem 0 0;
+}
+.scr5h-footer .scr5h-hourscard:nth-child(2) .hourscard__rect {
+    margin: -0.05rem 1rem 0 0;
+}
+.scr5h-btn .expand-txt {
+    width: 18rem;
+}
+.scr5h-btn {
+    padding: 0.8rem 1.2rem 0.8rem 1.2rem;
+}
+
+/*--------------- Scr 6 320      Hours---------------------*/
+.scr6-hours {
+    height: 57rem;
+}
+.scr6-hours-indoor {
+    height: 56rem;
+}
+.scr6-hours-card {
+    margin-top: 4rem;
+}
+.advantage-card {
+    width: 23.7rem;
+}
+.scr6-hours-scrhead {
+    margin-top: -1rem;
+    width: 23rem;
+}
+.scr6-hours .advantage-card-img {
+    margin-bottom:-4.2rem;
+}
+.scr6-hours-inner .scr6-hours-card:nth-child(3){ height:10rem; margin-bottom: 0rem;}
+.scr6-hours-inner .scr6-hours-card:nth-child(4){ height:10rem; margin-left:0rem;}
 
 
 }
