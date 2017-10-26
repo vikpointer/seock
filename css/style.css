@@ -222,6 +222,9 @@ input {
 .dark333 {
     color:#333;
 }
+.dark666 {
+    color:#666;
+}
 .circles-row{
     display:none;
 }
@@ -297,6 +300,9 @@ input {
     font-size:2.38rem;
     margin:0;
     padding: 0 0 37px 0;
+}
+.scr1 .p2 p {
+    margin: 1rem 0 0;
 }
 /*-- See Present --*/
 .movebtn {
@@ -886,7 +892,7 @@ input {
     width:48px;
 }
 .advantage-card-img{
-    margin:0 0 -3rem;
+    margin:0 0 -3.25rem;
 }
 .card__head{
     
@@ -1148,8 +1154,84 @@ input {
     background:url("../img/scalendar48.png") no-repeat left top;
 }
 
-.scr6-hours-inner .scr6-hours-card:nth-child(3){ height:7.5rem; margin-bottom:-21.2rem;}
+.scr6-hours-inner .scr6-hours-card:nth-child(3){ height:7.5rem; margin-bottom:-20.9rem;}
 .scr6-hours-inner .scr6-hours-card:nth-child(4){ margin-left:31.2rem;}
+
+/*-------------------- Scr 7 -----------------------*/
+.scr7{
+    height:37rem;
+    width:100%;
+}
+.scr7-indoor{
+    height:100%;
+}
+.scr7-inner{
+    height:5rem;
+    margin-top:3.5rem;
+}
+.scr7-scrhead{
+    margin-bottom:-2.4rem;
+}
+.scr7-pager{
+    margin:0 0 0 58rem;
+}
+.scr7-slider{
+    height:13rem;
+    float:right;
+    margin: 3.1rem 0 0 0;
+    width:calc(100% - 5.6rem);
+}
+.scr7-slide{
+    height:13rem;
+    margin-bottom:-13rem;
+    width:42rem;
+}
+.slide__bignumber{
+    color:#1068d2;
+    font-family:akrobatblack;
+    font-size: 12.8rem;
+    height: 13rem;
+    margin: -3.4rem 0 -9.55rem 0;
+    padding: 1px;
+    width: 6rem;
+}
+.slide__head{
+    margin: 0 0 0 7.3rem;
+}
+.slide__txt{
+    margin: 0.5rem 0 0 7.3rem;
+}
+.scr7-slider .slide:nth-child(1){left: 0;}
+.scr7-slider .slide:nth-child(2){left: calc(740px * 1);}
+.scr7-slider .slide:nth-child(3){left: calc(740px * 2);}
+.scr7-slider .slide:nth-child(4){left: calc(740px * 3);}
+.scr7-slider .slide:nth-child(5){left: calc(740px * 4);}
+
+
+.slider-bar{
+    height:1rem;
+    width:62rem;
+}
+.scr7-sliderbar{
+    margin: 18rem 0 0 7rem;
+}
+.slider__bar{
+    -webkit-appearance: none;
+    -moz-apperance: none;
+    background-color: #e8e8e8;
+    height: 0.25rem;
+    padding: 0;
+    width: 100%;
+}   
+.slider__bar::-webkit-slider-thumb {    
+    -webkit-appearance: none;
+    background-color: #06f;
+    border-radius:2px;
+    cursor:pointer;
+    height: 0.25rem;
+    width: 20%;
+}
+
 
 
 
@@ -1406,7 +1488,7 @@ html {
     margin-bottom:-3.7rem;
 }
 .scr6-abonent-inner .scr6-abonent-card:nth-child(4) {
-    margin-bottom: -34.8rem;
+    margin-bottom: -33.8rem;
 }
 
 /*-------------Scr5 1024            Hours-----------------*/
@@ -1436,7 +1518,12 @@ html {
     margin-bottom: -20.8rem;
 }
 
-
+/*----------------- Scr7      1024 --------------------*/
+.scr7-slider .slide:nth-child(1){left: 0;}
+.scr7-slider .slide:nth-child(2){left: calc(550px * 1);}
+.scr7-slider .slide:nth-child(3){left: calc(550px * 2);}
+.scr7-slider .slide:nth-child(4){left: calc(550px * 3);}
+.scr7-slider .slide:nth-child(5){left: calc(550px * 4);}
 
 
 
@@ -1507,7 +1594,7 @@ html {
     margin: 183px 0px 74px 0px;
 }
 .expand-textbox__collapsed .expand-textbox__mask {
-    margin-top: -480px;
+    margin-top: -460px;
 }
 .whatseo {
     margin: 67px 0 180px -213px;
@@ -1693,8 +1780,7 @@ html {
     width: 30.7rem;
 }
 .scr6-abonent-scrhead {
-   /* margin: 4.3rem 0 0 0;*/
-    /*width: 23rem;*/
+    width: 37rem;
 }
 .scr6-abonent .card__img{
     transform:scale(1.0);
@@ -1769,6 +1855,32 @@ html {
 .scr6-hours-inner .scr6-hours-card:nth-child(3){ margin-bottom: 0rem;}
 .scr6-hours-inner .scr6-hours-card:nth-child(4){ height:7.5rem; margin-left:0rem;}
 
+/*------------------ Scr7  770 ------------------*/
+.scr7-inner{
+    margin:5rem 0 0 0;
+}
+.scr7-pager {
+    margin: 0 0 0 36rem;
+}
+.scr7-slider{
+    margin:2.4rem 0 0 0;
+    width:100%;
+}
+.scr7-slide{
+    width:37rem;
+}
+.scr7-slider .slide:nth-child(1){left: 0;}
+.scr7-slider .slide:nth-child(2){left: calc(660px * 1);}
+.scr7-slider .slide:nth-child(3){left: calc(660px * 2);}
+.scr7-slider .slide:nth-child(4){left: calc(660px * 3);}
+.scr7-slider .slide:nth-child(5){left: calc(660px * 4);}
+
+.scr7-sliderbar {
+    margin: 18rem 0 0 0rem;
+}
+.slider-bar {
+    width: 41rem;
+}
 
 
 }
@@ -1823,12 +1935,15 @@ html {
 }
 .pager {
     font-size: 2rem;
-    width: 6rem;
+    width: 6.2rem;
 }
 .pager-arr {
     height: 2rem;
     margin-bottom: -0.3rem;
     width: 2rem;
+}
+.pager__bottom {
+    font-size: 1.4rem;
 }
 .scr3-pager {
     margin: -5.9rem 1.6rem 0 0;
@@ -1918,7 +2033,7 @@ html {
     width:23.5rem;
 }
 .expand-textbox__collapsed {
-    height: 10rem;
+    height: 13rem;
 }
 .expand-textbox__collapsed .expand-textbox__mask {
     background: linear-gradient(180deg, rgba(17, 122, 247, 0) 0%, rgba(17, 122, 247, 1) 54%);
@@ -2322,5 +2437,42 @@ html {
 .scr6-hours-inner .scr6-hours-card:nth-child(3){ height:10rem; margin-bottom: 0rem;}
 .scr6-hours-inner .scr6-hours-card:nth-child(4){ height:10rem; margin-left:0rem;}
 
+/*---------------Scr7 320 -----------------*/
+.scr7-inner {
+    margin: 3rem 0 0 16px;
+    width: 280px;
+}
+.scr7-pager {
+    margin: -2.7rem 0 0 17rem;
+}
+.scr7-slider {
+    height:16rem;
+    margin: 4rem 0 0 244px;
+    width: 95%;
+}
+.scr7-slide {
+    height:16rem;
+    width: 23rem;
+}
+.slide__bignumber {
+    font-size: 11rem;
+    height: 13rem;
+    margin: -3.4rem 0 -10.2rem 0;
+    width: 5rem;
+}
+.slide__head {
+    margin: 0 0 0 6rem;
+}
+.slide__txt {
+    font-size: 0.83rem;
+    margin: 0.5rem 0 0 6rem;
+}
+.slider-bar {
+    width: 22rem;
+}
+
+.scr7-sliderbar {
+    margin: 21.5rem 0 0 1.5rem;
+}
 
 }
