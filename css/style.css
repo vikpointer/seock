@@ -95,6 +95,9 @@ input {
         width:21rem;
 }
 .expand-txt_length_long {
+    width:12.5rem;
+}
+.expand-txt_length_long135 {
     width:13.5rem;
 }
 .expand-txt_length_short {
@@ -746,11 +749,11 @@ input {
 }
 .scr5-abonent, .scr6-abonent {/* //////////// Abonent vs Hours /////////// */              /* ////////////// */
     display:block;
-    /*display:none;      */
+    display:none;/*      */
 }
 .scr5-hours, .scr6-hours {
     display:none;
-    /*display:block;      */
+    display:block;/*      */
 }
 
 .scr5-abonent{
@@ -1399,6 +1402,104 @@ input {
     background:url("../img/bill.png") no-repeat left center;
 }
 
+/*--------------- Scr 9 ------------------------------*/
+.scr9{
+    height:38.4rem;
+}
+.page-scr9{}
+.scr9-inner{
+    height: 85%;
+    margin-left:calc(100% - 70.4rem);
+    margin-top:3.4rem;
+}
+.scr9-scrhead{
+    margin:2rem 0 0 -0.2rem;
+}
+.scr9-txt{
+    margin:1.8rem 0 0 0;
+    width:41rem;
+}
+.brace-list{
+    height:14rem;
+    padding:1px;
+    width:23rem;
+}
+.scr9-brace-list{
+    margin:3rem 0 -13.8rem 0;
+}
+.scr9-brace-list ul{
+    font-size:0.88rem;
+    list-style:none;
+    margin-top:0rem;
+    padding:0;
+}
+.scr9-brace-list li{
+    line-height: 1.5;
+}
+.scr9-brace-list li::before{
+    color:#06f;
+    content:"{ ";
+    font-family:latobold;
+    font-size:1.3rem;
+}
+.scr9-brace-list li::after{
+    color:#9cf;
+    content:" }";
+    font-family:latobold;
+    font-size:1.3rem;
+}
+.scr9-subheader-list{
+    margin:0;
+}
+.formdiv{
+    height:14rem;
+    width:37.5rem;
+}
+.scr9-formdiv{
+    float:right;
+    margin-right:0rem;
+}
+.scr9-subheader-form{
+    margin:0;
+}
+.form{
+    height:11rem;
+    width:100%;
+}
+.scr9-form{
+    margin:-1.3rem 0 0 0;
+}
+.form__txt{
+    border-radius:5px;
+    font-size: 1.1rem;
+    height:9.5rem;
+    margin:0rem 0 -12rem 0;
+    padding:1rem 0 0 1rem;
+    width:21.5rem;
+}
+.form__divinput{
+
+}
+.form__divinput input{
+    border:1px solid #e7e7e7;
+    border-radius:5px;
+    height:2.75rem;
+    padding:2px 0 0 1rem;
+    width:91%;
+}
+.form__divinput input:hover, .form__divinput input:focus, .form__divinput_active input{
+    border:3px solid #1b76e8;
+    height:calc(2.75rem - 4px);
+    padding-left:calc(1rem - 2px);
+}
+.scr9-divinput{
+    margin:1.1rem 0 0 23.75rem;
+}
+.scr9-form-btn{
+    margin: 1em 0 0 23.8em;
+}
+
+
 
 
 
@@ -1721,6 +1822,15 @@ html {
     padding-left: 10px;
     width: 1.5rem;
 }
+
+
+/*------------ Scr 9  1-24 -----------------------*/
+.scr9-inner {
+    margin-left: calc(100% - 67.7rem);
+}
+
+
+
 
 
 } 
@@ -2129,6 +2239,29 @@ html {
     position:relative;
     top:-35px;
     left:69px;
+}
+
+/*------------ Scr 9  770-----------------------*/
+.scr9 {
+    height: 47.4rem;
+}
+.scr9-inner {
+    margin-left: calc(100% - 40.5rem);
+    margin-top: 5.3rem;
+}
+.scr9-txt {
+    width: 38rem;
+}
+.scr9-brace-list {
+    margin: 2.3rem 0 -2.5rem 0;
+}
+.brace-list>ul>li:nth-child(3){    margin-bottom:-5.8rem; }
+.brace-list>ul>li:nth-child(4){    margin-left:18rem; }
+.brace-list>ul>li:nth-child(5){    margin-left:18rem; }
+.brace-list>ul>li:nth-child(6){    margin-left:18rem; }
+
+.scr9-brace-list ul {
+    width: 39rem;
 }
 
 
@@ -2807,6 +2940,55 @@ html {
 }
 .treaty-movebtn .movebtn__text {
     font-size: 2rem;
+}
+
+/*------------ Scr 9   320  --------------------*/
+.scr9 {
+    height: 75.4rem;
+}
+.scr9-inner {
+   margin-top:4.4rem;
+}
+.scr9-txt {
+    margin-top:2.2rem;
+    width: 23rem;
+}
+.brace-list>ul>li:nth-child(3){    margin-bottom:0rem; }
+.brace-list>ul>li:nth-child(4){    margin-left:0rem; }
+.brace-list>ul>li:nth-child(5){    margin-left:0rem; }
+.brace-list>ul>li:nth-child(6){    margin-left:0rem; }
+
+.form__txt {
+    font-size: 1.2rem;
+    margin: 0rem 0 0rem 0;
+}
+.scr9-brace-list {
+    margin: 0.9rem 0 4.5rem 0;
+}
+.formdiv {
+    height: 30rem;
+    margin-top: 1.4rem;
+    width: 23.5rem;
+}
+.scr9-form {
+    margin: 1.7rem 0 0 0;
+}
+.scr9-subheader-list, .scr9-subheader-form {
+    font-size: 1.65rem;
+}
+.scr9-brace-list ul {
+    font-size: 1rem;
+    width: 23rem;
+}
+.scr9-brace-list li {
+    line-height: 2;
+}
+.scr9-divinput {
+    margin: 1.1rem 0 0 0rem;
+}
+.scr9-form-btn {
+    margin: 1em 0 0 0em;
+    padding: 0.5em 5.8em 0.5em 5.8em;
 }
 
 
