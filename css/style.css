@@ -228,6 +228,9 @@ input {
 .dark666 {
     color:#666;
 }
+.white {
+    color:#fff;
+}
 .circles-row{
     display:none;
 }
@@ -1504,7 +1507,7 @@ input {
     height:49rem;
 }
 .scr10-inner{
-    height:85%;
+    height:80%;
     width: calc(50% + 508px);
 }
 .scr10-scrhead{
@@ -1556,7 +1559,7 @@ input {
 
 /*---------------- Scr 12    --------------------*/
 .page-scr12{
-    margin:55rem auto -110rem;
+    margin:57rem auto -109rem;
 }
 .scr12{
     height:53.75rem;
@@ -1598,7 +1601,86 @@ input {
     width:19rem;
 }
 
+/*--------------------- Scr 11 ------------------------*/
+.scr11{
+    height:57.5rem;
+}
+.page-scr11{
+    margin:0 0 50rem;
+}
+.scr11-inner{
+    margin-top:4.5rem;
+    overflow:hidden;
+}
+.scr11-scrhead{
+    margin: 2rem 0 4.7rem;
+}
+.lost-quest{
+    cursor:pointer;
+    padding: 0.62rem 0 0.62rem 0;
+    width:92%;
+}
+.scr11-lost-quest{
+    margin:1rem 0 0 0.2rem;
+}
+.quest_active .quest__head, .lost-quest:hover .quest__head{
+    color:#fff;
+}
+.quest__img{
+    background:url("../img/corns40.png")no-repeat 50% 50%;
+    background-size:2.5rem 2.5rem;
+    float:left;
+    height: 3rem;
+    width:3rem;
+}
+.quest-quest{
+    background: url("../img/question.png")no-repeat 50% 50%;
+    background-size:1.5rem 1.5rem;
+    height:1.5rem;
+    margin: 0.75rem auto 0;
+    width:1.5rem;
+}
+.quest__head{
+    color:#a8ccf7;
+    margin: 0.7rem 0 -0.7rem 4.5rem;
+    width: 35rem;
+}
+.quest__arr{
+    background:url("../img/corndown.png")no-repeat right top;
+    background-size:1rem 0.6rem;
+    float:right;
+    height:0.6rem;
+    width:1rem;
+}
 
+.lost-quest__answer {
+    display: none;
+    font-size: 0.88rem;
+    padding: 0 0 0 1.5rem;
+    margin: 1.2rem 0 0;
+    width: 71%;
+}
+.other-quest{
+    margin:4.2rem 0 0 0;
+}
+
+.quest_active .quest-quest, .lost-quest:hover .quest-quest {
+    background:url("../img/questionactive.png")no-repeat 50% 50%;
+    background-size:1.5rem 1.5rem;
+}
+.quest_active .quest__arr{
+    background:url("../img/cornup.png")no-repeat right top;
+    background-size: 1rem 0.6rem;
+}
+.quest_active .lost-quest__answer{
+    color:#a8ccf7;
+    display:inline-block;
+}
+
+
+.quest_active .quest__img, .lost-quest:hover .quest__img {
+    background-size:3rem 3rem;
+}
 
 /*****************************************                 ****    *   **   **    *   *************/
 /*****************************************                 ****   **  *  *    *  **   *************/
@@ -1942,8 +2024,25 @@ html {
     position:relative;
     top: 221px;
     left: -7px;
-} 
+}
 
+
+/*------------ Scr 11   1024  --------------*/
+.scr11-inner {
+    margin-top:2.5rem;
+}
+.lost-quest {
+    width: 95%;
+}
+
+
+
+
+
+
+
+ 
+}
 
    
 /*****************************************                     **** ****  ***       **************/
@@ -2392,6 +2491,9 @@ html {
 }
 
 /*------------- Scr 12 770 ---------------------*/
+.page-scr12 {
+    margin: 57rem auto -101rem;
+}
 .scr12 {
     height: 45.9rem;
 }
@@ -2419,6 +2521,24 @@ html {
     width:100%;
 }
 
+/*----------- Scr11  770 ----------------------*/
+
+.scr11-inner {
+    margin:3rem 0 0 3.5rem;
+}
+.lost-quest {
+    width: 99%;
+}
+.lost-quest__answer {
+    width: 80%;
+}
+
+.quest__head {
+    width: 30rem;
+}
+.other-quest {
+    margin-top: 3.2rem;
+}
 
 
 }
@@ -2452,11 +2572,11 @@ html {
 /*-- SCR-BACK --*/
 .scr-back-right {
     border-radius:0;
-    width:calc(50% + 151px);
+    width:calc(50% + 152px);
 }
 .scr-back-left {
     border-radius:0;
-    width:calc(50% + 150px);
+    width:calc(50% + 152px);
 }
 .scr-back-blue {
     box-shadow:none;
@@ -3181,14 +3301,16 @@ html {
 .scr10-slider .scr10-slide:nth-child(6){  left:calc(5 * 278px);}
 
 /*--------------- Scr12  320 ------------------------*/
-
+.page-scr12 {
+    margin: 57rem auto -133.8rem;
+}
 .scr12 {
     height:79.4rem;
 }
 .scr12-inner{   
     height:94%; 
     margin-top:4.3rem;
-    width: calc(50% + 135px);
+    width: 286px;
 }
 .guarantee {
     background-position: 0% 0%;
@@ -3215,5 +3337,42 @@ html {
     left: -46px;
 }
 
+/*-------Scr11    320 ----------------*/
+.scr11{
+    height:680px;
+}
+.scr11-inner {
+    margin: 2.8rem 0 0 16px;
+}
+.quest__img {
+    padding-right: 1rem
+}
+.lost-quest__answer {
+    font-size: 0.83rem;
+    padding-left:4.3rem;
+    width: 83%;
+}
+.quest-quest {
+    margin: 0.75rem 0 0 1.2rem;
+}
+.quest__head {
+    margin: 0.5rem 0 -0.9rem 4.5rem;
+    width: 19rem;
+    font-size: 1.23rem;
+    
+}
+.scr11-lost-quest {
+    margin: 1rem 0 0 -0.5rem;
+}
+.scr11-scrhead {
+    margin: 2rem 0 3.2rem;
+}
+.lost-quest {
+    width: 102%;
+}
+.other-quest {
+    margin-top: 2.2rem;
+    width: 20rem;
+}
 
 }
