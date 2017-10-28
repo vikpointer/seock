@@ -749,11 +749,11 @@ input {
 }
 .scr5-abonent, .scr6-abonent {/* //////////// Abonent vs Hours /////////// */              /* ////////////// */
     display:block;
-    display:none;/*      */
+    /*display:none;      */
 }
 .scr5-hours, .scr6-hours {
     display:none;
-    display:block;/*      */
+    /*display:block;      */
 }
 
 .scr5-abonent{
@@ -801,7 +801,7 @@ input {
     font-size:1rem;
     margin-bottom:-26.28em;
 }
-.scr5 .inner {
+.scr5-inner {
     font-size:1rem;
 }
 .inner .scr5-rate:nth-child(1) { margin-left:0; }
@@ -1499,8 +1499,104 @@ input {
     margin: 1em 0 0 23.8em;
 }
 
+/*-------------- Scr 10 -------------------*/
+.scr10{
+    height:49rem;
+}
+.scr10-inner{
+    height:85%;
+    width: calc(50% + 508px);
+}
+.scr10-scrhead{
+    margin:-0.56rem 0 -2.3rem 0;
+}
+.scr10-pager{
+    margin:0 0 0 58.5rem;
+}
+.scr10-slider{
+    height: 29rem;
+    margin: 4.1rem 0 0 -2rem;
+    width:calc(100% + 2rem);
+}
+.scr10-slide{
+    cursor:pointer;
+    height:25rem;
+    margin: 1.5rem 0 -26.5rem 2rem;
+    position:relative;
+    top:0px;
+    width:16.25rem;
+}
+.scr10-slider .scr10-slide:nth-child(1){
+    background:url("../img/member1.png") no-repeat left top;
+    left:calc(0 * 20rem);
+}
+.scr10-slider .scr10-slide:nth-child(2){    
+    background:url("../img/member2.png") no-repeat left top;
+    left:calc(1 * 20rem);
+}
+.scr10-slider .scr10-slide:nth-child(3){    
+    background:url("../img/member3.png") no-repeat left top;
+    left:calc(2 * 20rem);
+}
+.scr10-slider .scr10-slide:nth-child(4){    
+    background:url("../img/member4.png") no-repeat left top;
+    left:calc(3 * 20rem);
+}
+.scr10-slider .scr10-slide:nth-child(5){    
+    background:url("../img/member1.png") no-repeat left top;
+    left:calc(4 * 20rem);
+}
+.scr10-slider .scr10-slide:nth-child(6){    
+    background:url("../img/member2.png") no-repeat left top;
+    left:calc(5 * 20rem);
+}
+.scr10-slide_active, .scr10-slide:hover {
+    box-shadow:0 0.8rem 2rem 0 rgba(0, 80, 128, 0.5);
+}
 
+/*---------------- Scr 12    --------------------*/
+.page-scr12{
+    margin:55rem auto -110rem;
+}
+.scr12{
+    height:53.75rem;
+}
+.scr12-inner{
+    height:80%;
+    margin-top: 8.9rem;
+    width: 1126px;
+}
+.scr12-scrhead{
+    margin:0 0 0 0;
+}
+.guarantee{
+    background:url("../img/shape.png") no-repeat left bottom;
+    background-size:16.88rem 22.44rem;
+    height:29rem;
+    margin:7rem 0 0 0rem;
+    width:100%;
+}
 
+.flyphone{
+    background:url("../img/mokupbig2.png")no-repeat center center;
+    height:378px;
+    width:817px;
+    position:relative;
+    top: 300px;
+    left: -245px;
+}
+
+.guarantee .guarantee__item:nth-child(1){ background:url("../img/1g.png")no-repeat left top;}
+.guarantee .guarantee__item:nth-child(2){ background:url("../img/2g.png")no-repeat left top;}
+.guarantee .guarantee__item:nth-child(3){ background:url("../img/3g.png")no-repeat left top;}
+.guarantee .guarantee__item:nth-child(n){
+    color:#999;
+    background-size:4.62rem 6.72rem;
+    height:4.5rem;
+    margin:2.7rem 0 0 31.8rem;
+    padding:2.2rem 0 0 7.1rem;
+    width:19rem;
+}
 
 
 
@@ -1532,10 +1628,11 @@ html {
     width:930px;
 }
 .inner {
+    margin-left:7.3rem;
     width:730px;
 }
 .inner_right {
-    margin-right:60px;
+    margin-right:7.3rem;
 }
 
 /*-- SCR-BACK --*/
@@ -1803,7 +1900,7 @@ html {
 
 /*--------------------- Scr 8  1024 ------------------*/
 .scr8-inner {
-    width: calc(50% + 29rem);
+    width: calc(50% + 31.4rem);
 }
 .scr8-plane {
     width: 100%;
@@ -1824,15 +1921,27 @@ html {
 }
 
 
-/*------------ Scr 9  1-24 -----------------------*/
+/*------------ Scr 9  1024 -----------------------*/
 .scr9-inner {
-    margin-left: calc(100% - 67.7rem);
+    margin-left: calc(100% - 70rem);
+}
+/*----------- Scr 10 1024 ----------------------*/
+.scr10-inner{
+    width: calc(50% + 375px);
 }
 
 
-
-
-
+/*------------- Scr 12 1024 ---------------------*/
+.scr12-inner {
+    width: 841px;
+}
+.flyphone{
+    background:url("../img/mokuptable1024.png")no-repeat center center;
+    height:288px;
+    width:439px;
+    position:relative;
+    top: 221px;
+    left: -7px;
 } 
 
 
@@ -1866,15 +1975,15 @@ html {
     width:590px;
 }
 .inner_right {
-    margin-right: 45px;
+    margin-right: 79px;
     width:38rem;
 }
 /*-- SCR-BACK --*/
 .scr-back-right {
-    width:calc(50% + 325px);
+    width:calc(50% + 320px);
 }
 .scr-back-left {
-    width:calc(50% + 325px);
+    width:calc(50% + 366px);
 }
 .scrhead {
     font-size: 2.15rem;
@@ -1897,7 +2006,7 @@ html {
     margin: -164px 0px 0px 612px;
 }
 .scr1-expand-textbox {
-    margin: 183px 0px 74px 0px;
+    margin: 183px 0px 74px 8px;
 }
 .expand-textbox__collapsed .expand-textbox__mask {
     margin-top: -460px;
@@ -2044,14 +2153,14 @@ html {
 }
 .scr5-inner {
     margin-top: 5.1rem;
-    margin-left: 0;
+    margin-left: 5px;
     width: 41rem;
 }
 .scr5 {
     height: 350px;
 }
 .scr5-payments {
-    width: calc(50% + 324px);
+    width: calc(50% + 320px);
 }   
 .scr5_lineright {
     margin-top: 120px;
@@ -2104,7 +2213,7 @@ html {
     height: 1100px;
 }
 .scr5h-inner {
-    margin-left:0;
+    margin-left:5px;
     height:955px;
     width:692px;
 }
@@ -2246,14 +2355,14 @@ html {
     height: 47.4rem;
 }
 .scr9-inner {
-    margin-left: calc(100% - 40.5rem);
+    margin-left: calc(100% - 42.8rem);
     margin-top: 5.3rem;
 }
 .scr9-txt {
     width: 38rem;
 }
 .scr9-brace-list {
-    margin: 2.3rem 0 -2.5rem 0;
+    margin: 2.3rem 0 -2.5rem -0.2rem;
 }
 .brace-list>ul>li:nth-child(3){    margin-bottom:-5.8rem; }
 .brace-list>ul>li:nth-child(4){    margin-left:18rem; }
@@ -2263,7 +2372,52 @@ html {
 .scr9-brace-list ul {
     width: 39rem;
 }
+.scr9-formdiv {
+    margin-right: -0.5rem;
+}
 
+
+/*------------ Scr 10 770 -------------------*/
+.scr10 {
+    height: 41.8rem;
+}
+.scr10-inner {
+    margin-top: 5.7rem;
+}
+.scr10-pager {
+    margin: 0 0 0 35.5rem;
+}
+.scr10-slider {
+    margin-top: 4.3rem;
+}
+
+/*------------- Scr 12 770 ---------------------*/
+.scr12 {
+    height: 45.9rem;
+}
+.scr12-inner {
+    width: 686px;
+    margin-top: 7.9rem;
+}
+.flyphone{
+    background:url("../img/mokuptable720-2.png")no-repeat center center;
+    height:288px;
+    width:439px;
+    top: 205px;
+    left: -67px;
+}
+.guarantee .guarantee__item:nth-child(n) {
+    margin-left:19.2rem;
+    padding-left:6.6rem;
+    width: 15rem;
+}
+.guarantee{
+    background-size:186px 250px;
+    background-position: 0% 39%;
+    height: 27rem;
+    margin:4rem 0 0 0rem;
+    width:100%;
+}
 
 
 
@@ -2298,7 +2452,7 @@ html {
 /*-- SCR-BACK --*/
 .scr-back-right {
     border-radius:0;
-    width:calc(50% + 150px);
+    width:calc(50% + 151px);
 }
 .scr-back-left {
     border-radius:0;
@@ -2947,6 +3101,7 @@ html {
     height: 75.4rem;
 }
 .scr9-inner {
+   float: right;
    margin-top:4.4rem;
 }
 .scr9-txt {
@@ -2970,6 +3125,9 @@ html {
     margin-top: 1.4rem;
     width: 23.5rem;
 }
+.scr9-formdiv {
+    margin-right: 0.2rem;
+}
 .scr9-form {
     margin: 1.7rem 0 0 0;
 }
@@ -2991,6 +3149,71 @@ html {
     padding: 0.5em 5.8em 0.5em 5.8em;
 }
 
+/*---------------- Scr 10   320 ---------------*/
+
+.scr10 {
+    height: 52.2rem;
+}
+.scr10-inner {
+    width: calc(50% + 135px);
+}
+.scr10-pager {
+    margin: 0 0 0 16.5rem;
+}
+.scr10-slider{
+    height: 460px;
+    margin: 4px 0 0 -32px;
+    width:calc(100% + 32px);
+}
+.scr10-slide{
+    cursor:pointer;
+    height:410px;
+    margin: 2rem 0 -434px 2.67rem;
+    position:relative;
+    top:0px;
+    width:260px;
+}
+.scr10-slider .scr10-slide:nth-child(1){  left:calc(0 * 278px);}
+.scr10-slider .scr10-slide:nth-child(2){  left:calc(1 * 278px);}
+.scr10-slider .scr10-slide:nth-child(3){  left:calc(2 * 278px);}
+.scr10-slider .scr10-slide:nth-child(4){  left:calc(3 * 278px);}
+.scr10-slider .scr10-slide:nth-child(5){  left:calc(4 * 278px);}
+.scr10-slider .scr10-slide:nth-child(6){  left:calc(5 * 278px);}
+
+/*--------------- Scr12  320 ------------------------*/
+
+.scr12 {
+    height:79.4rem;
+}
+.scr12-inner{   
+    height:94%; 
+    margin-top:4.3rem;
+    width: calc(50% + 135px);
+}
+.guarantee {
+    background-position: 0% 0%;
+    height: 730px;
+    margin: 9.3rem 0 0 0rem;
+    padding-top: 1px;
+    width: 270px;
+}
+.guarantee .guarantee__item:nth-child(n) {
+    background-size: 5.5rem 7.9rem;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-left: 0rem;
+    margin-top: 3.3rem;
+    padding: 6px 0 30px 6.6rem;
+    width: 180px;
+}
+.guarantee .guarantee__item:nth-child(1) {
+    margin-top: 23.8rem;
+}
+.flyphone {
+    width: 307px;
+    top: 169px;
+    left: -46px;
+}
 
 
 }
