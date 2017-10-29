@@ -38,12 +38,12 @@
             </div>
             <div class="clear"></div>
             <div class="mouseimg scr1-mouseimg"> </div>
-            <div class="p2 expand-textbox scr1-expand-textbox expand-textbox__collapsed" >
+            <div class="p2 expand-textbox scr1-expand-textbox expand-textbox__collapsed" data-toggle='collapsed'>
                 <p>SEO (Search Engine Optimization) — это действия, направленные на  улучшение видимости сайта в тематиках, которым он действительно  соответствует в глазах пользователя, с точки зрения алгоритмов поисковых  систем. Конечная цель SEO — привлечь целевую аудиторию и конвертировать  ее часть в клиентов представленного на сайте бизнеса. Поисковое  продвижение — один из самых рентабельных инструментов  интернет-маркетинга. Несмотря на все разногласия сторон, SEO и UX теперь связаны поведенческими факторами, которые учитывают поисковые роботы при индексации сайта. К тому же, чтобы покорить ТОП, одной поисковой оптимизации недостаточно, сайту нужен комплексный подход и при этом не надо забывать про удобство. Например, если поработать над юзабилити сайта, можно улучшить его поведенческие факторы, а значит, и позиции в поисковой выдаче.
                 </p>
                 <p>Поэтому, если хотите получить хороший результат, то SEO- и юзабилити-специалист должны работать в одной команде. </p>
                 <div class="expand-textbox__mask"></div>
-                <div class="expand-textbox__btn" onclick="expand-textbox__btnclick();">
+                <div class="expand-textbox__btn" onclick="expandTextboxBtnClick();">
                     <div class="expand-txt expand-txt_length_short expand-txt_size_small-115">[<span>Развернуть</span>]</div>
                 </div>
             </div>
@@ -57,7 +57,7 @@
         <div class="scr3 page-scr3 scr-back-right scr-back-white">
             <div class="inner scr3-inner">
                 <h3 class="scrhead dark222">Примеры <span class="wrap_320"><br></span>наших работ</h3>
-                <div class="pager scr3-pager"><span class="pager__arrleft_black pager-arr"></span><span class="pager__number">1</span>/<span class="pager__bottom">6</span><span class="pager__arrright_black pager-arr"></span></div>
+                <div class="pager scr3-pager"><span class="pager__arrleft_black pager-arr" onclick="changePager('.scr3',-1);"></span><span class="pager__number">1</span>/<span class="pager__bottom">6</span><span class="pager__arrright_black pager-arr" onclick="changePager('.scr3',1);"></span></div>
             </div>
             <div class="slider scr3-slider" data-slide-width="1010">
                 <div class="slide scr3-slide"><!-- Первый слайд -->
@@ -234,7 +234,7 @@
                 <h2 class="scrhead">Почему web разработчики продвигают лучше?</h2>
                 <p class="scrtxt scr2-scrtxt scrtxt_light p2">Многие агентства предлагают SEO-продвижение как дополнительную услугу,  и в результате всеми проектами занимается небольшой отдел или даже один  человек. Как булки вкуснее в специализированных булочных, так и SEO круче у тех, для кого это дело — главное. Аналогичный текст нужно сделать со смыслом, что только те кто разрабатывают - знают самые короткие пути и выполняют работы в несколько раз быстрее.</p>
             </div><!-- end of inner-->
-            <div class="pager scr2-pager"><span class="pager__arrleft pager-arr"></span><span class="pager__number">1</span>/<span class="pager__bottom">6</span><span class="pager__arrright pager-arr"></span></div>
+            <div class="pager scr2-pager"><span class="pager__arrleft pager-arr" onclick="changePager('.scr2',-1);"></span><span class="pager__number">1</span>/<span class="pager__bottom">6</span><span class="pager__arrright pager-arr" onclick="changePager('.scr2',1);"></span></div>
             <div class="lineright scr2-lineright"> <div class="lineright__hr_dark"></div></div>
             
             <div class="slider scr2-slider">
@@ -319,8 +319,8 @@
             </div>
             <div class="scr5-payments page-scr5-payments  scr-back-white">
                 <div class="lineright__hr scr5_lineright"></div>
-                <h3 class="h3 payment scr5-payment payment_active">Абонентская плата</h3>
-                <h3 class="h3 payment scr5-payment">Почасовая оплата</h3>
+                <h3 class="h3 payment scr5-payment payment_active" onclick="paytype(1);">Абонентская плата</h3>
+                <h3 class="h3 payment scr5-payment" onclick="paytype(2);">Почасовая оплата</h3>
         </div>
         </div>
   <!-- *********************** Абонентская плата ************************** -->      
@@ -448,56 +448,56 @@
                     <div class="hours-item scr5-hours-item"><!-- Item 1 -->
                         <h3 class="h3 hours-item__head hours-item-head">Количество конкурентов</h3>
                         <div class="hours-item__divinput hours-item-divinput">
-                            <input type="text" name="competitors" class="competitors" value="15" placeholder="0" />
+                            <input type="text" name="competitors" class="competitors" value="15" placeholder="0" onchange="setInput(this,30,3);"  />
                         </div>
-                        <div class="hours-item__range"><input type="range" min="1" max="30" class="range-bar" oninput="setrange(this,30,'.competitors')" value="15"></div>
+                        <div class="hours-item__range"><input type="range" min="1" max="30" class="range-bar" oninput="setRange(this,30,'.competitors');" value="15"></div>
                     </div><!-- end of item 1 -->
                                          
                     <div class="hours-item scr5-hours-item"><!-- Item 2 -->
                         <h3 class="h3 hours-item__head hours-item-head">Число регионов</h3>
                         <div class="hours-item__divinput hours-item-divinput">
-                            <input type="text" name="regions" class="regions" value="2" placeholder="0" />
+                            <input type="text" name="regions" class="regions" value="2" placeholder="0" onchange="setInput(this,10,4);"  />
                         </div>
-                        <div class="hours-item__range"><input type="range" min="1" max="10" class="range-bar" oninput="setrange(this,10,'.regions')" value="2"></div>
+                        <div class="hours-item__range"><input type="range" min="1" max="10" class="range-bar" oninput="setRange(this,10,'.regions');" value="2"></div>
                     </div><!-- end of item 2 -->
                                          
                     <div class="hours-item scr5-hours-item"><!-- Item 3 -->
                         <h3 class="h3 hours-item__head hours-item-head">Количество запросов</h3>
                         <div class="hours-item__divinput hours-item-divinput">
-                            <input type="text" name="requests" class="requests" value="10000" placeholder="1" />
+                            <input type="text" name="requests" class="requests" value="10000" placeholder="1" onchange="setInput(this,13000,5);"  />
                         </div>
-                        <div class="hours-item__range"><input type="range" min="1" max="13000" class="range-bar" oninput="setrange(this,13000,'.requests')" value="10000"></div>
+                        <div class="hours-item__range"><input type="range" min="1" max="13000" class="range-bar" oninput="setRange(this,13000,'.requests');" value="10000"></div>
                     </div><!-- end of item 3 -->
                                         
                     <div class="hours-item scr5-hours-item"><!-- Item 4 -->
                         <h3 class="h3 hours-item__head hours-item-head">Количество страниц</h3>
                         <div class="hours-item__divinput hours-item-divinput">
-                            <input type="text" name="countpages" class="countpages" value="1" placeholder="1" />
+                            <input type="text" name="countpages" class="countpages" value="1" placeholder="1" onchange="setInput(this,20,6);"  />
                         </div>
-                        <div class="hours-item__range"><input type="range" min="1" max="20" class="range-bar" oninput="setrange(this,20,'.countpages')" value="1"></div>
+                        <div class="hours-item__range"><input type="range" min="1" max="20" class="range-bar" oninput="setRange(this,20,'.countpages');" value="1"></div>
                     </div><!-- end of item 4 -->
                     
                     <div class="cms scr5-hours-cms">
                         <h3 class="h3 cms__head cms-head">CMS Cайта:</h3>
                         
                         <div class="cms__item cms-item">
-                            <label><input type="checkbox" name="withoutcms" class="withoutcms" checked /><span></span><span>Без CMS</span></label>
-                            <label><input type="checkbox" name="modx" class="modx" /><span></span><span>ModX</span></label>
+                            <label><input type="radio" name="cmsselect" class="withoutcms" checked value="withoutcms" /><span></span><span>Без CMS</span></label>
+                            <label><input type="radio" name="cmsselect" class="modx" value="modx" /><span></span><span>ModX</span></label>
                         </div>
                         
                         <div class="cms__item cms-item">
-                            <label><input type="checkbox" name="bitrix" class="bitrix" /><span></span><span>1C Битрикс</span></label>
-                            <label><input type="checkbox" name="opencart" class="opencart" /><span></span><span>OpenCart</span></label>
+                            <label><input type="radio" name="cmsselect" class="bitrix" value="bitrix" /><span></span><span>1C Битрикс</span></label>
+                            <label><input type="radio" name="cmsselect" class="opencart" value="opencart"/><span></span><span>OpenCart</span></label>
                         </div>
                         
                         <div class="cms__item cms-item">
-                            <label><input type="checkbox" name="wordpress" class="wordpress" /><span></span><span>Wordpress</span></label>
-                            <label><input type="checkbox" name="drupal" class="drupal" /><span></span><span>Drupal</span></label>
+                            <label><input type="radio" name="cmsselect" class="wordpress" value="wordpress" /><span></span><span>Wordpress</span></label>
+                            <label><input type="radio" name="cmsselect" class="drupal" value="drupal" /><span></span><span>Drupal</span></label>
                         </div>
                         
                         <div class="cms__item cms-item">
-                            <label><input type="checkbox" name="joomla" class="joomla" /><span></span><span>Joomla</span></label>
-                            <label><input type="checkbox" name="othercms" class="others" /><span></span><span>Другая</span></label>
+                            <label><input type="radio" name="cmsselect" class="joomla" value="joomla" /><span></span><span>Joomla</span></label>
+                            <label><input type="radio" name="cmsselect" class="others" value="others" /><span></span><span>Другая</span></label>
                         </div>
                     </div>
                     
@@ -552,7 +552,7 @@
             <div class="indoor scr-back-right scr7-indoor scr-back-white">
                 <div class="inner scr7-inner">
                     <h2 class="h2 scrhead scr7-scrhead dark333">Что влияет на <span class="wrap_320"><br></span>стоимость работ?</h2>
-                    <div class="pager scr7-pager"><span class="pager__arrleft_black pager-arr"></span><span class="pager__number">1</span>/<span class="pager__bottom">5</span><span class="pager__arrright_black pager-arr"></span></div>
+                    <div class="pager scr7-pager"><span class="pager__arrleft_black pager-arr" onclick="changePager('.scr7',-1);"></span><span class="pager__number">1</span>/<span class="pager__bottom">5</span><span class="pager__arrright_black pager-arr" onclick="changePager('.scr7',1);"></span></div>
                 </div>
                 <div class="slider scr7-slider">
                     
@@ -589,7 +589,7 @@
                 </div><!-- end of slider -->
                 
                 <div class="slider-bar scr7-sliderbar">
-                    <input type="range" name="slider__bar" class="slider__bar" min="1" max="5" oninput="setpage7(this,20,'.countpages')" value="1" />
+                    <input type="range" name="slider__bar" class="slider__bar" min="1" max="5" oninput="setPage7(this,'.scr7');" value="1" />
                 </div>
             </div><!-- end of indoor -->
         </div><!-- end of scr7 -->
@@ -676,7 +676,7 @@
         <div class="scr10">
             <div class="inner scr-back-right scr10-inner">
                 <h2 class="scrhead scr10-scrhead">Наша команда</h2>
-                <div class="pager scr10-pager"><span class="pager__arrleft pager-arr"></span><span class="pager__number">1</span>/<span class="pager__bottom">6</span><span class="pager__arrright pager-arr"></span></div>
+                <div class="pager scr10-pager"><span class="pager__arrleft pager-arr" onclick="changePager('.scr10',-1);"></span><span class="pager__number">1</span>/<span class="pager__bottom">6</span><span class="pager__arrright pager-arr" onclick="changePager('.scr10',1);"></span></div>
                 <div class="slider scr10-slider">
                     <div class="slide scr10-slide scr10-slide_active"></div>
                     <div class="slide scr10-slide"></div>
@@ -704,43 +704,43 @@
         <div class="scr11 scr-back-blue scr-back-right page-scr11">
             <div class="inner scr11-inner">
                 <h2 class="scrhead scr11-scrhead">Остались вопросы?</h2>
-                <div class="lost-quest scr11-lost-quest quest_active">
+                <div class="lost-quest scr11-lost-quest quest_active" onclick="showAnswer(this);">
                     <div class="quest__img"><div class="quest-quest"></div></div>
                     <h3 class="h3 quest__head">От чего зависит стоимость?</h3>
                     <div class="quest__arr"></div>
                     <p class="p3 lost-quest__answer">Стоимость зависит от конкуренции в вашей нише, от количества продвигаемых запросов, от допол<span class="wrap_320">-<br></span>нительных запросов по работе над сайтом. Поэто<span class="wrap_320">-<br></span>му, чтобы сообщить Вам точную стоимость мы вынуждены ознакомиться с сайтом.</p>
                 </div>
-                <div class="lost-quest scr11-lost-quest">
+                <div class="lost-quest scr11-lost-quest" onclick="showAnswer(this);">
                     <div class="quest__img"><div class="quest-quest"></div></div>
                     <h3 class="h3 quest__head">Как я буду получать отчет?</h3>
                     <div class="quest__arr"></div>
                     <p class="p3 lost-quest__answer">Способ получения отчёта зависит от конкуренции в вашей нише, от количества продвигаемых запросов, от дополнительных запросов по работе над сайтом. Поэтому, чтобы сообщить Вам точный способ получения отчёта мы вынуждены ознакомиться с сайтом.</p>
                 </div>
-                <div class="lost-quest scr11-lost-quest">
+                <div class="lost-quest scr11-lost-quest" onclick="showAnswer(this);">
                     <div class="quest__img"><div class="quest-quest"></div></div>
                     <h3 class="h3 quest__head">Могу я заказать SEO аудит на этапе разработки сайта?</h3>
                     <div class="quest__arr"></div>
                     <p class="p3 lost-quest__answer">Заказ SEO-аудита на сайте зависит от конкуренции в вашей нише, от количества продвигаемых запросов, от дополнительных запросов по работе над сайтом. Поэтому, чтобы сообщить Вам возможность заказа SEO-аудита на сайте мы вынуждены ознакомиться с сайтом.</p>
                 </div>
-                <div class="lost-quest scr11-lost-quest">
+                <div class="lost-quest scr11-lost-quest" onclick="showAnswer(this);">
                     <div class="quest__img"><div class="quest-quest"></div></div>
                     <h3 class="h3 quest__head">Каков срок реализации SEO услуг?</h3>
                     <div class="quest__arr"></div>
                     <p class="p3 lost-quest__answer">Срок реализации SEO услуг зависит от конкуренции в вашей нише, от количества продвигаемых запросов, от дополнительных запросов по работе над сайтом. Поэтому, чтобы сообщить Вам точный срок реализации SEO услуг мы вынуждены ознакомиться с сайтом.</p>
                 </div>
-                <div class="lost-quest scr11-lost-quest">
+                <div class="lost-quest scr11-lost-quest" onclick="showAnswer(this);">
                     <div class="quest__img"><div class="quest-quest"></div></div>
                     <h3 class="h3 quest__head">Существует ли более быстрый способ прироста трафика на сайт?</h3>
                     <div class="quest__arr"></div>
                     <p class="p3 lost-quest__answer">Быстрота прироста трафика на сайт зависит от конкуренции в вашей нише, от количества продвигаемых запросов, от дополнительных запросов по работе над сайтом. Поэтому, чтобы сообщить Вам существование более быстрого способа прироста трафика на сайт мы вынуждены ознакомиться с сайтом.</p>
                 </div>
-                <div class="lost-quest scr11-lost-quest">
+                <div class="lost-quest scr11-lost-quest" onclick="showAnswer(this);">
                     <div class="quest__img"><div class="quest-quest"></div></div>
                     <h3 class="h3 quest__head">Почему SEO UX это лучший вариант продвижения?</h3>
                     <div class="quest__arr"></div>
                     <p class="p3 lost-quest__answer">Варианты продвижения зависят от конкуренции в вашей нише, от количества продвигаемых запросов, от дополнительных запросов по работе над сайтом. Поэтому, чтобы сообщить Вам почему SEO UX это лучший вариант продвижения мы вынуждены ознакомиться с сайтом.</p>
                 </div>
-                <div class="lost-quest scr11-lost-quest">
+                <div class="lost-quest scr11-lost-quest" onclick="showAnswer(this);">
                     <div class="quest__img"><div class="quest-quest"></div></div>
                     <h3 class="h3 quest__head">Почему мы реализуем план 6 месяцев?</h3>
                     <div class="quest__arr"></div>
@@ -799,5 +799,6 @@
     </footer>
 
     <script type="text/javascript" src="js/scripts.js"></script>
+    <input type="hidden" class="scr-width" value="" />
 </body>
 </html>
