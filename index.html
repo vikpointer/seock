@@ -223,7 +223,7 @@
                 </div><!-- end of slide 6 -->
             
                 <a class="slider__link slider-link" href="http://www.auto-sushi.com">www.auto-sushi.com</a>
-                <div class="btn slider-btn">
+                <div class="btn scr3-slider-btn">
                     <div class="expand-txt">[<span>Хочу также</span>]</div>
                 </div>
             </div><!-- end of slider-->
@@ -379,10 +379,10 @@
                         </div>
                     </div><!-- end of rate4 -->
                     <div class="circles-row scr5a-circles-row">
-                        <div class="circle circles-row-circle circle_active"></div>
-                        <div class="circle circles-row-circle"></div>
-                        <div class="circle circles-row-circle"></div>
-                        <div class="circle circles-row-circle"></div>
+                        <div class="circle circles-row-circle circle_active" onclick="viewRate(1);" ></div>
+                        <div class="circle circles-row-circle" onclick="viewRate(2);" ></div>
+                        <div class="circle circles-row-circle" onclick="viewRate(3);" ></div>
+                        <div class="circle circles-row-circle" onclick="viewRate(4);" ></div>
                     </div>
                 </div><!-- end of inner -->
             </div><!-- end of indoor -->
@@ -599,29 +599,31 @@
                 <h2 class="scrhead scr8-head-stage">Этап работ и план действий</h2>
                 <p class="p2 scr8-txt-stage">Многие агенства предлагают SEO-продвижение как дпоплнительную услугу, и в результате всеми проектами занимается небольшой отдел или даже один человек. Как булки вкуснее в специализированных булочных, так и SEO круче у тех, для кого это дело &mdash; главное. Аналогичный текст нужно сделать со смыслом, что только те кто разрабатывают - знают самые короткие пути и выполняют</p>
                 <h3 class="blue-caption scr8-month">1 Месяц</h3>
-                <div class="plane  scr-back-white scr-back-right scr8-plane">
-                    <ul class="weeks scr8-plane-weeks">
-                        <li>1 неделя</li>
-                        <li>2 неделя</li>
-                        <li>3 неделя</li>
-                        <li>4 неделя</li>
-                        <li>5 неделя</li>
-                    </ul>
-                    <div class="clear"></div>
-                    <div class="tasks plane-tasks">
-                        <div>Работа с семантикой</div>
-                        <div>Разовые работы</div>
-                        <div>Отчётность</div>
-                        <div>Технический аудит сайта. Ежемесячно.</div>
-                        <div>Структура сайта. 1-2месяцы, после - при расширении семантики.</div>
-                        <div>Оптимизация мета-тегов. Ежемесячно.</div>
-                    </div>
-                </div><!-- end of plane -->
+                <div class="container scr-back-white scr-back-right scr8-container">
+                    <div class="plane scr8-plane">
+                        <ul class="weeks scr8-plane-weeks">
+                            <li>1 неделя</li>
+                            <li>2 неделя</li>
+                            <li>3 неделя</li>
+                            <li>4 неделя</li>
+                            <li>5 неделя</li>
+                        </ul>
+                        <div class="clear"></div>
+                        <div class="tasks plane-tasks">
+                            <div>Работа с семантикой</div>
+                            <div>Разовые работы</div>
+                            <div>Отчётность</div>
+                            <div>Технический аудит сайта. Ежемесячно.</div>
+                            <div>Структура сайта. 1-2месяцы, после - при расширении семантики.</div>
+                            <div>Оптимизация мета-тегов. Ежемесячно.</div>
+                        </div>
+                    </div><!-- end of plane -->
+                </div><!-- container -->
                 <div class="slider-bar scr8-scroll">
-                    <input type="range" min="0" max="99" class="slider__bar scr8-slider-bar" oninput="movescroll8()" value="0">
+                    <input type="range" min="0" max="100" class="slider__bar scr8-slider-bar" oninput="moveScroll8(this);" value="0">
                 </div>
                 <h2 class="scrhead scr8-head-result">Результат.</h2>
-                <p class="p2 scr8-txt-result">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repre<span class="wrap__1024">-<br></span>henderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae<span class="wrap__1024">-<br></span>cat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="p2 scr8-txt-result">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repre<span class="wrap_1024">-<br></span>henderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae<span class="wrap_1024">-<br></span>cat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <div class="examples scr8-examples">
                     <div class="examples__treaty">
                         <div class="movebtn treaty-movebtn">
@@ -656,14 +658,14 @@
                 </div>
                 
                 <div class="formdiv scr9-formdiv">
-                    <h3 class="h3 scr9-subheader-form dark333">Ваши данные:</h4>
+                    <h3 class="h3 scr9-subheader-form dark333">Ваши данные:</h3>
                     <form name="userdata" class="form scr9-form" action="#" method="get">
                         <textarea class="form__txt" placeholder="Опишите проблему"></textarea>
                         <div class="form__divinput scr9-divinput form__divinput_active">
-                            <input type="text" name="usercite" value="" placeholder="www.testcite.ru" >
+                            <input type="text" name="site" value="" placeholder="www.testcite.ru" >
                         </div>
                         <div class="form__divinput scr9-divinput">
-                            <input type="text" name="userphone" value="" placeholder="Ваш телефон" >
+                            <input type="text" name="phone" value="" placeholder="Ваш телефон" onchange="checkPhone();" >
                         </div>
                         <div class="btn rate-btn scr9-form-btn" >
                             <div class="expand-txt expand-txt_length_middle">[<span>Заказать</span>]</div>

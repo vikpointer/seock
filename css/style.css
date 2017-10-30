@@ -10,7 +10,6 @@ input {
     padding:0;
     margin:0;
 }
-/* 17, 122, 247   */
 .page-scr1 {
 }
 .page-scr2 {
@@ -28,7 +27,7 @@ input {
 }
 .page-scr5-payments{
     float:right;
-    margin:0 0 0 0;
+    margin:0;
 }
 .btn {
     border-radius:5px;
@@ -47,7 +46,6 @@ input {
     text-align:center;
     width:7.5rem;
 }
-
 .expand-txt span {
     animation: expand-txt-in 0.3s infinite ease-in-out;
     animation-iteration-count: 1;
@@ -77,7 +75,6 @@ input {
     0% { width:80%; }
     100% { width:90%;}
 }
-
 @keyframes expand-txt-in {
     0% { width:90%; }
     100% { width:80%;}
@@ -86,13 +83,12 @@ input {
     0% { width:75%; }
     100% { width:85%;}
 }
-
 @keyframes expand-txt-in-middle {
     0% { width:85%; }
     100% { width:75%;}
 }
 .expand-txt_length_longest {
-        width:21rem;
+    width:21rem;
 }
 .expand-txt_length_long {
     width:12.5rem;
@@ -122,10 +118,10 @@ input {
 .wrap_320 {
     display:none;
 }
-.wrap__770 {
+.wrap_770 {
     display:none;
 }
-.wrap__1366 {
+.wrap_1366 {
     display:inline;
 }
 .scr-width{
@@ -233,6 +229,10 @@ input {
 }
 .white {
     color:#fff;
+}
+.red {
+    border:1px solid #f00!important;
+    color:#f00;
 }
 .circles-row{
     display:none;
@@ -368,13 +368,11 @@ input {
     height:35rem;
     overflow-Y:hidden;
     width:35rem;
-    
 }
-
 .expand-textbox__mask {
     background: linear-gradient(180deg, rgba(17, 122, 247, 0) 0%, rgba(17, 122, 247, 0) 65%);
     height: 35rem;
-    margin: -462px 0 0px 0px;
+    margin: -462px 0 0 0;
     position:relative;
     width:100%;
 }
@@ -474,8 +472,6 @@ input {
 .pager__arrright_black:hover, .pager__arrright:hover {
     background-position:1rem 0.05rem;
 }
-
-
 .pager__number {
     display:inline-block;
 }
@@ -501,7 +497,6 @@ input {
     width:calc(100% - 115px);
     data-slide-width:1070;
 }
-
 .scr3-slide {
     background:#fcfcfc;
     box-shadow:1px 3px 20px 0px rgba(243, 243, 243, 1); 
@@ -509,7 +504,6 @@ input {
     margin-bottom:-442px;
     width:1010px;
 }
-
 
 .scr3-slider .slide:nth-child(1) { left:0px;   }
 .scr3-slider .slide:nth-child(2) { left:calc(1*1070px);   }
@@ -531,14 +525,13 @@ input {
 .slide {
     position:relative;
 }
-
 .slider__link {
     color:#3d8ae2;
     font-family:akrobatbold;
     font-size:1.25rem;
     text-decoration:none;
 }
-.scr3 .slider-btn {
+.scr3-slider-btn {
     position:relative;
     left:626px;
     top:466px;
@@ -592,7 +585,6 @@ input {
     padding:0px 0 0 0px;
     width:285px;
 }
-
 .slide-caption {
     margin:0;
 }
@@ -626,7 +618,6 @@ input {
     margin:0;
     text-align:right;
 }
-
 .scr3 .slide__content{
     padding:0;
 }
@@ -663,7 +654,7 @@ input {
 }
 .scr2-lineright {
     background:transparent;
-    margin:0 0 0 0;
+    margin:0;
     float: right;
     width: 64rem;
 }
@@ -722,7 +713,7 @@ input {
 .scr2-slider .slide:nth-child(6) { left:calc(5*450px);   }
 
 .slider__mask {
-    background:linear-gradient(90deg, rgba(14, 105, 212, 0) 0%, rgba(14, 105, 212, 1) 100%);/* #0e69d4*/
+    background:linear-gradient(90deg, rgba(14, 105, 212, 0) 0%, rgba(14, 105, 212, 1) 100%);
     position:relative;
     float:right;
 }
@@ -778,15 +769,12 @@ input {
     height:100%;
     overflow:hidden;
 }
-.scr5-abonent, .scr6-abonent {/* //////////// Abonent vs Hours /////////// */              /* ////////////// */
+.scr5-abonent, .scr6-abonent {
     display:block;
-    /*display:none;      */
 }
 .scr5-hours, .scr6-hours {
     display:none;
-    /*display:block;      */
 }
-
 .scr5-abonent{
     height:585px;
     width:100%;
@@ -830,7 +818,7 @@ input {
 /*----------- Abonents ----------------- */
 .scr5-rate{
     font-size:1rem;
-    margin-bottom:-26.28em;
+    margin-bottom:-26.25em;
 }
 .scr5-inner {
     font-size:1rem;
@@ -861,14 +849,13 @@ input {
     width:12em;
 }
 .ratecontent-caption{
-    margin:0 0 0 0;
+    margin:0;
 }
 .ratecontent__context{
     color:#ccc;
     font-family:akrobatbold;
     font-size:1.5em;
     margin:0;
-    
 }
 .ratecontent__subhead {
     margin-top:1em;
@@ -929,21 +916,15 @@ input {
 .advantage-card-img{
     margin:0 0 -3.25rem;
 }
-.card__head{
-    
-}
 .advantage-card-head{
     margin:0 0 0 4.7rem;
-}
-.card__content{
-    
 }
 .advantage-card-content{
     margin:1rem 0 0 4.7rem;
 }
-.scr6-abonent-inner .scr6-abonent-card:nth-child(4){ height:7.5rem; margin-bottom:-33.5rem;}
-.scr6-abonent-inner .scr6-abonent-card:nth-child(5){ margin-left:31.2rem;}
-.scr6-abonent-inner .scr6-abonent-card:nth-child(6){ margin-left:31.2rem;}
+.scr6-abonent-inner .advantage-card:nth-child(4){ height:7.5rem; margin-bottom:-33.5rem;}
+.scr6-abonent-inner .advantage-card:nth-child(5){ margin-left:31.2rem;}
+.scr6-abonent-inner .advantage-card:nth-child(6){ margin-left:31.2rem;}
 
 /* ------------------- Scr5 - Hours -------------------------*/
 .scr5-hours{
@@ -964,19 +945,18 @@ input {
     width:98%;
 }
 .scr5-hours-txt{
-    margin:0 0 0 0;
+    margin:0;
 }
 .scr5-hours-caption{
     margin:3.7rem 0 0 0;
 }
-
 .hours-item{
     font-size:16px;
     height:5.6rem;
     padding-top:1px;
     width:16.9rem;
 }
-.range-bar{
+.range-bar{// Раскраска ползунка для IE 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0066ff', endColorstr='#cccccc',GradientType=1 );
 }
 
@@ -1025,12 +1005,6 @@ input {
     text-align:center;
     width:2.4rem;
 }
-.competitors{
-    
-}
-.hours-item__range{
-    
-}
 .hours-item__range input{
     -webkit-appearance: none;
     -moz-apperance: none;
@@ -1039,7 +1013,6 @@ input {
     padding: 0 0px;
     margin: 30px 0 0 0;
 }
-
 .hours-item__range input::-webkit-slider-thumb {
     -webkit-appearance: none;
     background-color: #06f;
@@ -1048,7 +1021,6 @@ input {
     height: 15px;
     width: 15px;
 }
-
 .cms {
     color:#333;
     height:5rem;
@@ -1078,31 +1050,13 @@ input {
     padding:0;
     width:100%;
 }
-.cms__item  label:nth-child(1){
-    margin:0.56rem 0 0 10px;
-}
-.cms__item  label:nth-child(2) {
-    margin:2rem 0 0 10px;
-}
+.cms__item  label:nth-child(1){    margin:0.56rem 0 0 10px;}
+.cms__item  label:nth-child(2) {    margin:2rem 0 0 10px;}
 
-
-.cms .cms-item:nth-child(2){
-    margin:0 0 -4.6rem 6.3rem;
-}
-.cms .cms-item:nth-child(3){
-    margin:0 0 -4.5rem 14.9rem;    
-}
-.cms .cms-item:nth-child(4){
-    margin:0 0 -4.5rem 23.3rem;   
-}
-.cms .cms-item:nth-child(5){
-    margin:0 0 -4.5rem 32rem;   
-}
-.withoutcms{
-}
-.modx{
-    
-}
+.cms .cms-item:nth-child(2){    margin:0 0 -4.6rem 6.3rem;}
+.cms .cms-item:nth-child(3){    margin:0 0 -4.5rem 14.9rem;}
+.cms .cms-item:nth-child(4){    margin:0 0 -4.5rem 23.3rem;}
+.cms .cms-item:nth-child(5){    margin:0 0 -4.5rem 32rem;}
 
 .cms-item input + span {
 	background: url("../img/chkbtn.png") no-repeat 49% 100%;
@@ -1131,14 +1085,12 @@ input {
 .cms-robotcount{
     margin-top:2.2rem;
 }
-
 .scr5h-footer{
     margin:0 auto;
 }
 .scr5h-footer .scr5h-hourscard:nth-child(1){     margin: 1.38rem 0 -2.85rem 0;}
 .scr5h-footer .scr5h-hourscard:nth-child(2){     margin: 0 0 -2.7rem 19.2rem;}
 
-.scr5h-hourscard{}
 .hourscard__title{
     color:#333;
     display:inline-block;
@@ -1242,7 +1194,6 @@ input {
 .scr7-slider .slide:nth-child(4){left: calc(740px * 3);}
 .scr7-slider .slide:nth-child(5){left: calc(740px * 4);}
 
-
 .slider-bar{
     height:1rem;
     width:62rem;
@@ -1290,13 +1241,26 @@ input {
     font-size: 1.5rem;
     margin: 4rem 0 0 0;
 }
-.plane {
+.container {
     background:#fff;
     height:27rem;
 }
-.scr8-plane{
+.scr8-container{
     margin:1.12rem 0 0 0;
     overflow:hidden;
+    width:100%;
+}
+.plane {
+    background:#fff;
+    height:95%;
+    width:92rem;
+}
+.scr8-plane{
+    margin:0;
+    padding:0;
+    position:relative;
+    left:0%;
+    top:0px;
     width:100%;
 }
 .weeks {
@@ -1405,7 +1369,7 @@ input {
 }
 .examples__treaty{
     height:3rem;
-    margin:0 0 0 0;
+    margin:0;
     width:100%;
 }
 .examples__report{
@@ -1413,10 +1377,7 @@ input {
     margin:2rem 0 0 0;
     width:90%;
 }
-.treaty-movebtn{
-    width:100%
-}
-.report-movebtn{
+.treaty-movebtn, .report-movebtn{
     width:100%
 }
 .treaty-img, .report-img {
@@ -1437,7 +1398,6 @@ input {
 .scr9{
     height:38.4rem;
 }
-.page-scr9{}
 .scr9-inner{
     height: 85%;
     margin-left:calc(100% - 70.4rem);
@@ -1523,6 +1483,11 @@ input {
     height:calc(2.75rem - 4px);
     padding-left:calc(1rem - 2px);
 }
+.form__divinput .red:hover, .form__divinput .red:focus, .form__divinput .red:active {
+    height:2.75rem;
+    padding:2px 0 0 1rem;
+}
+
 .scr9-divinput{
     margin:1.1rem 0 0 23.75rem;
 }
@@ -1598,7 +1563,7 @@ input {
     width: 1126px;
 }
 .scr12-scrhead{
-    margin:0 0 0 0;
+    margin:0;
 }
 .guarantee{
     background:url("../img/shape.png") no-repeat left bottom;
@@ -1704,15 +1669,13 @@ input {
     color:#a8ccf7;
     display:inline-block;
 }
-
-
 .quest_active .quest__img, .lost-quest:hover .quest__img {
     background-size:3rem 3rem;
 }
 
 /*----------- Footer ---------------------*/
 .page-footer {
-    margin: 0 auto 0;
+    margin: 0 auto;
 }
 footer {
     height: 37rem;
@@ -1722,7 +1685,7 @@ footer {
     margin-top:13.5rem;
 }
 .footer-scrhead{
-    margin:0 0 0 0;
+    margin:0;
 }
 .map{
     background:url("../img/maprussia.png")no-repeat center center;
@@ -1782,12 +1745,11 @@ footer {
 }
 
 .social a:nth-child(1){  background:url("../img/vk2.png")no-repeat 0% 100%; }
-.social a:nth-child(2){  
-    background:url("../img/behance2.png")no-repeat 0% 100%; 
-}
+.social a:nth-child(2){  background:url("../img/behance2.png")no-repeat 0% 100%; }
 .social a:nth-child(3){  background:url("../img/instagram2.png")no-repeat 0% 100%; }
 .social a:nth-child(4){  background:url("../img/facebook2.png")no-repeat 0% 100%; }
 .social a:nth-child(5){  background:url("../img/youtube2.png")no-repeat 0% 100%; }
+
 .social a:nth-child(n){
     background-size:1.5rem 3.12rem;
     content:' ';
@@ -1802,10 +1764,6 @@ footer {
 }
 .contacts-social{
     margin:2rem 0 0 0;
-}
-
-.agreement{
-    
 }
 .agreement a{
     border-bottom:2px solid #fff;
@@ -1830,17 +1788,7 @@ footer {
     overflow: hidden;
 }
 
-
-
-
-
-
-
-/*****************************************                 ****    *   **   **    *   *************/
-/*****************************************                 ****   **  *  *    *  **   *************/
-/*****************************************                 ****    *  *  *  **  * *   *************/
-/*****************************************                 ****    *  *  * *    ****  *************/
-/*****************************************   1024 - 1260   ****   ***  **  ****   *   *************/
+/*****************************************   1024 - 1260   *************/
 @media only screen and (max-width: 1260px){
 html {
     font-size:12px;
@@ -1892,7 +1840,6 @@ html {
 .scr1-seotext {
     margin-right:40px
 }
-
 .movebtn {
     background:url("../img/cpl4.png")no-repeat 1% center, url("../img/cpr4.png")no-repeat 3rem center;
     animation: expand-play-in_mini  .5s infinite ease-in-out;
@@ -1956,7 +1903,6 @@ html {
 .graph__caption {
     padding-bottom: 6px;
 }
-
 .graph1 {
     margin: -266px 0 0 -51px;
     transform: scale(0.74);
@@ -2040,7 +1986,6 @@ html {
 }
 
 /*------------- SCR 4    1024 -------------------*/
-
 .scr4 {
     height: 657px;
 }
@@ -2051,7 +1996,6 @@ html {
     left: 86px;
     margin-bottom: -610px;
     width: 283px;
-    
 }
 .scr4-indoor {
     background: url("../img/shape1024.svg") no-repeat 267px 170px;
@@ -2067,7 +2011,6 @@ html {
 .scr5-inner {
     width:42rem;
 }
-
 .scr5-payments {
     height: 59px;
     width: calc(50% + 374px);
@@ -2145,7 +2088,6 @@ html {
 .scr8-plane {
     width: 100%;
 }
-
 .treaty-img {
     transform:scale(0.8);
 }
@@ -2170,7 +2112,6 @@ html {
     width: calc(50% + 375px);
 }
 
-
 /*------------- Scr 12 1024 ---------------------*/
 .scr12-inner {
     width: 841px;
@@ -2184,7 +2125,6 @@ html {
     left: -7px;
 }
 
-
 /*------------ Scr 11   1024  --------------*/
 .scr11-inner {
     margin-top:2.5rem;
@@ -2193,29 +2133,17 @@ html {
     width: 95%;
 }
 
-
-  
-
-
-
-
-
- 
 }
 
    
-/*****************************************                     **** ****  ***       **************/
-/*****************************************                        *    * *   *      **************/
-/*****************************************                       *    *  *   *      **************/
-/*****************************************                      *    *   *   *      **************/
-/*****************************************     768 - 1023      *    *     ***       **************/
+
+/*****************************************     768 - 1023     **************/
 @media only screen and (max-width: 1023px){
 html {
     font-size:16px;
 }
 .page-scr3 {
     margin: 745px 0 -2065px 0;
-
 }
 .scr-width{
     width:770px;
@@ -2269,6 +2197,9 @@ html {
 .scr1-expand-textbox {
     margin: 183px 0px 74px 8px;
 }
+.expand-textbox__mask {
+    height: 27rem;
+}
 .expand-textbox__collapsed .expand-textbox__mask {
     margin-top: -460px;
 }
@@ -2299,8 +2230,6 @@ html {
     padding-top:1px;
     width: 590px;
 }
-
-
 .scr3-slide-info {
     margin-left: 50px;
 }
@@ -2322,7 +2251,6 @@ html {
     height: 392px;
     width: 542px;
 }
-
 .graph__legend-h {
     margin-left:-1.5rem;
 }
@@ -2332,7 +2260,6 @@ html {
 .graph__legend-h li:nth-child(2n) {
     display:none;
 }
-
 .scr3 .slider-link {
     top: 894px;
 }
@@ -2407,11 +2334,7 @@ html {
     margin-top: 2rem;
 }
 
-
 /*------------------ Scr5     770 -------------------- */
-.scr5 {
-    height: 280px;
-}
 .scr5-inner {
     margin-top: 5.1rem;
     margin-left: 5px;
@@ -2464,9 +2387,9 @@ html {
 .scr6-abonent .advantage-card-img {
     margin-bottom:-3.2rem;
 }
-.scr6-abonent-inner .scr6-abonent-card:nth-child(4){ margin-bottom: 0rem;}
-.scr6-abonent-inner .scr6-abonent-card:nth-child(5){ margin-left:0rem;}
-.scr6-abonent-inner .scr6-abonent-card:nth-child(6){ height:7.5rem; margin-left:0rem;}
+.scr6-abonent-inner .advantage-card:nth-child(4){ margin-bottom: 0rem;}
+.scr6-abonent-inner .advantage-card:nth-child(5){ margin-left:0rem;}
+.scr6-abonent-inner .advantage-card:nth-child(6){ height:7.5rem; margin-left:0rem;}
 
 /*-------------Scr5h 770            Hours-----------------*/
 
@@ -2478,7 +2401,6 @@ html {
     height:955px;
     width:692px;
 }
-
 .scr5h-inner .hours-item:nth-child(4) {
     margin: 0 0 3.2rem 22.75rem;
 }
@@ -2562,7 +2484,7 @@ html {
 .scr8-txt-stage {
     width: 39.5rem;
 }
-.scr8-plane {
+.scr8-container{
     width: 100%;
 }
 .scr8-txt-result {
@@ -2585,7 +2507,6 @@ html {
     margin: 0 0 0 0rem;
     width: 36%;
 }
-
 .treaty-img {
     transform:scale(1.0);
 }
@@ -2595,7 +2516,6 @@ html {
 .treaty-img, .report-img {
     height: 2.5rem;
     float: left;
-    
     padding-left: 10px;
     width: 1.5rem;
 }
@@ -2694,7 +2614,6 @@ html {
 .lost-quest__answer {
     width: 80%;
 }
-
 .quest__head {
     width: 30rem;
 }
@@ -2749,15 +2668,11 @@ footer {
     width: 41rem;
 }
 
-
 }
 
 
-/*****************************************                     ***   **   ***       **************/
-/*****************************************                        * *  * *   *      **************/
-/*****************************************                      **    *  *   *      **************/
-/*****************************************                        *  *   *   *      **************/
-/*****************************************     0 - 767         ***  ****  ***       **************/
+
+/*****************************************     0 - 767   *****************/
 @media only screen and (max-width: 767px){
 html {
     font-size:12px;
@@ -2871,7 +2786,6 @@ html {
 .scr1-seotext {
     margin-right: 9px;
 }
-
 .movebtn__arrplay {
     border: 0.9rem solid transparent;
     border-left: 1.4rem solid #fff;
@@ -2886,7 +2800,6 @@ html {
     margin-left: -2px;
     width: 21rem;
 }
-
 .seotext p {
     font-size: 2.0rem;
     padding-bottom:23px;
@@ -2907,6 +2820,9 @@ html {
 .expand-textbox__collapsed {
     height: 13rem;
 }
+.expand-textbox__mask {
+    height: 35rem;
+}
 .expand-textbox__collapsed .expand-textbox__mask {
     background: linear-gradient(180deg, rgba(17, 122, 247, 0) 0%, rgba(17, 122, 247, 1) 54%);
     height: 12rem;
@@ -2918,7 +2834,6 @@ html {
 .scr1 .expand-txt_length_short {
     width: 8rem;
 }
-
 .expand-textbox__btn {
     background: url("../img/cornup.png")no-repeat 8% 90%;
     height: 5rem;
@@ -2999,12 +2914,10 @@ html {
 .scr3 .slide-info {
     width: 237px;
 }
-
 .scr3 .slide-theme {
     font-size: 1.32rem;
     margin-bottom:0;
 }
-
 .scr3 .slide__data {
     margin-top: 10px;
 }
@@ -3060,7 +2973,6 @@ html {
     height: 12rem;
     width: 25.5rem;
 }
-
 .scr2_slide-head {
     margin: 15px 0 -6px;
 }
@@ -3123,10 +3035,11 @@ html {
 }
 .scr5-rate{
     font-size:1.333rem;
-    margin-bottom:-26.28em;
+    margin-bottom:-26.25em;
 }
-.scr5 .inner {
+.scr5a-inner {
     font-size:1.333rem;
+    overflow: hidden;
 }
 .scr5 .p2 p {
     font-size: 1rem;
@@ -3188,9 +3101,9 @@ html {
 .scr6-abonent .advantage-card-img {
     margin-bottom:-4.2rem;
 }
-.scr6-abonent-inner .scr6-abonent-card:nth-child(4){ height:10rem; margin-bottom: 0rem;}
-.scr6-abonent-inner .scr6-abonent-card:nth-child(5){ margin-left:0rem;}
-.scr6-abonent-inner .scr6-abonent-card:nth-child(6){ height:10rem; margin-left:0rem;}
+.scr6-abonent-inner .advantage-card:nth-child(4){ height:10rem; margin-bottom: 0rem;}
+.scr6-abonent-inner .advantage-card:nth-child(5){ margin-left:0rem;}
+.scr6-abonent-inner .advantage-card:nth-child(6){ height:10rem; margin-left:0rem;}
 
 
 /*-------------Scr5h 320            Hours-----------------*/
@@ -3215,18 +3128,10 @@ html {
 .scr5h-inner .hours-item:nth-child(5) .hours-item-divinput{
     margin-left: 16.5rem;
 }
-.scr5h-inner .hours-item:nth-child(3) {
-    margin: 3.75rem 0 0 0;
-}
-.scr5h-inner .hours-item:nth-child(4) {
-    margin: 3.5rem 0 0 0;
-}
-.scr5h-inner .hours-item:nth-child(5) {
-    margin: 3.5rem 0 0 0;
-}
-.scr5h-inner .hours-item:nth-child(6) {
-    margin: 3.5rem 0 0 0;
-}
+.scr5h-inner .hours-item:nth-child(3) {    margin: 3.75rem 0 0 0;}
+.scr5h-inner .hours-item:nth-child(4) {    margin: 3.5rem 0 0 0;}
+.scr5h-inner .hours-item:nth-child(5) {    margin: 3.5rem 0 0 0;}
+.scr5h-inner .hours-item:nth-child(6) {    margin: 3.5rem 0 0 0;}
 
 .scr5-hours-cms {
     margin: -1rem 0 0 0rem;
@@ -3310,8 +3215,8 @@ html {
 .scr6-hours .advantage-card-img {
     margin-bottom:-4.2rem;
 }
-.scr6-hours-inner .scr6-hours-card:nth-child(3){ height:10rem; margin-bottom: 0rem;}
-.scr6-hours-inner .scr6-hours-card:nth-child(4){ height:10rem; margin-left:0rem;}
+.scr6-hours-inner .advantage-card:nth-child(3){ height:10rem; margin-bottom: 0rem;}
+.scr6-hours-inner .advantage-card:nth-child(4){ height:10rem; margin-left:0rem;}
 
 /*---------------Scr7 320 -----------------*/
 .scr7-inner {
@@ -3347,14 +3252,13 @@ html {
 .slider-bar {
     width: 22rem;
 }
-
 .scr7-sliderbar {
     margin: 21.5rem 0 0 1.5rem;
 }
 
 /*------------- Scr 8    320 ---------------------*/
 
-.wrap__1024{
+.wrap_1024{
     display:none;
 }
 .scr8 {
@@ -3368,7 +3272,7 @@ html {
     font-size: 1.5rem;
     margin: 3rem 0 0 0;
 }
-.scr8-plane{
+.scr8-container{
     width: 100%;
 }
 .scr8-plane-weeks {
@@ -3385,7 +3289,7 @@ html {
     overflow: hidden;
 }
 .weeks li {
-    margin-left: 16rem;
+    margin-left: 21rem;
 }
 .scr8-head-result {
     margin: 5.7rem 0 0 0;
@@ -3395,7 +3299,6 @@ html {
     width: 23rem;
     overflow: hidden;
 }
-
 .examples {
     height: 9rem;
     width: 23rem;
@@ -3422,7 +3325,6 @@ html {
     left: 54px;
 }
 .report-movebtn{
-
     width:17rem;
 }
 .treaty-movebtn{
@@ -3454,7 +3356,7 @@ html {
 
 .form__txt {
     font-size: 1.2rem;
-    margin: 0rem 0 0rem 0;
+    margin: 0;
 }
 .scr9-brace-list {
     margin: 0.9rem 0 4.5rem 0;
@@ -3481,10 +3383,10 @@ html {
     line-height: 2;
 }
 .scr9-divinput {
-    margin: 1.1rem 0 0 0rem;
+    margin: 1.1rem 0 0 0;
 }
 .scr9-form-btn {
-    margin: 1em 0 0 0em;
+    margin: 1em 0 0 0;
     padding: 0.5em 5.8em 0.5em 5.8em;
 }
 
@@ -3581,7 +3483,6 @@ html {
     margin: 0.5rem 0 -0.9rem 4.5rem;
     width: 19rem;
     font-size: 1.23rem;
-    
 }
 .scr11-lost-quest {
     margin: 1rem 0 0 -0.5rem;
@@ -3604,7 +3505,6 @@ footer {
 .page-footer {
     margin: 5rem auto 0;
 }
-
 .footer-scrhead {
     font-size: 2.9rem;
     width: 20rem;
@@ -3619,7 +3519,6 @@ footer {
     margin: 0.5rem 0 0 0rem;
     overflow:hidden;
     width: 23.8rem;
-    
 }
 .contacts {
     height: 15rem;
@@ -3650,13 +3549,10 @@ footer {
 .contacts-social {
     margin:2.4rem 0 0 0;
 }
-
-
 .agreement a:nth-child(2) {
     margin: 2rem 0 0 0;
 }
 .footer-agreement {
-    
     margin-top: 9.4rem;
 }
 .agreement a {
@@ -3669,11 +3565,5 @@ footer {
     margin: 2.5rem 0 0 0;
     width: 23rem;
 }
-
-
-
-
-
-
 
 }
