@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>SEO CK</title>
+<!-- text-shadow: 1px 1px mediumturquoise,
+               -1px 1px mediumturquoise,
+               -1px -1px mediumturquoise,
+               1px -1px mediumturquoise; -->
+<style>
+H1 {
+  display: inline-block;
+  position: relative;
+  letter-spacing: .05em;
+  text-shadow: linear-gradient(-45deg,
+    rgba(72, 209, 204, 0) 2px, #f00 3px, rgba(72, 209, 204, 0) 3px ) repeat;
+  color: white;
+  transition: all 1s;
+  }
+  H1:before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -15px;
+    bottom: -15px;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(-45deg,
+    rgba(72, 209, 204, 0) 2px, #f00 3px, rgba(72, 209, 204, 0) 3px ) repeat;
+    background-size: 4px 4px;
+    }
+  H1:after {
+    content: attr(data-name);
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    z-index: -2;
+    text-shadow: 1px 1px white,
+                 2px 2px white,
+                 3px 3px white,
+                 4px 4px white;
+    color: white;
+    transition: all 1s;
+    }
+
+  H1:hover {
+    color: lemonchiffon;
+    }
+    H1:hover:before {
+      animation: 5s move_lines infinite linear;
+      }
+    H1:hover:after {
+      color: lemonchiffon;
+      text-shadow: 1px 1px lemonchiffon,
+        2px 2px lemonchiffon,
+        3px 3px lemonchiffon,
+        4px 4px lemonchiffon;
+      }
+@keyframes move_lines {
+  100% {
+    background-position: 40px 40px;
+  }
+}
+
+.page {
+background:#1179f5;
+}
+h2 {
+/*  font-family: 'Rubik One', sans-serif;*/
+  font-size: 50px;
+  text-transform: uppercase;
+  /*background: repeating-linear-gradient(45deg, white, white 2px, #7AB4E2 2px, #7AB4E2 3px);*/
+  background: repeating-linear-gradient(45deg, transparent 0px, transparent 2px, #7AB4E2 2px, #7AB4E2 3px);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ /* color: #183D58;*/
+ color:red;
+  display: table;
+  margin: 20px auto; }
+
+.striped-shadow {
+  font-family: 'Rubik One', sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-shadow: -10px -4px 0px #03f;
+  background: repeating-linear-gradient(45deg, #6EB495, #6EB495 1px, white 2px, white 3px);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(34, 122, 252, 0.5);
+  display: table;
+  margin: 20px auto;
+} 
+
+
+
+/* ============= Полосатые тени ================== */ 
+.striped-shadow2{
+  text-transform: uppercase;
+  /*text-shadow: -10px -4px 0px #03f;*/
+  background: repeating-linear-gradient(135deg, #3da6fd, #3da6fd 1px, #227afc 2px, #227afc 7px);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(34, 122, 252, 0.5);
+  display: table;
+  margin: 20px auto;
+} 
+.big-digit{
+font-family:arial;
+font-size:236px;
+
+}
+.white-square{
+width:400px;
+height:200px;
+padding:20px;
+background:#fff;
+}
+.big-digit2{
+/*display:inline-block;*/
+font-family:arial;
+font-weight:bolder;
+font-size:150px;}
+
+.striped-shadow3{
+  text-transform: uppercase;
+  /*text-shadow: -11px -10px 0px #0f69d4;*/
+  background: repeating-linear-gradient(135deg, #f1f1f1, #f1f1f1 1px, transparent 2px, transparent 6px);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: table;
+  margin: 20px auto;
+}
+.digit2.big-digit2:after {
+    content: "2";
+}
+.digit3.big-digit2:after {
+    content: "3";
+}
+.big-digit2:after {
+    margin-left: -78px;
+    margin-right:78px;
+    color: #03f;
+    font-family: arial;
+    font-weight: lighter;
+    font-size: 150px;
+    text-shadow: -11px -10px 0px #0f69d4;
+}
+/* ============= конец полосатых теней ================== */ 
+
+
+/* ============= Анимация обводки рамки туда-обратно ================== */
+button {
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  border-radius:5px;
+  margin: 1em;
+  padding: 1em 2em;
+
+  font-size: inherit;
+  font-weight: 700;
+  position: relative;
+  vertical-align: middle;
+}
+button::before, button::after {
+  box-sizing: inherit;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+.draw {
+
+}
+.draw::before, .draw::after {
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+  border-radius:8px;
+}
+
+.draw::after {
+  bottom: 0;
+  left: 0;
+  -webkit-transition: border-color 0s ease 0.15s, width 0.15s ease-out, height 0.15s ease-out 0.15s; 
+  transition: border-color 0s ease 0.15s, width 0.15s ease-out, height 0.15s ease-out 0.15s;  
+
+}
+.draw::before {
+  top: 0;
+  right: 0;
+  -webkit-transition:  border-color 0s ease-out 0.5s, width 0.25s ease-out 0.25s, height 0.25s ease-out 0.5s; 
+  transition:  border-color 0s ease-out 0.5s, width 0.25s ease-out 0.25s, height 0.25s ease-out 0.5s; 
+}
+.draw:hover::before, .draw:hover::after {
+  width: 100%;
+  height: 100%;
+ /* border-radius:8px;*/
+}
+.draw:hover::before {
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+  -webkit-transition: height 0.15s ease, width 0.15s ease 0.05s;
+  transition: height 0.15s ease, width 0.15s ease 0.05s;
+}
+.draw:hover::after {
+  border-left-color: #fff;
+  border-top-color: #fff;
+  -webkit-transition: border-color 0s ease 0.25s, height 0.15s ease, width 0.5s ease-out 0.25s;
+  transition: border-color 0s ease 0.25s, height 0.15s ease, width 0.5s ease-out 0.25s;
+}
+
+/* ============= конец обводки рамки туда-обратно ================== */
+
+
+
+
+.page-button{
+width:500px;}
+
+/* ============= Растягай ================== */
+.expand {
+margin:0 auto;
+max-width:500px;
+text-align:center;
+}
+
+.expand__txt::before{
+content:'[';
+display:inline-block;
+text-align:left;
+width:0.3rem;
+transition:all 0.5s;
+}
+.expand__txt::after{
+content:']';
+display:inline-block;
+text-align:right;
+width:0.2rem;
+transition:all 0.5s;
+}
+.expand:hover .expand__txt:before{
+width:0.7rem;
+}
+.expand:hover .expand__txt:after{
+width:0.7rem;
+}
+
+/* ============= конец растягая ================== */
+</style>
+
+ 	
+</head>
+<body class="page">
+
+  <h2>jcjkcjhcGRGRHRE</h2>
+  
+  <p class="striped-shadow">Полосатая тень</p>
+  <p class="striped-shadow2 big-digit"><b>seo</b></p>
+  <div class="white-square">
+    <p class="striped-shadow3 digit2 big-digit2">2...</p>
+    <p class="striped-shadow3 digit3 big-digit2">3//</p>
+  </div>
+  <br><br><br><br><br>
+  <button class="page-button draw expand">
+    <div class="expand__txt">Софья учит математику очень хорошо!!!!!</div>
+  </button>
+  <br>
+  <button class="page-button draw expand">
+    <div class="expand__txt">Кирюша, не включай компьютер!!!!!</div>
+  </button>
+
+</body>
+</html>

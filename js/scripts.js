@@ -78,7 +78,20 @@ function setPage(setPageTo,scrClass)  // Перемотка на сладер с
 
 }    
 
-function moveSlide(pos)//непосредственно движение слайдов шажками по 20мс
+function moveSlide(pos)//непосредственно движение слайдов за один шаг
+{
+    var slideBase = pos['scrClass'] + '-slider .slide:nth-child(';//Заготовка для названия слайдов в данном экране
+    var stepJ = Math.floor(pos['step160']);// находим смещение для крайнего положения слайда
+
+    for (var i = 1; i <= pos['slideCount'] ; i++) 
+    {
+        var position = pos[i-1] + stepJ;    //Вычисляем положение каждого слайда для крайнего положения
+        $(slideBase + i + ')').css('left', position + 'px'); // Двигаем слайд
+    }
+
+}
+
+function moveSlide1(pos)//непосредственно движение слайдов шажками по 20мс
 {
     var step = 1;
     var slideBase = pos['scrClass'] + '-slider .slide:nth-child(';//Заготовка для названия слайдов в данном экране
@@ -135,18 +148,25 @@ function expandTextboxBtnClick()// разворачивание полусвёр
     {
         $('.scr1-expand-textbox').data('toggle','');
         $('.expand-textbox').removeClass('expand-textbox__collapsed');
-        $('.expand-textbox__btn span').html('Свернуть');
+        $('.expand-textbox__btn .expand__txt').html('Свернуть');
         $('.scr1').css('height',txtOpen);
+        $('.page-scr2').css('top','-9.5em');
     }
     else 
     { 
         $('.scr1-expand-textbox').data('toggle','collapsed');
         $('.expand-textbox').addClass('expand-textbox__collapsed');
-        $('.expand-textbox__btn span').html('Развернуть');
+        $('.expand-textbox__btn .expand__txt').html('Развернуть');
         $('.scr1').css('height',txtClose);
+        $('.page-scr2').css('top','-16.5em');
     }
 }
 
+function expandTextboxCollapse(){
+    var collapseStatus = $('.scr1-expand-textbox').data('toggle');
+    if (collapseStatus) return;
+    expandTextboxBtnClick();
+}
 
 
 function setRange(el,maxVal,divClass)// Ввод значений ползунками (экран 5 почасовая)

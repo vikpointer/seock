@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>svg02</title>
+    <style>
+    .icon{
+    width:16px;
+    height:16px;
+    color:red;
+    background:blue;
+    stroke:yellow;
+    fill:none;
+    stroke-width:2px;
+    }
+    .box-plus{
+    height:200px;
+    width:200px;
+    border:1px solid red;
+background:#117AF7;
+    }
+    .icon-plus{
+    stroke:#39f;
+    stroke-width:1px;
+    width:150px;
+   /*height:53px;*/
+    }
+    </style>
+</head>
+<body>
+  <!-- SVG SOURCE -->
+    <svg height="0" width="0" style="position:absolute;margin-left: -100%;">
+<path id="heart-icon"
+d="M16,28.261c0,0-14-7.926-14-17.046c0-9.356,13.159-10.399,14-0.454c1.011-9.938,14-8.903,14,0.454
+	C30,20.335,16,28.261,16,28.261z"/>                    
+    </svg>
+    <svg height="0" width="0" style="position:absolute;margin-left: -100%;">
+<path id="plus"
+d="M0 10 L20 10 M10 0 L10 20"/>                    
+    </svg>
+        <svg height="0" width="0" style="position:absolute;margin-left: -100%;">
+<path id="plusplus"
+d="M0 4 L8 4 M4 0 L4 8 M95 4 L103 4 M99 0 L99 8 M190 4 L198 4 M194 0 L194 8 M285 4 L293 4 M289 0 L289 8 M380 4 L388 4 M384 0 L384 8
+M0 99 L8 99 M4 95 L4 103 M95 99 L103 99 M99 95 L99 103 M190 99 L198 99 M194 95 L194 103 M285 99 L293 99 M289 95 L289 103 M380 99 L388 99 M384 95 L384 103 
+M0 194 L8 194 M4 190 L4 198 M95 194 L103 194 M99 190 L99 198 M190 194 L198 194 M194 190 L194 198 M285 194 L293 194 M289 190 L289 198 M380 194 L388 194 M384 190 L384 198 
+M0 289 L8 289 M4 285 L4 293 M95 289 L103 289 M99 285 L99 293 M190 289 L198 289 M194 285 L194 293 M285 289 L293 289 M289 285 L289 293 M380 289 L388 289 M384 285 L384 293 "/>                    
+    </svg>
+<!-- SVG SOURCE ends-->
+Маша ела кашу<svg class="icon" viewBox="0 0 32 32"><use xlink:href="#heart-icon"></svg>
+<br>
+Мама ела Машу<svg class="icon" viewBox="0 0 20 20"><use xlink:href="#plus"></svg>
+<div class="box-plus">
+    <svg class="icon-plus" viewBox="0 0 390 295"><use xlink:href="#plusplus"></svg>
+</div>
+</body>
+</html>

@@ -17,10 +17,13 @@
  	
 </head>
 <body class="page">
+    <svg height="0" width="0" style="position:absolute;margin-left: -100%;">
+        <path id="grid" d="M0 4 L8 4 M4 0 L4 8 M95 4 L103 4 M99 0 L99 8 M190 4 L198 4 M194 0 L194 8 M285 4 L293 4 M289 0 L289 8 M380 4 L388 4 M384 0 L384 8 M0 99 L8 99 M4 95 L4 103 M95 99 L103 99 M99 95 L99 103 M190 99 L198 99 M194 95 L194 103 M285 99 L293 99 M289 95 L289 103 M380 99 L388 99 M384 95 L384 103  M0 194 L8 194 M4 190 L4 198 M95 194 L103 194 M99 190 L99 198 M190 194 L198 194 M194 190 L194 198 M285 194 L293 194 M289 190 L289 198 M380 194 L388 194 M384 190 L384 198  M0 289 L8 289 M4 285 L4 293 M95 289 L103 289 M99 285 L99 293 M190 289 L198 289 M194 285 L194 293 M285 289 L293 289 M289 285 L289 293 M380 289 L388 289 M384 285 L384 293 "/>                    
+    </svg>
     <header class="header">
         <div class="logo header-logo"></div>
-        <div class="free-consult header-free-consult">
-            <div class="expand-txt expand-txt_length_long free-consult-expand-txt">[<span>Бесплатная консультация</span>]</div>
+        <div class="free-consult header__free-consult expand">
+            <div class="expand__txt">Бесплатная консультация</div>
         </div>
         <div class="subclear"></div>
         <div class="phone header-phone">+7 (342) 225-00-75</div>
@@ -28,31 +31,99 @@
     </header>
     <section>
         <div class="scr1 page-scr1 indoor">
-            <div class="scr1__ux">ux</div>
-            <div class="seotext scr1-seotext">
+            <div class="scr1__seo scr1-seo striped-txt">seo</div>
+            <div class="scr1__grid scr1-grid">
+                <svg class="grid-icon" viewBox="0 0 390 295"><use xlink:href="#grid"></svg>
+            </div>
+            <div class="scr1__ux scr1-ux">ux</div>
+            <canvas class="scr1__canvas scr1-canvas"></canvas>
+            <div class="scr1__seotext scr1-seotext">
                 <p>В одну телегу впрячь не можно<br>коня и трепетную лань</p>
-                <div class="movebtn">
-                    <div class="movebtn__arrplay"> </div>
+                <div class="movebtn scr1-movebtn">
+                    <div class="movebtn__icon_arrplay scr1-movebtn-icon"> </div>
                     <div class="movebtn__text">Посмотреть презентацию</div>
                 </div>
             </div>
             <div class="clear"></div>
             <div class="mouseimg scr1-mouseimg"> </div>
-            <div class="p2 expand-textbox scr1-expand-textbox expand-textbox__collapsed" data-toggle='collapsed'>
+            <div class="p2 expand-textbox scr1-expand-textbox expand-textbox__collapsed" data-toggle='collapsed' onmouseleave="expandTextboxCollapse();">
                 <p>SEO (Search Engine Optimization) — это действия, направленные на  улучшение видимости сайта в тематиках, которым он действительно  соответствует в глазах пользователя, с точки зрения алгоритмов поисковых  систем. Конечная цель SEO — привлечь целевую аудиторию и конвертировать  ее часть в клиентов представленного на сайте бизнеса. Поисковое  продвижение — один из самых рентабельных инструментов  интернет-маркетинга. Несмотря на все разногласия сторон, SEO и UX теперь связаны поведенческими факторами, которые учитывают поисковые роботы при индексации сайта. К тому же, чтобы покорить ТОП, одной поисковой оптимизации недостаточно, сайту нужен комплексный подход и при этом не надо забывать про удобство. Например, если поработать над юзабилити сайта, можно улучшить его поведенческие факторы, а значит, и позиции в поисковой выдаче.
                 </p>
                 <p>Поэтому, если хотите получить хороший результат, то SEO- и юзабилити-специалист должны работать в одной команде. </p>
                 <div class="expand-textbox__mask"></div>
-                <div class="expand-textbox__btn" onclick="expandTextboxBtnClick();">
-                    <div class="expand-txt expand-txt_length_short expand-txt_size_small-115">[<span>Развернуть</span>]</div>
+                <div class="expand-textbox__btn expand-textbox-btn expand" onclick="expandTextboxBtnClick();">
+                    <div class="expand__txt">Развернуть</div>
                 </div>
             </div>
         
         </div>
-        <div class="whatseo">
-            <div class="lineright whatseo-lineright"> <div class="lineright__hr"></div></div>
-            <div class="expand-txt expand-txt_length_longest expand-txt_size_small whatseo-expand-txt">[<span>Что такое SEO продвижение сайта?</span>]</div>
-        </div>
+        <div class="whatseo scr1-whatseo expand">
+            <div class="expand__txt">Что такое SEO продвижение сайта?</div>
+        </div><!--
+     --><div class="lineright scr1-lineright"><div class="lineright__hr"></div></div>
+        
+        <div class="scr2 page-scr2 scr-back-left scr-back-blue">
+            <div class="inner_right scr2-inner_right">
+                <h2 class="scrhead">Почему web разработчики продвигают лучше?</h2>
+                <p class="scrtxt scr2-scrtxt scrtxt_light p2">Многие агентства предлагают SEO-продвижение как дополнительную услугу,  и в результате всеми проектами занимается небольшой отдел или даже один  человек. Как булки вкуснее в специализированных булочных, так и SEO круче у тех, для кого это дело — главное. Аналогичный текст нужно сделать со смыслом, что только те кто разрабатывают - знают самые короткие пути и выполняют работы в несколько раз быстрее.</p>
+            </div><!-- end of inner-->
+            <div class="pager scr2-pager"><span class="pager__arrleft pager-arr" onclick="changePager('.scr2',-1);"></span><span class="pager__number">1</span>/<span class="pager__bottom">6</span><span class="pager__arrright pager-arr" onclick="changePager('.scr2',1);"></span></div>
+            <div class="lineright scr2-lineright"> <div class="lineright__hr_dark"></div></div>
+            
+            <div class="slider scr2-slider">
+                <div class="slide scr2-slide"><!-- Первый слайд -->
+                    <div class="slide__picture scr2-slide-picture"></div>
+                    <div class="p3 slide__content scr2-slide-content">
+                        <h3 class="h3 scr2_slide-head">Заголовок преимущества</h3>
+                        <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
+                    </div>
+                </div><!-- end of slide 1 -->
+                
+                <div class="slide scr2-slide"><!-- Второй слайд -->
+                    <div class="slide__picture scr2-slide-picture"></div>
+                    <div class="p3 slide__content scr2-slide-content">
+                        <h3 class="h3 scr2_slide-head">Заголовок преимущества2</h3>
+                        <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
+                    </div>
+                </div><!-- end of slide 2 -->
+                
+                <div class="slide scr2-slide"><!-- Третий слайд -->
+                    <div class="slide__picture scr2-slide-picture"></div>
+                    <div class="p3 slide__content scr2-slide-content">
+                        <h3 class="h3 scr2_slide-head">Заголовок преимущества3</h3>
+                        <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
+                    </div>
+                </div><!-- end of slide 3 -->
+                
+                <div class="slide scr2-slide"><!-- Четвертый слайд -->
+                    <div class="slide__picture scr2-slide-picture"></div>
+                    <div class="p3 slide__content scr2-slide-content">
+                        <h3 class="h3 scr2_slide-head">Заголовок преимущества4</h3>
+                        <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
+                    </div>
+                </div><!-- end of slide 4 -->
+                                
+                <div class="slide scr2-slide"><!-- Пятый слайд -->
+                    <div class="slide__picture scr2-slide-picture"></div>
+                    <div class="p3 slide__content scr2-slide-content">
+                        <h3 class="h3 scr2_slide-head">Заголовок преимущества5</h3>
+                        <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
+                    </div>
+                </div><!-- end of slide 5 -->
+                
+                <div class="slide scr2-slide"><!-- Шестой слайд -->
+                    <div class="slide__picture scr2-slide-picture"></div>
+                    <div class="p3 slide__content scr2-slide-content">
+                        <h3 class="h3 scr2_slide-head">Заголовок преимущества6</h3>
+                        <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
+                    </div>
+                </div><!-- end of slide 6 -->
+                
+                <div class="slider__mask scr2-slider-mask"></div>
+            </div><!-- end of slider -->
+            <div class="clear"></div>
+        </div><!-- end of scr2 -->
+        
         
         <div class="scr3 page-scr3 scr-back-right scr-back-white">
             <div class="inner scr3-inner">
@@ -223,73 +294,13 @@
                 </div><!-- end of slide 6 -->
             
                 <a class="slider__link slider-link" href="http://www.auto-sushi.com">www.auto-sushi.com</a>
-                <div class="btn scr3-slider-btn">
-                    <div class="expand-txt">[<span>Хочу также</span>]</div>
+                <div class="btn scr3-slider-btn expand">
+                    <div class="expand__txt">Хочу также</div>
                 </div>
             </div><!-- end of slider-->
         </div><!-- end of scr3 -->
         
-        <div class="scr2 page-scr2 scr-back-left scr-back-blue">
-            <div class="inner_right">
-                <h2 class="scrhead">Почему web разработчики продвигают лучше?</h2>
-                <p class="scrtxt scr2-scrtxt scrtxt_light p2">Многие агентства предлагают SEO-продвижение как дополнительную услугу,  и в результате всеми проектами занимается небольшой отдел или даже один  человек. Как булки вкуснее в специализированных булочных, так и SEO круче у тех, для кого это дело — главное. Аналогичный текст нужно сделать со смыслом, что только те кто разрабатывают - знают самые короткие пути и выполняют работы в несколько раз быстрее.</p>
-            </div><!-- end of inner-->
-            <div class="pager scr2-pager"><span class="pager__arrleft pager-arr" onclick="changePager('.scr2',-1);"></span><span class="pager__number">1</span>/<span class="pager__bottom">6</span><span class="pager__arrright pager-arr" onclick="changePager('.scr2',1);"></span></div>
-            <div class="lineright scr2-lineright"> <div class="lineright__hr_dark"></div></div>
-            
-            <div class="slider scr2-slider">
-                <div class="slide scr2-slide"><!-- Первый слайд -->
-                    <div class="slide__picture scr2-slide-picture"></div>
-                    <div class="p3 slide__content scr2-slide-content">
-                        <h3 class="h3 scr2_slide-head">Заголовок преимущества</h3>
-                        <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
-                    </div>
-                </div><!-- end of slide 1 -->
-                
-                <div class="slide scr2-slide"><!-- Второй слайд -->
-                    <div class="slide__picture scr2-slide-picture"></div>
-                    <div class="p3 slide__content scr2-slide-content">
-                        <h3 class="h3 scr2_slide-head">Заголовок преимущества2</h3>
-                        <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
-                    </div>
-                </div><!-- end of slide 2 -->
-                
-                <div class="slide scr2-slide"><!-- Третий слайд -->
-                    <div class="slide__picture scr2-slide-picture"></div>
-                    <div class="p3 slide__content scr2-slide-content">
-                        <h3 class="h3 scr2_slide-head">Заголовок преимущества3</h3>
-                        <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
-                    </div>
-                </div><!-- end of slide 3 -->
-                
-                <div class="slide scr2-slide"><!-- Четвертый слайд -->
-                    <div class="slide__picture scr2-slide-picture"></div>
-                    <div class="p3 slide__content scr2-slide-content">
-                        <h3 class="h3 scr2_slide-head">Заголовок преимущества4</h3>
-                        <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
-                    </div>
-                </div><!-- end of slide 4 -->
-                                
-                <div class="slide scr2-slide"><!-- Пятый слайд -->
-                    <div class="slide__picture scr2-slide-picture"></div>
-                    <div class="p3 slide__content scr2-slide-content">
-                        <h3 class="h3 scr2_slide-head">Заголовок преимущества5</h3>
-                        <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
-                    </div>
-                </div><!-- end of slide 5 -->
-                
-                <div class="slide scr2-slide"><!-- Шестой слайд -->
-                    <div class="slide__picture scr2-slide-picture"></div>
-                    <div class="p3 slide__content scr2-slide-content">
-                        <h3 class="h3 scr2_slide-head">Заголовок преимущества6</h3>
-                        <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
-                    </div>
-                </div><!-- end of slide 6 -->
-                
-                <div class="slider__mask scr2-slider-mask"></div>
-            </div><!-- end of slider -->
-            <div class="clear"></div>
-        </div><!-- end of scr2 -->
+        
         
         <div class="scr4 page-scr4">
             <div class="indoor scr4-indoor">
@@ -335,8 +346,8 @@
                             <p class="p3 ratecontent__txt dark333">Мы предлагаем простые и прозрачные условия оплаты, которые напрямую зависят от технического состояния веб-площадки и степени её развитости на момент начала работ. Это может быть абонентская или почасовая оплата.</p>
                             <h2 class="blue-caption ratecontent-cost dark333">15590 руб.</h2>
                         </div>
-                        <div class="btn rate-btn">
-                            <div class="expand-txt expand-txt_length_middle">[<span>Заказать</span>]</div>
+                        <div class="btn rate__btn rate-btn expand">
+                            <div class="expand__txt">Заказать</div>
                         </div>
                     </div><!-- end of rate1 -->
                     
@@ -348,8 +359,8 @@
                             <p class="p3 ratecontent__txt dark333">Мы предлагаем простые и прозрачные условия оплаты, которые напрямую зависят от технического состояния веб-площадки и степени её развитости на момент начала работ. Это может быть абонентская или почасовая оплата.</p>
                             <h2 class="blue-caption ratecontent-cost dark333">15590 руб.</h2>
                         </div>
-                        <div class="btn rate-btn">
-                            <div class="expand-txt expand-txt_length_middle">[<span>Заказать</span>]</div>
+                        <div class="btn rate__btn rate-btn expand">
+                            <div class="expand__txt">Заказать</div>
                         </div>
                     </div><!-- end of rate2 -->
                     
@@ -361,8 +372,8 @@
                             <p class="p3 ratecontent__txt dark333">Мы предлагаем простые и прозрачные условия оплаты, которые напрямую зависят от технического состояния веб-площадки и степени её развитости на момент начала работ. Это может быть абонентская или почасовая оплата.</p>
                             <h2 class="blue-caption ratecontent-cost dark333">15590 руб.</h2>
                         </div>
-                        <div class="btn rate-btn">
-                            <div class="expand-txt expand-txt_length_middle">[<span>Заказать</span>]</div>
+                        <div class="btn rate__btn rate-btn expand">
+                            <div class="expand__txt">Заказать</div>
                         </div>
                     </div><!-- end of rate3 -->
                     
@@ -374,8 +385,8 @@
                             <p class="p3 ratecontent__txt dark333">Мы предлагаем простые и прозрачные условия оплаты, которые напрямую зависят от технического состояния веб-площадки и степени её развитости на момент начала работ. Это может быть абонентская или почасовая оплата.</p>
                             <h2 class="blue-caption ratecontent-cost dark333">15590 руб.</h2>
                         </div>
-                        <div class="btn rate-btn">
-                            <div class="expand-txt expand-txt_length_middle">[<span>Заказать</span>]</div>
+                        <div class="btn rate__btn rate-btn expand">
+                            <div class="expand__txt">Заказать</div>
                         </div>
                     </div><!-- end of rate4 -->
                     <div class="circles-row scr5a-circles-row">
@@ -513,8 +524,8 @@
                             <div class="hourscard__title">Стоимость часа работы <span class="wrap_320"><br></span>SEO-специалиста</div>
                             <div class="hourscard__rect">1500</div>
                         </div>
-                        <div class="btn scr5h-btn">
-                            <div class="expand-txt expand-txt_length_long135">[<span>Узнать точную цену</span>]</div>
+                        <div class="btn scr5h__btn scr5h-btn expand">
+                            <div class="expand__txt">Узнать точную цену</div>
                         </div>
                     </div>
                 </div>
@@ -627,13 +638,13 @@
                 <div class="examples scr8-examples">
                     <div class="examples__treaty">
                         <div class="movebtn treaty-movebtn">
-                            <div class="treaty-img"> </div>
+                            <div class="movebtn__icon_treaty"> </div>
                             <div class="movebtn__text">Пример договора</div>
                         </div>
                     </div>
                     <div class="examples__report">
                         <div class="movebtn report-movebtn">
-                            <div class="report-img"> </div>
+                            <div class="movebtn__icon_report"> </div>
                             <div class="movebtn__text">Пример отчёта</div>
                         </div>
                     </div>
@@ -667,8 +678,8 @@
                         <div class="form__divinput scr9-divinput">
                             <input type="text" name="phone" value="" placeholder="Ваш телефон" onchange="checkPhone();" >
                         </div>
-                        <div class="btn rate-btn scr9-form-btn" >
-                            <div class="expand-txt expand-txt_length_middle">[<span>Заказать</span>]</div>
+                        <div class="btn rate__btn scr9-form-btn expand" >
+                            <div class="expand__txt">Заказать</div>
                         </div>
                     </form>
                 </div><!-- formdiv -->
