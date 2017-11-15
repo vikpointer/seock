@@ -18,11 +18,12 @@
 </head>
 <body class="page">
     <svg height="0" width="0" style="position:absolute;margin-left: -100%;">
-        <path id="grid" d="M0 4 L8 4 M4 0 L4 8 M95 4 L103 4 M99 0 L99 8 M190 4 L198 4 M194 0 L194 8 M285 4 L293 4 M289 0 L289 8 M380 4 L388 4 M384 0 L384 8 M0 99 L8 99 M4 95 L4 103 M95 99 L103 99 M99 95 L99 103 M190 99 L198 99 M194 95 L194 103 M285 99 L293 99 M289 95 L289 103 M380 99 L388 99 M384 95 L384 103  M0 194 L8 194 M4 190 L4 198 M95 194 L103 194 M99 190 L99 198 M190 194 L198 194 M194 190 L194 198 M285 194 L293 194 M289 190 L289 198 M380 194 L388 194 M384 190 L384 198  M0 289 L8 289 M4 285 L4 293 M95 289 L103 289 M99 285 L99 293 M190 289 L198 289 M194 285 L194 293 M285 289 L293 289 M289 285 L289 293 M380 289 L388 289 M384 285 L384 293 "/>                    
+        <path id="grid" d="M0 4 L8 4 M4 0 L4 8 M95 4 L103 4 M99 0 L99 8 M190 4 L198 4 M194 0 L194 8 M285 4 L293 4 M289 0 L289 8 M380 4 L388 4 M384 0 L384 8 M0 99 L8 99 M4 95 L4 103 M95 99 L103 99 M99 95 L99 103 M190 99 L198 99 M194 95 L194 103 M285 99 L293 99 M289 95 L289 103 M380 99 L388 99 M384 95 L384 103  M0 194 L8 194 M4 190 L4 198 M95 194 L103 194 M99 190 L99 198 M190 194 L198 194 M194 190 L194 198 M285 194 L293 194 M289 190 L289 198 M380 194 L388 194 M384 190 L384 198  M0 289 L8 289 M4 285 L4 293 M95 289 L103 289 M99 285 L99 293 M190 289 L198 289 M194 285 L194 293 M285 289 L293 289 M289 285 L289 293 M380 289 L388 289 M384 285 L384 293 "/>
+        <path id="plusplus" d="M0 5 L10 5 M5 0 L5 10 M225 350 L225 360 M220 355 L230 355"/>                    
     </svg>
     <header class="header">
         <div class="logo header-logo"></div>
-        <div class="free-consult header__free-consult expand">
+        <div class="free-consult header-free-consult expand">
             <div class="expand__txt">Бесплатная консультация</div>
         </div>
         <div class="subclear"></div>
@@ -41,12 +42,12 @@
                 <p>В одну телегу впрячь не можно<br>коня и трепетную лань</p>
                 <div class="movebtn scr1-movebtn">
                     <div class="movebtn__icon_arrplay scr1-movebtn-icon"> </div>
-                    <div class="movebtn__text">Посмотреть презентацию</div>
+                    <div class="movebtn__text scr1-movebtn-text">Посмотреть презентацию</div>
                 </div>
             </div>
-            <div class="clear"></div>
+            
             <div class="mouseimg scr1-mouseimg"> </div>
-            <div class="p2 expand-textbox scr1-expand-textbox expand-textbox__collapsed" data-toggle='collapsed' onmouseleave="expandTextboxCollapse();">
+            <div class="p2 expand-textbox scr1-expand-textbox expand-textbox_collapsed" data-toggle='collapsed' onmouseleave="expandTextboxCollapse();">
                 <p>SEO (Search Engine Optimization) — это действия, направленные на  улучшение видимости сайта в тематиках, которым он действительно  соответствует в глазах пользователя, с точки зрения алгоритмов поисковых  систем. Конечная цель SEO — привлечь целевую аудиторию и конвертировать  ее часть в клиентов представленного на сайте бизнеса. Поисковое  продвижение — один из самых рентабельных инструментов  интернет-маркетинга. Несмотря на все разногласия сторон, SEO и UX теперь связаны поведенческими факторами, которые учитывают поисковые роботы при индексации сайта. К тому же, чтобы покорить ТОП, одной поисковой оптимизации недостаточно, сайту нужен комплексный подход и при этом не надо забывать про удобство. Например, если поработать над юзабилити сайта, можно улучшить его поведенческие факторы, а значит, и позиции в поисковой выдаче.
                 </p>
                 <p>Поэтому, если хотите получить хороший результат, то SEO- и юзабилити-специалист должны работать в одной команде. </p>
@@ -61,7 +62,7 @@
             <div class="expand__txt">Что такое SEO продвижение сайта?</div>
         </div><!--
      --><div class="lineright scr1-lineright"><div class="lineright__hr"></div></div>
-        
+        <div class="clear"></div>
         <div class="scr2 page-scr2 scr-back-left scr-back-blue">
             <div class="inner_right scr2-inner_right">
                 <h2 class="scrhead">Почему web разработчики продвигают лучше?</h2>
@@ -71,54 +72,56 @@
             <div class="lineright scr2-lineright"> <div class="lineright__hr_dark"></div></div>
             
             <div class="slider scr2-slider">
-                <div class="slide scr2-slide"><!-- Первый слайд -->
-                    <div class="slide__picture scr2-slide-picture"></div>
-                    <div class="p3 slide__content scr2-slide-content">
-                        <h3 class="h3 scr2_slide-head">Заголовок преимущества</h3>
-                        <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
-                    </div>
-                </div><!-- end of slide 1 -->
+                <div class="slider__container scr2-slider-container">
+                    <div class="slide scr2-slide"><!-- Первый слайд -->
+                        <div class="slide__picture scr2-slide-picture"></div>
+                        <div class="p3 slide__content scr2-slide-content">
+                            <h3 class="h3 scr2_slide-head">Заголовок преимущества</h3>
+                            <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
+                        </div>
+                    </div><!-- end of slide 1 -->
                 
-                <div class="slide scr2-slide"><!-- Второй слайд -->
-                    <div class="slide__picture scr2-slide-picture"></div>
-                    <div class="p3 slide__content scr2-slide-content">
-                        <h3 class="h3 scr2_slide-head">Заголовок преимущества2</h3>
-                        <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
-                    </div>
-                </div><!-- end of slide 2 -->
+                    <div class="slide scr2-slide"><!-- Второй слайд -->
+                        <div class="slide__picture scr2-slide-picture"></div>
+                        <div class="p3 slide__content scr2-slide-content">
+                            <h3 class="h3 scr2_slide-head">Заголовок преимущества2</h3>
+                            <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
+                        </div>
+                    </div><!-- end of slide 2 -->
                 
-                <div class="slide scr2-slide"><!-- Третий слайд -->
-                    <div class="slide__picture scr2-slide-picture"></div>
-                    <div class="p3 slide__content scr2-slide-content">
-                        <h3 class="h3 scr2_slide-head">Заголовок преимущества3</h3>
-                        <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
-                    </div>
-                </div><!-- end of slide 3 -->
+                    <div class="slide scr2-slide"><!-- Третий слайд -->
+                        <div class="slide__picture scr2-slide-picture"></div>
+                        <div class="p3 slide__content scr2-slide-content">
+                            <h3 class="h3 scr2_slide-head">Заголовок преимущества3</h3>
+                            <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
+                        </div>
+                    </div><!-- end of slide 3 -->
                 
-                <div class="slide scr2-slide"><!-- Четвертый слайд -->
-                    <div class="slide__picture scr2-slide-picture"></div>
-                    <div class="p3 slide__content scr2-slide-content">
-                        <h3 class="h3 scr2_slide-head">Заголовок преимущества4</h3>
-                        <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
-                    </div>
-                </div><!-- end of slide 4 -->
+                    <div class="slide scr2-slide"><!-- Четвертый слайд -->
+                        <div class="slide__picture scr2-slide-picture"></div>
+                        <div class="p3 slide__content scr2-slide-content">
+                            <h3 class="h3 scr2_slide-head">Заголовок преимущества4</h3>
+                            <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
+                        </div>
+                    </div><!-- end of slide 4 -->
                                 
-                <div class="slide scr2-slide"><!-- Пятый слайд -->
-                    <div class="slide__picture scr2-slide-picture"></div>
-                    <div class="p3 slide__content scr2-slide-content">
-                        <h3 class="h3 scr2_slide-head">Заголовок преимущества5</h3>
-                        <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
-                    </div>
-                </div><!-- end of slide 5 -->
+                    <div class="slide scr2-slide"><!-- Пятый слайд -->
+                        <div class="slide__picture scr2-slide-picture"></div>
+                        <div class="p3 slide__content scr2-slide-content">
+                            <h3 class="h3 scr2_slide-head">Заголовок преимущества5</h3>
+                            <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
+                        </div>
+                    </div><!-- end of slide 5 -->
                 
-                <div class="slide scr2-slide"><!-- Шестой слайд -->
-                    <div class="slide__picture scr2-slide-picture"></div>
-                    <div class="p3 slide__content scr2-slide-content">
-                        <h3 class="h3 scr2_slide-head">Заголовок преимущества6</h3>
-                        <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
-                    </div>
-                </div><!-- end of slide 6 -->
+                    <div class="slide scr2-slide"><!-- Шестой слайд -->
+                        <div class="slide__picture scr2-slide-picture"></div>
+                        <div class="p3 slide__content scr2-slide-content">
+                            <h3 class="h3 scr2_slide-head">Заголовок преимущества6</h3>
+                            <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
+                        </div>
+                    </div><!-- end of slide 6 -->
                 
+                </div><!-- end of slider-container -->
                 <div class="slider__mask scr2-slider-mask"></div>
             </div><!-- end of slider -->
             <div class="clear"></div>
@@ -130,169 +133,177 @@
                 <h3 class="scrhead dark222">Примеры <span class="wrap_320"><br></span>наших работ</h3>
                 <div class="pager scr3-pager"><span class="pager__arrleft_black pager-arr" onclick="changePager('.scr3',-1);"></span><span class="pager__number">1</span>/<span class="pager__bottom">6</span><span class="pager__arrright_black pager-arr" onclick="changePager('.scr3',1);"></span></div>
             </div>
-            <div class="slider scr3-slider" data-slide-width="1010">
-                <div class="slide scr3-slide"><!-- Первый слайд -->
-                    <div class="graph scr3-slide-graph">
-                        <div class="graph__caption">Изменение строки в поисковой выдаче по запросу "Суши"</div>
-                        <ul class="graph__legend-v">
-                            <li>01</li><li>02</li><li>03</li><li>04</li><li>05</li><li>06</li><li>07</li><li>08</li><li>09</li><li>10</li>
-                        </ul>
-                        <ul class="graph__legend-h">
-                            <li>06.16</li><li>07.16</li><li>08.16</li><li>09.16</li><li>10.16</li><li>11.16</li><li>12.16</li><li>01.17</li><li>02.17</li><li>03.17</li><li>04.17</li><li>05.17</li>
-                        </ul>
-                        <div class="graph1"></div>
-                    </div>
-                    <div class="slide-info scr3-slide-info">
-                        <h4 class="blue-caption slide-caption">Япона матрёна</h4>
-                        <p class="slide__theme slide-theme">Тема:"Доставка суши и роллов"</p>
-                        <p class="h3 slide__data slide-data">Срок 8 месяцев<br>Вывели 91 запрос в ТОП 3</p>
-                        <h5 class="slide__position slide-position">Поисковой запрос</h5>
-                        <h5 class="slide__position slide-position-right">Позиция</h5>
-                        <ul class="slide__content slide-content dark222">
-                            <li>Доставка суши Пермь<b>3</b></li>
-                            <li>Заказать суши<b>2</b></li>
-                            <li>Заказ роллов <b>1</b></li>
-                            <li>Заказ суши<b>1</b></li>
-                            <li>Доставка суши круглосуточно<b>1</b></li>
-                        </ul>
-                    </div>
-                </div><!-- end of slide 1 -->
+            <div class="slider scr3-slider">
+                <div class="slider__container scr3-slider-container">
+                    <div class="slide scr3-slide"><!-- Первый слайд -->
+
+                        <div class="slide-info scr3-slide-info">
+                            <h4 class="blue-caption slide__caption scr3-slide-caption">Япона матрёна</h4>
+                            <p class="slide__theme slide-theme">Тема:"Доставка суши и роллов"</p>
+                            <p class="h3 slide__data slide-data">Срок 8 месяцев<br>Вывели 91 запрос в ТОП 3</p>
+                            <h5 class="slide__position slide-position">Поисковой запрос</h5>
+                            <h5 class="slide__position slide-position-right">Позиция</h5>
+                            <ul class="slide__content slide-content dark222">
+                                <li>Доставка суши Пермь<b>3</b></li>
+                                <li>Заказать суши<b>2</b></li>
+                                <li>Заказ роллов <b>1</b></li>
+                                <li>Заказ суши<b>1</b></li>
+                                <li>Доставка суши круглосуточно<b>1</b></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="graph scr3-slide-graph">
+                            <div class="graph__caption">Изменение строки в поисковой выдаче по запросу "Суши"</div>
+                            <ul class="graph__legend-v">
+                                <li>01</li><li>02</li><li>03</li><li>04</li><li>05</li><li>06</li><li>07</li><li>08</li><li>09</li><li>10</li>
+                            </ul>
+                            <ul class="graph__legend-h">
+                                <li>06.16</li><li>07.16</li><li>08.16</li><li>09.16</li><li>10.16</li><li>11.16</li><li>12.16</li><li>01.17</li><li>02.17</li><li>03.17</li><li>04.17</li><li>05.17</li>
+                            </ul>
+                            <div class="graph1"></div>
+                        </div>
+                    </div><!-- end of slide 1 -->
                 
-                <div class="slide scr3-slide"><!-- Второй слайд -->
-                    <div class="graph scr3-slide-graph">
-                        <div class="graph__caption">Изменение строки в поисковой выдаче по запросу "Суши"</div>
-                        <ul class="graph__legend-v">
-                            <li>01</li><li>02</li><li>03</li><li>04</li><li>05</li><li>06</li><li>07</li><li>08</li><li>09</li><li>10</li>
-                        </ul>
-                        <ul class="graph__legend-h">
-                            <li>06.16</li><li>07.16</li><li>08.16</li><li>09.16</li><li>10.16</li><li>11.16</li><li>12.16</li><li>01.17</li><li>02.17</li><li>03.17</li><li>04.17</li><li>05.17</li>
-                        </ul>
-                        <div class="graph1"></div>
-                    </div>
-                    <div class="slide-info scr3-slide-info">
-                        <h4 class="blue-caption slide-caption">Япона матрёна2</h4>
-                        <p class="slide__theme slide-theme">Тема:"Доставка суши и роллов"</p>
-                        <p class="h3 slide__data slide-data">Срок 8 месяцев<br>Вывели 91 запрос в ТОП 3</p>
-                        <h5 class="slide__position slide-position">Поисковой запрос</h5>
-                        <h5 class="slide__position slide-position-right">Позиция</h5>
-                        <ul class="slide__content slide-content dark222">
-                            <li>Доставка суши Пермь<b>3</b></li>
-                            <li>Заказать суши<b>2</b></li>
-                            <li>Заказ роллов <b>1</b></li>
-                            <li>Заказ суши<b>1</b></li>
-                            <li>Доставка суши круглосуточно<b>1</b></li>
-                        </ul>
-                    </div>
-                </div><!-- end of slide 2 -->
+                    <div class="slide scr3-slide"><!-- Второй слайд -->
+                        
+                        <div class="slide-info scr3-slide-info">
+                            <h4 class="blue-caption slide__caption scr3-slide-caption">Япона матрёна2</h4>
+                            <p class="slide__theme slide-theme">Тема:"Доставка суши и роллов"</p>
+                            <p class="h3 slide__data slide-data">Срок 8 месяцев<br>Вывели 91 запрос в ТОП 3</p>
+                            <h5 class="slide__position slide-position">Поисковой запрос</h5>
+                            <h5 class="slide__position slide-position-right">Позиция</h5>
+                            <ul class="slide__content slide-content dark222">
+                                <li>Доставка суши Пермь<b>3</b></li>
+                                <li>Заказать суши<b>2</b></li>
+                                <li>Заказ роллов <b>1</b></li>
+                                <li>Заказ суши<b>1</b></li>
+                                <li>Доставка суши круглосуточно<b>1</b></li>
+                            </ul>
+                        </div>
+                        <div class="graph scr3-slide-graph">
+                            <div class="graph__caption">Изменение строки в поисковой выдаче по запросу "Суши"</div>
+                            <ul class="graph__legend-v">
+                                <li>01</li><li>02</li><li>03</li><li>04</li><li>05</li><li>06</li><li>07</li><li>08</li><li>09</li><li>10</li>
+                            </ul>
+                            <ul class="graph__legend-h">
+                                <li>06.16</li><li>07.16</li><li>08.16</li><li>09.16</li><li>10.16</li><li>11.16</li><li>12.16</li><li>01.17</li><li>02.17</li><li>03.17</li><li>04.17</li><li>05.17</li>
+                            </ul>
+                            <div class="graph1"></div>
+                        </div>
+                    </div><!-- end of slide 2 -->
                 
-                <div class="slide scr3-slide"><!-- Третий слайд -->
-                    <div class="graph scr3-slide-graph">
-                        <div class="graph__caption">Изменение строки в поисковой выдаче по запросу "Суши"</div>
-                        <ul class="graph__legend-v">
-                            <li>01</li><li>02</li><li>03</li><li>04</li><li>05</li><li>06</li><li>07</li><li>08</li><li>09</li><li>10</li>
-                        </ul>
-                        <ul class="graph__legend-h">
-                            <li>06.16</li><li>07.16</li><li>08.16</li><li>09.16</li><li>10.16</li><li>11.16</li><li>12.16</li><li>01.17</li><li>02.17</li><li>03.17</li><li>04.17</li><li>05.17</li>
-                        </ul>
-                        <div class="graph1"></div>
-                    </div>
-                    <div class="slide-info scr3-slide-info">
-                        <h4 class="blue-caption slide-caption">Япона матрёна3</h4>
-                        <p class="slide__theme slide-theme">Тема:"Доставка суши и роллов"</p>
-                        <p class="h3 slide__data slide-data">Срок 8 месяцев<br>Вывели 91 запрос в ТОП 3</p>
-                        <h5 class="slide__position slide-position">Поисковой запрос</h5>
-                        <h5 class="slide__position slide-position-right">Позиция</h5>
-                        <ul class="slide__content slide-content dark222">
-                            <li>Доставка суши Пермь<b>3</b></li>
-                            <li>Заказать суши<b>2</b></li>
-                            <li>Заказ роллов <b>1</b></li>
-                            <li>Заказ суши<b>1</b></li>
-                            <li>Доставка суши круглосуточно<b>1</b></li>
-                        </ul>
-                    </div>
-                </div><!-- end of slide 3 -->
+                    <div class="slide scr3-slide"><!-- Третий слайд -->
+                        
+                        <div class="slide-info scr3-slide-info">
+                            <h4 class="blue-caption slide__caption scr3-slide-caption">Япона матрёна3</h4>
+                            <p class="slide__theme slide-theme">Тема:"Доставка суши и роллов"</p>
+                            <p class="h3 slide__data slide-data">Срок 8 месяцев<br>Вывели 91 запрос в ТОП 3</p>
+                            <h5 class="slide__position slide-position">Поисковой запрос</h5>
+                            <h5 class="slide__position slide-position-right">Позиция</h5>
+                            <ul class="slide__content slide-content dark222">
+                                <li>Доставка суши Пермь<b>3</b></li>
+                                <li>Заказать суши<b>2</b></li>
+                                <li>Заказ роллов <b>1</b></li>
+                                <li>Заказ суши<b>1</b></li>
+                                <li>Доставка суши круглосуточно<b>1</b></li>
+                            </ul>
+                        </div>
+                        <div class="graph scr3-slide-graph">
+                            <div class="graph__caption">Изменение строки в поисковой выдаче по запросу "Суши"</div>
+                            <ul class="graph__legend-v">
+                                <li>01</li><li>02</li><li>03</li><li>04</li><li>05</li><li>06</li><li>07</li><li>08</li><li>09</li><li>10</li>
+                            </ul>
+                            <ul class="graph__legend-h">
+                                <li>06.16</li><li>07.16</li><li>08.16</li><li>09.16</li><li>10.16</li><li>11.16</li><li>12.16</li><li>01.17</li><li>02.17</li><li>03.17</li><li>04.17</li><li>05.17</li>
+                            </ul>
+                            <div class="graph1"></div>
+                        </div>
+                    </div><!-- end of slide 3 -->
                 
-                <div class="slide scr3-slide"><!-- Четвертый слайд -->
-                    <div class="graph scr3-slide-graph">
-                        <div class="graph__caption">Изменение строки в поисковой выдаче по запросу "Суши"</div>
-                        <ul class="graph__legend-v">
-                            <li>01</li><li>02</li><li>03</li><li>04</li><li>05</li><li>06</li><li>07</li><li>08</li><li>09</li><li>10</li>
-                        </ul>
-                        <ul class="graph__legend-h">
-                            <li>06.16</li><li>07.16</li><li>08.16</li><li>09.16</li><li>10.16</li><li>11.16</li><li>12.16</li><li>01.17</li><li>02.17</li><li>03.17</li><li>04.17</li><li>05.17</li>
-                        </ul>
-                        <div class="graph1"></div>
-                    </div>
-                    <div class="slide-info scr3-slide-info">
-                        <h4 class="blue-caption slide-caption">Япона матрёна4</h4>
-                        <p class="slide__theme slide-theme">Тема:"Доставка суши и роллов"</p>
-                        <p class="h3 slide__data slide-data">Срок 8 месяцев<br>Вывели 91 запрос в ТОП 3</p>
-                        <h5 class="slide__position slide-position">Поисковой запрос</h5>
-                        <h5 class="slide__position slide-position-right">Позиция</h5>
-                        <ul class="slide__content slide-content dark222">
-                            <li>Доставка суши Пермь<b>3</b></li>
-                            <li>Заказать суши<b>2</b></li>
-                            <li>Заказ роллов <b>1</b></li>
-                            <li>Заказ суши<b>1</b></li>
-                            <li>Доставка суши круглосуточно<b>1</b></li>
-                        </ul>
-                    </div>
-                </div><!-- end of slide 4 -->
+                    <div class="slide scr3-slide"><!-- Четвертый слайд -->
+                        
+                        <div class="slide-info scr3-slide-info">
+                            <h4 class="blue-caption slide__caption scr3-slide-caption">Япона матрёна4</h4>
+                            <p class="slide__theme slide-theme">Тема:"Доставка суши и роллов"</p>
+                            <p class="h3 slide__data slide-data">Срок 8 месяцев<br>Вывели 91 запрос в ТОП 3</p>
+                            <h5 class="slide__position slide-position">Поисковой запрос</h5>
+                            <h5 class="slide__position slide-position-right">Позиция</h5>
+                            <ul class="slide__content slide-content dark222">
+                                <li>Доставка суши Пермь<b>3</b></li>
+                                <li>Заказать суши<b>2</b></li>
+                                <li>Заказ роллов <b>1</b></li>
+                                <li>Заказ суши<b>1</b></li>
+                                <li>Доставка суши круглосуточно<b>1</b></li>
+                            </ul>
+                        </div>
+                        <div class="graph scr3-slide-graph">
+                            <div class="graph__caption">Изменение строки в поисковой выдаче по запросу "Суши"</div>
+                            <ul class="graph__legend-v">
+                                <li>01</li><li>02</li><li>03</li><li>04</li><li>05</li><li>06</li><li>07</li><li>08</li><li>09</li><li>10</li>
+                            </ul>
+                            <ul class="graph__legend-h">
+                                <li>06.16</li><li>07.16</li><li>08.16</li><li>09.16</li><li>10.16</li><li>11.16</li><li>12.16</li><li>01.17</li><li>02.17</li><li>03.17</li><li>04.17</li><li>05.17</li>
+                            </ul>
+                            <div class="graph1"></div>
+                        </div>
+                    </div><!-- end of slide 4 -->
                 
-                <div class="slide scr3-slide"><!-- Пятый слайд -->
-                    <div class="graph scr3-slide-graph">
-                        <div class="graph__caption">Изменение строки в поисковой выдаче по запросу "Суши"</div>
-                        <ul class="graph__legend-v">
-                            <li>01</li><li>02</li><li>03</li><li>04</li><li>05</li><li>06</li><li>07</li><li>08</li><li>09</li><li>10</li>
-                        </ul>
-                        <ul class="graph__legend-h">
-                            <li>06.16</li><li>07.16</li><li>08.16</li><li>09.16</li><li>10.16</li><li>11.16</li><li>12.16</li><li>01.17</li><li>02.17</li><li>03.17</li><li>04.17</li><li>05.17</li>
-                        </ul>
-                        <div class="graph1"></div>
-                    </div>
-                    <div class="slide-info scr3-slide-info">
-                        <h4 class="blue-caption slide-caption">Япона матрёна5</h4>
-                        <p class="slide__theme slide-theme">Тема:"Доставка суши и роллов"</p>
-                        <p class="h3 slide__data slide-data">Срок 8 месяцев<br>Вывели 91 запрос в ТОП 3</p>
-                        <h5 class="slide__position slide-position">Поисковой запрос</h5>
-                        <h5 class="slide__position slide-position-right">Позиция</h5>
-                        <ul class="slide__content slide-content dark222">
-                            <li>Доставка суши Пермь<b>3</b></li>
-                            <li>Заказать суши<b>2</b></li>
-                            <li>Заказ роллов <b>1</b></li>
-                            <li>Заказ суши<b>1</b></li>
-                            <li>Доставка суши круглосуточно<b>1</b></li>
-                        </ul>
-                    </div>
-                </div><!-- end of slide 5 -->
+                    <div class="slide scr3-slide"><!-- Пятый слайд -->
+                        
+                        <div class="slide-info scr3-slide-info">
+                            <h4 class="blue-caption slide__caption scr3-slide-caption">Япона матрёна5</h4>
+                            <p class="slide__theme slide-theme">Тема:"Доставка суши и роллов"</p>
+                            <p class="h3 slide__data slide-data">Срок 8 месяцев<br>Вывели 91 запрос в ТОП 3</p>
+                            <h5 class="slide__position slide-position">Поисковой запрос</h5>
+                            <h5 class="slide__position slide-position-right">Позиция</h5>
+                            <ul class="slide__content slide-content dark222">
+                                <li>Доставка суши Пермь<b>3</b></li>
+                                <li>Заказать суши<b>2</b></li>
+                                <li>Заказ роллов <b>1</b></li>
+                                <li>Заказ суши<b>1</b></li>
+                                <li>Доставка суши круглосуточно<b>1</b></li>
+                            </ul>
+                        </div>
+                        <div class="graph scr3-slide-graph">
+                            <div class="graph__caption">Изменение строки в поисковой выдаче по запросу "Суши"</div>
+                            <ul class="graph__legend-v">
+                                <li>01</li><li>02</li><li>03</li><li>04</li><li>05</li><li>06</li><li>07</li><li>08</li><li>09</li><li>10</li>
+                            </ul>
+                            <ul class="graph__legend-h">
+                                <li>06.16</li><li>07.16</li><li>08.16</li><li>09.16</li><li>10.16</li><li>11.16</li><li>12.16</li><li>01.17</li><li>02.17</li><li>03.17</li><li>04.17</li><li>05.17</li>
+                            </ul>
+                            <div class="graph1"></div>
+                        </div>
+                    </div><!-- end of slide 5 -->
                 
-                <div class="slide scr3-slide"><!-- Шестой слайд -->
-                    <div class="graph scr3-slide-graph">
-                        <div class="graph__caption">Изменение строки в поисковой выдаче по запросу "Суши"</div>
-                        <ul class="graph__legend-v">
-                            <li>01</li><li>02</li><li>03</li><li>04</li><li>05</li><li>06</li><li>07</li><li>08</li><li>09</li><li>10</li>
-                        </ul>
-                        <ul class="graph__legend-h">
-                            <li>06.16</li><li>07.16</li><li>08.16</li><li>09.16</li><li>10.16</li><li>11.16</li><li>12.16</li><li>01.17</li><li>02.17</li><li>03.17</li><li>04.17</li><li>05.17</li>
-                        </ul>
-                        <div class="graph1"></div>
-                    </div>
-                    <div class="slide-info scr3-slide-info">
-                        <h4 class="blue-caption slide-caption">Япона матрёна6</h4>
-                        <p class="slide__theme slide-theme">Тема:"Доставка суши и роллов"</p>
-                        <p class="h3 slide__data slide-data">Срок 8 месяцев<br>Вывели 91 запрос в ТОП 3</p>
-                        <h5 class="slide__position slide-position">Поисковой запрос</h5>
-                        <h5 class="slide__position slide-position-right">Позиция</h5>
-                        <ul class="slide__content slide-content dark222">
-                            <li>Доставка суши Пермь<b>3</b></li>
-                            <li>Заказать суши<b>2</b></li>
-                            <li>Заказ роллов <b>1</b></li>
-                            <li>Заказ суши<b>1</b></li>
-                            <li>Доставка суши круглосуточно<b>1</b></li>
-                        </ul>
-                    </div>
-                </div><!-- end of slide 6 -->
-            
+                    <div class="slide scr3-slide"><!-- Шестой слайд -->
+                        
+                        <div class="slide-info scr3-slide-info">
+                            <h4 class="blue-caption slide__caption scr3-slide-caption">Япона матрёна6</h4>
+                            <p class="slide__theme slide-theme">Тема:"Доставка суши и роллов"</p>
+                            <p class="h3 slide__data slide-data">Срок 8 месяцев<br>Вывели 91 запрос в ТОП 3</p>
+                            <h5 class="slide__position slide-position">Поисковой запрос</h5>
+                            <h5 class="slide__position slide-position-right">Позиция</h5>
+                            <ul class="slide__content slide-content dark222">
+                                <li>Доставка суши Пермь<b>3</b></li>
+                                <li>Заказать суши<b>2</b></li>
+                                <li>Заказ роллов <b>1</b></li>
+                                <li>Заказ суши<b>1</b></li>
+                                <li>Доставка суши круглосуточно<b>1</b></li>
+                            </ul>
+                        </div>
+                        <div class="graph scr3-slide-graph">
+                            <div class="graph__caption">Изменение строки в поисковой выдаче по запросу "Суши"</div>
+                            <ul class="graph__legend-v">
+                                <li>01</li><li>02</li><li>03</li><li>04</li><li>05</li><li>06</li><li>07</li><li>08</li><li>09</li><li>10</li>
+                            </ul>
+                            <ul class="graph__legend-h">
+                                <li>06.16</li><li>07.16</li><li>08.16</li><li>09.16</li><li>10.16</li><li>11.16</li><li>12.16</li><li>01.17</li><li>02.17</li><li>03.17</li><li>04.17</li><li>05.17</li>
+                            </ul>
+                            <div class="graph1"></div>
+                        </div>
+                    </div><!-- end of slide 6 -->
+                </div><!-- end of slider-container -->
                 <a class="slider__link slider-link" href="http://www.auto-sushi.com">www.auto-sushi.com</a>
                 <div class="btn scr3-slider-btn expand">
                     <div class="expand__txt">Хочу также</div>
@@ -304,19 +315,19 @@
         
         <div class="scr4 page-scr4">
             <div class="indoor scr4-indoor">
-                <div class="scr4__mokup"></div>
+                
                 <div class="p3 inner_right scr4-inner">
                     <h2 class="scrhead scr4-scrhead">Что вы в результате получите?</h2>
-                    <h3 class="h3 scr4_slide-head">О вас узнают</h3>
+                    <h3 class="h3 scr4__slide-head">О вас узнают</h3>
                     <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
-                    <h3 class="h3 scr4_slide-head">Привлечение лидов на сайт</h3>
+                    <h3 class="h3 scr4__slide-head">Привлечение лидов на сайт</h3>
                     <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
-                    <h3 class="h3 scr4_slide-head">Повышение конверсии</h3>
+                    <h3 class="h3 scr4__slide-head">Повышение конверсии</h3>
                     <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
-                    <h3 class="h3 scr4_slide-head">Стабильный рост продаж</h3>
+                    <h3 class="h3 scr4__slide-head">Стабильный рост продаж</h3>
                     <p>Мы не ограничиваемся ежемесячным отчетом о проделанной работе. Для того, чтобы вы всегда были в курсе работ, мы разработали систему SMS-оповещений.</p>
                 </div>
-                
+                <div class="scr4__mokup"></div>
             </div>
         </div><!-- end of scr4 -->
         
@@ -328,79 +339,89 @@
                     
                 </div>
             </div>
-            <div class="scr5-payments page-scr5-payments  scr-back-white">
-                <div class="lineright__hr scr5_lineright"></div>
+            <div class="payments scr-back-right scr5-payments scr-back-white">
                 <h3 class="h3 payment scr5-payment payment_active" onclick="paytype(1);">Абонентская плата</h3>
                 <h3 class="h3 payment scr5-payment" onclick="paytype(2);">Почасовая оплата</h3>
-        </div>
+            </div>
         </div>
   <!-- *********************** Абонентская плата ************************** -->      
-        <div class="scr5-abonent page-scr5a scr-back-white">
-            <div class="indoor scr5a-indoor">
-                <div class="inner scr5a-inner">
-                    <div class="rate scr5-rate">
-                        <div class="ratecontent rate-ratecontent">
+        <div class="scr5__abonent page-scr5a scr-back-white">
+            <div class="inner scr5a-inner">
+                <div class="rate scr5-rate">
+                    <div class="ratecontent rate-ratecontent">
+                        <svg class="plus-icon" viewBox="0 0 230 360"><use xlink:href="#plusplus"></svg>
+                        <div class="ratecontent__back ratecontent-back">
                             <h2 class="blue-caption ratecontent-caption">Старт</h2>
                             <h3 class="ratecontent__context">&nbsp;</h3>
-                            <h3 class="h3 ratecontent__subhead dark333">Что входит:</h3>
-                            <p class="p3 ratecontent__txt dark333">Мы предлагаем простые и прозрачные условия оплаты, которые напрямую зависят от технического состояния веб-площадки и степени её развитости на момент начала работ. Это может быть абонентская или почасовая оплата.</p>
+                            <h3 class="h3 ratecontent__subhead ratecontent-subhead dark333">Что входит:</h3>
+                            <p class="p3 ratecontent__txt ratecontent-txt dark333">Мы предлагаем простые и прозрачные условия оплаты, которые напрямую зависят от технического состояния веб-площадки и степени её развитости на момент начала работ. Это может быть абонентская или почасовая оплата.</p>
                             <h2 class="blue-caption ratecontent-cost dark333">15590 руб.</h2>
                         </div>
-                        <div class="btn rate__btn rate-btn expand">
-                            <div class="expand__txt">Заказать</div>
-                        </div>
-                    </div><!-- end of rate1 -->
+                    </div>
+                    <div class="btn rate__btn rate-btn expand">
+                        <div class="expand__txt">Заказать</div>
+                    </div>
+                </div><!-- end of rate1 -->
                     
-                    <div class="rate scr5-rate">
-                        <div class="ratecontent rate-ratecontent">
+                <div class="rate scr5-rate">
+                    <div class="ratecontent rate-ratecontent">
+                        <svg class="plus-icon" viewBox="0 0 230 360"><use xlink:href="#plusplus"></svg>
+                        <div class="ratecontent__back ratecontent-back">
                             <h2 class="blue-caption ratecontent-caption">Рост бизнеса</h2>
                             <h3 class="ratecontent__context">&nbsp;</h3>
-                            <h3 class="h3 ratecontent__subhead dark333">Что входит:</h3>
-                            <p class="p3 ratecontent__txt dark333">Мы предлагаем простые и прозрачные условия оплаты, которые напрямую зависят от технического состояния веб-площадки и степени её развитости на момент начала работ. Это может быть абонентская или почасовая оплата.</p>
+                            <h3 class="h3 ratecontent__subhead ratecontent-subhead dark333">Что входит:</h3>
+                            <p class="p3 ratecontent__txt ratecontent-txt dark333">Мы предлагаем простые и прозрачные условия оплаты, которые напрямую зависят от технического состояния веб-площадки и степени её развитости на момент начала работ. Это может быть абонентская или почасовая оплата.</p>
                             <h2 class="blue-caption ratecontent-cost dark333">15590 руб.</h2>
                         </div>
-                        <div class="btn rate__btn rate-btn expand">
-                            <div class="expand__txt">Заказать</div>
-                        </div>
-                    </div><!-- end of rate2 -->
+                    </div>
+                    <div class="btn rate__btn rate-btn expand">
+                        <div class="expand__txt">Заказать</div>
+                    </div>
+                </div><!-- end of rate2 -->
                     
-                    <div class="rate scr5-rate">
-                        <div class="ratecontent rate-ratecontent">
+                <div class="rate scr5-rate">
+                    <div class="ratecontent rate-ratecontent">
+                        <svg class="plus-icon" viewBox="0 0 230 360"><use xlink:href="#plusplus"></svg>
+                        <div class="ratecontent__back ratecontent-back">
                             <h2 class="blue-caption ratecontent-caption">Лидер рынка</h2>
                             <h3 class="ratecontent__context">(популярное)</h3>
-                            <h3 class="h3 ratecontent__subhead dark333">Что входит:</h3>
-                            <p class="p3 ratecontent__txt dark333">Мы предлагаем простые и прозрачные условия оплаты, которые напрямую зависят от технического состояния веб-площадки и степени её развитости на момент начала работ. Это может быть абонентская или почасовая оплата.</p>
+                            <h3 class="h3 ratecontent__subhead ratecontent-subhead dark333">Что входит:</h3>
+                            <p class="p3 ratecontent__txt ratecontent-txt dark333">Мы предлагаем простые и прозрачные условия оплаты, которые напрямую зависят от технического состояния веб-площадки и степени её развитости на момент начала работ. Это может быть абонентская или почасовая оплата.</p>
                             <h2 class="blue-caption ratecontent-cost dark333">15590 руб.</h2>
                         </div>
-                        <div class="btn rate__btn rate-btn expand">
-                            <div class="expand__txt">Заказать</div>
-                        </div>
-                    </div><!-- end of rate3 -->
+                    </div>
+                    <div class="btn rate__btn rate-btn expand">
+                        <div class="expand__txt">Заказать</div>
+                    </div>
+                </div><!-- end of rate3 -->
                     
-                    <div class="rate scr5-rate">
-                        <div class="ratecontent rate-ratecontent">
+                <div class="rate scr5-rate">
+                    <div class="ratecontent rate-ratecontent">
+                        <svg class="plus-icon" viewBox="0 0 230 360"><use xlink:href="#plusplus"></svg>
+                        <div class="ratecontent__back ratecontent-back">
                             <h2 class="blue-caption ratecontent-caption">Топ</h2>
                             <h3 class="ratecontent__context">&nbsp;</h3>
-                            <h3 class="h3 ratecontent__subhead dark333">Что входит:</h3>
-                            <p class="p3 ratecontent__txt dark333">Мы предлагаем простые и прозрачные условия оплаты, которые напрямую зависят от технического состояния веб-площадки и степени её развитости на момент начала работ. Это может быть абонентская или почасовая оплата.</p>
+                            <h3 class="h3 ratecontent__subhead ratecontent-subhead dark333">Что входит:</h3>
+                            <p class="p3 ratecontent__txt ratecontent-txt dark333">Мы предлагаем простые и прозрачные условия оплаты, которые напрямую зависят от технического состояния веб-площадки и степени её развитости на момент начала работ. Это может быть абонентская или почасовая оплата.</p>
                             <h2 class="blue-caption ratecontent-cost dark333">15590 руб.</h2>
                         </div>
-                        <div class="btn rate__btn rate-btn expand">
-                            <div class="expand__txt">Заказать</div>
-                        </div>
-                    </div><!-- end of rate4 -->
+                    </div>
+                    <div class="btn rate__btn rate-btn expand">
+                        <div class="expand__txt">Заказать</div>
+                    </div>
+                </div><!-- end of rate4 -->
                     <div class="circles-row scr5a-circles-row">
                         <div class="circle circles-row-circle circle_active" onclick="viewRate(1);" ></div>
                         <div class="circle circles-row-circle" onclick="viewRate(2);" ></div>
                         <div class="circle circles-row-circle" onclick="viewRate(3);" ></div>
                         <div class="circle circles-row-circle" onclick="viewRate(4);" ></div>
                     </div>
-                </div><!-- end of inner -->
-            </div><!-- end of indoor -->
-        </div><!-- end of scr5-abonent -->
+            </div><!-- end of inner -->
+
+        </div><!-- end of scr5__abonent -->
         
         <div class="scr6-abonent scr-back-white"><!--  Задник белый -->
-            <div class="indoor scr-back-right scr6-abonent-indoor scr-back-blue"><!-- Передник синий - вправо -->
+            <div class="scr-back-right scr6-abonent-indoor scr-back-blue"><!-- Передник синий - вправо -->
                 <div class="inner scr6-abonent-inner">
                     <h2 class="scrhead scr6-abonent-scrhead">Преимущества схемы оплаты <span class="wrap_770"><br></span>&laquo;SEO-продви<span class="wrap_320">-<br></span>жение с абонентской платой&raquo;</h2>
                     <div class="advantage-card scr6-abonent-card">
@@ -533,7 +554,7 @@
         </div><!-- end of scr5-hours -->
         
         <div class="scr6-hours scr-back-white"><!--  Задник белый -->
-            <div class="indoor scr-back-right scr6-hours-indoor scr-back-blue"><!-- Передник синий - вправо -->
+            <div class="scr-back-right scr6-hours-indoor scr-back-blue"><!-- Передник синий - вправо -->
                 <div class="inner scr6-hours-inner">
                     <h2 class="scrhead scr6-hours-scrhead">Преимущества схемы оплаты <span class="wrap_770"><br></span>&laquo;SEO-продви<span class="wrap_320">-<br></span>жение c оплатой по часам&raquo;</h2>
                     <div class="advantage-card scr6-hours-card">
@@ -560,43 +581,44 @@
         </div><!-- end of scr6-hours -->
         
         <div class="scr7 scr-back-white">
-            <div class="indoor scr-back-right scr7-indoor scr-back-white">
+            <div class="scr-back-right scr7-indoor scr-back-white">
                 <div class="inner scr7-inner">
                     <h2 class="h2 scrhead scr7-scrhead dark333">Что влияет на <span class="wrap_320"><br></span>стоимость работ?</h2>
                     <div class="pager scr7-pager"><span class="pager__arrleft_black pager-arr" onclick="changePager('.scr7',-1);"></span><span class="pager__number">1</span>/<span class="pager__bottom">5</span><span class="pager__arrright_black pager-arr" onclick="changePager('.scr7',1);"></span></div>
                 </div>
                 <div class="slider scr7-slider">
+                    <div class="slider__container scr7-slider-container">
+                        <div class="slide scr7-slide">
+                            <div class="slide__bignumber num1 big-digit">1</div>
+                            <div class="h3 slide__head dark333">Конкурентоспособность тематики</div>
+                            <p class="p3 slide__txt dark666">Многие ниши переполнены предложениями, поэтому нужно приложить немало усилий, чтобы выделить их из толпы. У нас есть опыт работы с большинством тематик, и мы знаем, как грамотно составить стратегию продвижения. Перед SEO оптимизацией и поисковым продвижением сайта мы проводим его анализ и определяем конкурентоспособность.</p>
+                        </div><!-- end of slide 1 -->
                     
-                    <div class="slide scr7-slide">
-                        <div class="slide__bignumber">1</div>
-                        <div class="h3 slide__head dark333">Конкурентоспособность тематики</div>
-                        <p class="p3 slide__txt dark666">Многие ниши переполнены предложениями, поэтому нужно приложить немало усилий, чтобы выделить их из толпы. У нас есть опыт работы с большинством тематик, и мы знаем, как грамотно составить стратегию продвижения. Перед SEO оптимизацией и поисковым продвижением сайта мы проводим его анализ и определяем конкурентоспособность.</p>
-                    </div><!-- end of slide 1 -->
+                        <div class="slide scr7-slide">
+                            <div class="slide__bignumber num2 big-digit">2</div>
+                            <div class="h3 slide__head dark333">Возраст сайта</div>
+                            <p class="p3 slide__txt dark666">Важный показатель, влияющий на степень доверия поисковых систем. Чем старше сайт, тем больше ему доверяют и тем легче пробиться в ТОП 10.</p>
+                        </div><!-- end of slide 2 -->
                     
-                    <div class="slide scr7-slide">
-                        <div class="slide__bignumber">2</div>
-                        <div class="h3 slide__head dark333">Возраст сайта</div>
-                        <p class="p3 slide__txt dark666">Важный показатель, влияющий на степень доверия поисковых систем. Чем старше сайт, тем больше ему доверяют и тем легче пробиться в ТОП 10.</p>
-                    </div><!-- end of slide 2 -->
+                        <div class="slide scr7-slide">
+                            <div class="slide__bignumber num3 big-digit">3</div>
+                            <div class="h3 slide__head dark333">Конкурентоспособность тематики</div>
+                            <p class="p3 slide__txt dark666">Многие ниши переполнены предложениями, поэтому нужно приложить немало усилий, чтобы выделить их из толпы. У нас есть опыт работы с большинством тематик, и мы знаем, как грамотно составить стратегию продвижения. Перед SEO оптимизацией и поисковым продвижением сайта мы проводим его анализ и определяем конкурентоспособность.</p>
+                        </div><!-- end of slide 3 -->
                     
-                    <div class="slide scr7-slide">
-                        <div class="slide__bignumber">3</div>
-                        <div class="h3 slide__head dark333">Конкурентоспособность тематики</div>
-                        <p class="p3 slide__txt dark666">Многие ниши переполнены предложениями, поэтому нужно приложить немало усилий, чтобы выделить их из толпы. У нас есть опыт работы с большинством тематик, и мы знаем, как грамотно составить стратегию продвижения. Перед SEO оптимизацией и поисковым продвижением сайта мы проводим его анализ и определяем конкурентоспособность.</p>
-                    </div><!-- end of slide 3 -->
+                        <div class="slide scr7-slide">
+                            <div class="slide__bignumber num4 big-digit">4</div>
+                            <div class="h3 slide__head dark333">Возраст сайта</div>
+                            <p class="p3 slide__txt dark666">Важный показатель, влияющий на степень доверия поисковых систем. Чем старше сайт, тем больше ему доверяют и тем легче пробиться в ТОП 10.</p>
+                        </div><!-- end of slide 4 -->
                     
-                    <div class="slide scr7-slide">
-                        <div class="slide__bignumber">4</div>
-                        <div class="h3 slide__head dark333">Возраст сайта</div>
-                        <p class="p3 slide__txt dark666">Важный показатель, влияющий на степень доверия поисковых систем. Чем старше сайт, тем больше ему доверяют и тем легче пробиться в ТОП 10.</p>
-                    </div><!-- end of slide 4 -->
+                        <div class="slide scr7-slide">
+                            <div class="slide__bignumber num5 big-digit">5</div>
+                            <div class="h3 slide__head dark333">Возраст сайта</div>
+                            <p class="p3 slide__txt dark666">Важный показатель, влияющий на степень доверия поисковых систем. Чем старше сайт, тем больше ему доверяют и тем легче пробиться в ТОП 10.</p>
+                        </div><!-- end of slide 5 -->
                     
-                    <div class="slide scr7-slide">
-                        <div class="slide__bignumber">5</div>
-                        <div class="h3 slide__head dark333">Возраст сайта</div>
-                        <p class="p3 slide__txt dark666">Важный показатель, влияющий на степень доверия поисковых систем. Чем старше сайт, тем больше ему доверяют и тем легче пробиться в ТОП 10.</p>
-                    </div><!-- end of slide 5 -->
-                    
+                    </div><!-- end of container -->
                 </div><!-- end of slider -->
                 
                 <div class="slider-bar scr7-sliderbar">

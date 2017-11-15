@@ -17,21 +17,21 @@ function paytype(type)
 {
     if (type == '2') 
     {// Переключение на вкладку почасовой оплаты
-        $('.scr5-abonent').css('display','none');
+        $('.scr5__abonent').css('display','none');
         $('.scr6-abonent').css('display','none');
         $('.scr5-hours').css('display','block');
         $('.scr6-hours').css('display','block');
         $('.scr5-payment').removeClass('payment_active');
-        $('.scr5-payments .scr5-payment:nth-child(3)').addClass('payment_active');
+        $('.scr5-payments .scr5-payment:nth-child(2)').addClass('payment_active');
     }else 
     {
             //Переключение на вкладку абонентской оплаты
         $('.scr5-hours').css('display','none');
         $('.scr6-hours').css('display','none');
-        $('.scr5-abonent').css('display','block');
+        $('.scr5__abonent').css('display','block');
         $('.scr6-abonent').css('display','block');
         $('.scr5-payment').removeClass('payment_active');
-        $('.scr5-payments .scr5-payment:nth-child(2)').addClass('payment_active');
+        $('.scr5-payments .scr5-payment:nth-child(1)').addClass('payment_active');
     }
 }
 
@@ -46,37 +46,18 @@ function setPage7(el,scrClass)  // Передача значения из пол
     setPage(pageNum,scrClass);
 }
     
-
-function setPage(setPageTo,scrClass)  // Перемотка на сладер с заданным номером в заданном экране
+function setPage(setPageTo,scrClass)  // Перемотка на слайдер с заданным номером в заданном экране
 {
     var slideCount = parseInt($(scrClass + ' .pager__bottom').text());// количество слайдов в экране
     var stepSlide = scrResol[scrClass][getWidthWindow()];//шаг между слайдами в указанном экране при текущей ширине
-    var currentIndex = parseInt($(scrClass + ' .pager__number').text());// номер текущего слайда
-    
-    // Задаём массив начальных положений слайдов
-    var positions = [];
-    for (var i = 1; i <= slideCount ; i++)
-    {
-        positions[i-1] = stepSlide * (i - currentIndex);
-    }
-    
-
-    // Двигаем слайды от начального положения к заданному за сколько-то шагов (~55)
-    var step160 = (currentIndex - setPageTo) * stepSlide;
-    positions['step160'] = step160;
-    positions['slideCount'] = slideCount;
-    positions['j'] = 0;
-    positions['scrClass'] = scrClass;
-    
-    //Запускаем движение по таймеру
-    moveSlide(positions);
-    
+    var posContainer = -stepSlide * (setPageTo - 1);// вычисляем положение контейнера
+    $(scrClass + '-slider-container').css('left',posContainer + 'px');// двигаем контейнер вместе со слайдами
     $(scrClass + ' .pager__number').html(setPageTo);//Меняем номер страницы в Pager
 
-    if (parseInt(scrClass.substring(4,)) == 7) 
+    if (parseInt(scrClass.substring(4,5)) == 7) 
         $(scrClass + ' .slider__bar').val(setPageTo);//Если экран №7 - двигаем бегунок
 
-}    
+}  
 
 function moveSlide(pos)//непосредственно движение слайдов за один шаг
 {
@@ -90,28 +71,7 @@ function moveSlide(pos)//непосредственно движение сла�
     }
 
 }
-
-function moveSlide1(pos)//непосредственно движение слайдов шажками по 20мс
-{
-    var step = 1;
-    var slideBase = pos['scrClass'] + '-slider .slide:nth-child(';//Заготовка для названия слайдов в данном экране
-    if ((pos['j'] > 8)&&(pos['j'] < 152)) 
-        step = 4;
-    var stepJ = Math.floor(pos['step160'] * pos['j'] / 160);// находим смещение для текущего j
-    pos['j'] += step;
-    for (var i = 1; i <= pos['slideCount'] ; i++) 
-    {
-        var position = pos[i-1] + stepJ;    //Вычисляем положение каждого слайда для текущего j
-        $(slideBase + i + ')').css('left', position + 'px'); // Двигаем слайд
-    }
-    // Если это ещё не конец - перезапускаемся через таймер
-    if (pos['j'] < 161)
-    {
-        clearTimeout(timOut);// Вдруг страница уже движется - сбрасываем работающий таймер
-        timOut = setTimeout(moveSlide,20,pos);//Запускаем движение с шагом 20мс
-    }
-}
-    
+  
 function changePager(scrClass,directChange) // Обработка нажатия Pager
 {
     var newIndex = 0;
@@ -131,34 +91,39 @@ function expandTextboxBtnClick()// разворачивание полусвёр
 {
     var collapseStatus = $('.scr1-expand-textbox').data('toggle');
     var scrWidth = getWidthWindow();
-    var txtOpen = '53rem';
-    var txtClose = '46.5rem';
+    var txtOpen = '1110px';
+    var txtClose = '760px';
     if (scrWidth < 770)
     {
-        txtOpen = '91rem';
-        txtClose = '60rem';
+        txtOpen = '1080px';
+        txtClose = '60em';
     }
     else if (scrWidth < 1024)
     {
-        txtOpen = '70rem';
-        txtClose = '53rem';
+        txtOpen = '1375px';
+        txtClose = '1030px';
+    }
+    else if (scrWidth < 1366)
+    {
+        txtOpen = '920px';
+        txtClose = '600px';
     }
 
     if (collapseStatus)
     {
         $('.scr1-expand-textbox').data('toggle','');
-        $('.expand-textbox').removeClass('expand-textbox__collapsed');
+        $('.expand-textbox').removeClass('expand-textbox_collapsed');
         $('.expand-textbox__btn .expand__txt').html('Свернуть');
         $('.scr1').css('height',txtOpen);
-        $('.page-scr2').css('top','-9.5em');
+        //$('.page-scr2').css('top','18em');
     }
     else 
     { 
         $('.scr1-expand-textbox').data('toggle','collapsed');
-        $('.expand-textbox').addClass('expand-textbox__collapsed');
+        $('.expand-textbox').addClass('expand-textbox_collapsed');
         $('.expand-textbox__btn .expand__txt').html('Развернуть');
         $('.scr1').css('height',txtClose);
-        $('.page-scr2').css('top','-16.5em');
+       // $('.page-scr2').css('top','18em');
     }
 }
 
@@ -211,9 +176,7 @@ function moveScroll8(el)// Перемещение план-графика в э�
 function viewRate(numRate)// Просмотр абонентских тарифов (экран 5) на смартфонах
 {
     var numberRate = parseInt(numRate);
-    for (var i = 1; i < 5; i++){
-        $('.scr5a-inner .rate:nth-child(' + i + ')').css('margin-left',((i - numberRate)*16.4) + 'em');
-    }
+    $('.scr5a-inner .rate:nth-child(1)').css('margin-left',((1 - numberRate)*16.4) + 'em');
     $('.circles-row-circle').removeClass('circle_active');
     $('.scr5a-circles-row .circle:nth-child(' + numRate + ')').addClass('circle_active');
 }
