@@ -591,7 +591,7 @@
                         <div class="slide scr7-slide">
                             <div class="slide__bignumber num1 big-digit">1</div>
                             <div class="h3 slide__head dark333">Конкурентоспособность тематики</div>
-                            <p class="p3 slide__txt dark666">Многие ниши переполнены предложениями, поэтому нужно приложить немало усилий, чтобы выделить их из толпы. У нас есть опыт работы с большинством тематик, и мы знаем, как грамотно составить стратегию продвижения. Перед SEO оптимизацией и поисковым продвижением сайта мы проводим его анализ и определяем конкурентоспособность.</p>
+                            <p class="p3 slide__txt dark666">Многие ниши перегружены предложениями, поэтому нужно приложить немало усилий, чтобы выделить их из толпы. У нас есть опыт работы с большинством тематик, и мы знаем, как грамотно составить стратегию продвижения. Перед SEO оптимизацией и поисковым продвижением сайта мы проводим его анализ и определяем конкурентоспособность.</p>
                         </div><!-- end of slide 1 -->
                     
                         <div class="slide scr7-slide">
@@ -694,11 +694,11 @@
                     <h3 class="h3 scr9-subheader-form dark333">Ваши данные:</h3>
                     <form name="userdata" class="form scr9-form" action="#" method="get">
                         <textarea class="form__txt" placeholder="Опишите проблему"></textarea>
-                        <div class="form__divinput scr9-divinput form__divinput_active">
-                            <input type="text" name="site" value="" placeholder="www.testcite.ru" >
+                        <div class="form__divinput scr9-divinput draw">
+                            <input type="text" name="citename" placeholder="www.testcite.ru" value=""  onfocus="focusInput(this);" onblur="blurInput(this);" />
                         </div>
-                        <div class="form__divinput scr9-divinput">
-                            <input type="text" name="phone" value="" placeholder="Ваш телефон" onchange="checkPhone();" >
+                        <div class="form__divinput scr9-divinput draw">
+                            <input type="text" name="phone" placeholder="Ваш телефон" value=""  onchange="checkPhone();" onfocus="focusInput(this);" onblur="blurInput(this);" />
                         </div>
                         <div class="btn rate__btn scr9-form-btn expand" >
                             <div class="expand__txt">Заказать</div>
@@ -713,12 +713,14 @@
                 <h2 class="scrhead scr10-scrhead">Наша команда</h2>
                 <div class="pager scr10-pager"><span class="pager__arrleft pager-arr" onclick="changePager('.scr10',-1);"></span><span class="pager__number">1</span>/<span class="pager__bottom">6</span><span class="pager__arrright pager-arr" onclick="changePager('.scr10',1);"></span></div>
                 <div class="slider scr10-slider">
-                    <div class="slide scr10-slide scr10-slide_active"></div>
-                    <div class="slide scr10-slide"></div>
-                    <div class="slide scr10-slide"></div>
-                    <div class="slide scr10-slide"></div>
-                    <div class="slide scr10-slide"></div>
-                    <div class="slide scr10-slide"></div>
+                    <div class="slider__container scr10-slider-container">
+                        <div class="slide scr10-slide scr10-slide_active"></div>
+                        <div class="slide scr10-slide"></div>
+                        <div class="slide scr10-slide"></div>
+                        <div class="slide scr10-slide"></div>
+                        <div class="slide scr10-slide"></div>
+                        <div class="slide scr10-slide"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -741,45 +743,59 @@
                 <h2 class="scrhead scr11-scrhead">Остались вопросы?</h2>
                 <div class="lost-quest scr11-lost-quest quest_active" onclick="showAnswer(this);">
                     <div class="quest__img"><div class="quest-quest"></div></div>
-                    <h3 class="h3 quest__head">От чего зависит стоимость?</h3>
-                    <div class="quest__arr"></div>
-                    <p class="p3 lost-quest__answer">Стоимость зависит от конкуренции в вашей нише, от количества продвигаемых запросов, от допол<span class="wrap_320">-<br></span>нительных запросов по работе над сайтом. Поэто<span class="wrap_320">-<br></span>му, чтобы сообщить Вам точную стоимость мы вынуждены ознакомиться с сайтом.</p>
+                    <div class="lost-quest__content">
+                        <h3 class="h3 quest__head">От чего зависит стоимость?</h3>
+                        <div class="quest__arr"></div>
+                        <p class="p3 lost-quest__answer">Стоимость зависит от конкуренции в вашей нише, от количества продвигаемых запросов, от допол<span class="wrap_320">-<br></span>нительных запросов по работе над сайтом. Поэто<span class="wrap_320">-<br></span>му, чтобы сообщить Вам точную стоимость мы вынуждены ознакомиться с сайтом.</p>
+                    </div>
                 </div>
                 <div class="lost-quest scr11-lost-quest" onclick="showAnswer(this);">
                     <div class="quest__img"><div class="quest-quest"></div></div>
-                    <h3 class="h3 quest__head">Как я буду получать отчет?</h3>
-                    <div class="quest__arr"></div>
-                    <p class="p3 lost-quest__answer">Способ получения отчёта зависит от конкуренции в вашей нише, от количества продвигаемых запросов, от дополнительных запросов по работе над сайтом. Поэтому, чтобы сообщить Вам точный способ получения отчёта мы вынуждены ознакомиться с сайтом.</p>
+                    <div class="lost-quest__content">
+                        <h3 class="h3 quest__head">Как я буду получать отчет?</h3>
+                        <div class="quest__arr"></div>
+                        <p class="p3 lost-quest__answer">Способ получения отчёта зависит от конкуренции в вашей нише, от количества продвигаемых запросов, от дополнительных запросов по работе над сайтом. Поэтому, чтобы сообщить Вам точный способ получения отчёта мы вынуждены ознакомиться с сайтом.</p>
+                    </div>
                 </div>
                 <div class="lost-quest scr11-lost-quest" onclick="showAnswer(this);">
                     <div class="quest__img"><div class="quest-quest"></div></div>
-                    <h3 class="h3 quest__head">Могу я заказать SEO аудит на этапе разработки сайта?</h3>
-                    <div class="quest__arr"></div>
-                    <p class="p3 lost-quest__answer">Заказ SEO-аудита на сайте зависит от конкуренции в вашей нише, от количества продвигаемых запросов, от дополнительных запросов по работе над сайтом. Поэтому, чтобы сообщить Вам возможность заказа SEO-аудита на сайте мы вынуждены ознакомиться с сайтом.</p>
+                    <div class="lost-quest__content">    
+                        <h3 class="h3 quest__head">Могу я заказать SEO аудит на этапе разработки сайта?</h3>
+                        <div class="quest__arr"></div>
+                        <p class="p3 lost-quest__answer">Заказ SEO-аудита на сайте зависит от конкуренции в вашей нише, от количества продвигаемых запросов, от дополнительных запросов по работе над сайтом. Поэтому, чтобы сообщить Вам возможность заказа SEO-аудита на сайте мы вынуждены ознакомиться с сайтом.</p>
+                    </div>
                 </div>
                 <div class="lost-quest scr11-lost-quest" onclick="showAnswer(this);">
                     <div class="quest__img"><div class="quest-quest"></div></div>
-                    <h3 class="h3 quest__head">Каков срок реализации SEO услуг?</h3>
-                    <div class="quest__arr"></div>
-                    <p class="p3 lost-quest__answer">Срок реализации SEO услуг зависит от конкуренции в вашей нише, от количества продвигаемых запросов, от дополнительных запросов по работе над сайтом. Поэтому, чтобы сообщить Вам точный срок реализации SEO услуг мы вынуждены ознакомиться с сайтом.</p>
+                    <div class="lost-quest__content">    
+                        <h3 class="h3 quest__head">Каков срок реализации SEO услуг?</h3>
+                        <div class="quest__arr"></div>
+                        <p class="p3 lost-quest__answer">Срок реализации SEO услуг зависит от конкуренции в вашей нише, от количества продвигаемых запросов, от дополнительных запросов по работе над сайтом. Поэтому, чтобы сообщить Вам точный срок реализации SEO услуг мы вынуждены ознакомиться с сайтом.</p>
+                    </div>
                 </div>
                 <div class="lost-quest scr11-lost-quest" onclick="showAnswer(this);">
                     <div class="quest__img"><div class="quest-quest"></div></div>
-                    <h3 class="h3 quest__head">Существует ли более быстрый способ прироста трафика на сайт?</h3>
-                    <div class="quest__arr"></div>
-                    <p class="p3 lost-quest__answer">Быстрота прироста трафика на сайт зависит от конкуренции в вашей нише, от количества продвигаемых запросов, от дополнительных запросов по работе над сайтом. Поэтому, чтобы сообщить Вам существование более быстрого способа прироста трафика на сайт мы вынуждены ознакомиться с сайтом.</p>
+                    <div class="lost-quest__content">    
+                        <h3 class="h3 quest__head">Существует ли более быстрый способ прироста трафика на сайт?</h3>
+                        <div class="quest__arr"></div>
+                        <p class="p3 lost-quest__answer">Быстрота прироста трафика на сайт зависит от конкуренции в вашей нише, от количества продвигаемых запросов, от дополнительных запросов по работе над сайтом. Поэтому, чтобы сообщить Вам существование более быстрого способа прироста трафика на сайт мы вынуждены ознакомиться с сайтом.</p>
+                    </div>
                 </div>
                 <div class="lost-quest scr11-lost-quest" onclick="showAnswer(this);">
                     <div class="quest__img"><div class="quest-quest"></div></div>
-                    <h3 class="h3 quest__head">Почему SEO UX это лучший вариант продвижения?</h3>
-                    <div class="quest__arr"></div>
-                    <p class="p3 lost-quest__answer">Варианты продвижения зависят от конкуренции в вашей нише, от количества продвигаемых запросов, от дополнительных запросов по работе над сайтом. Поэтому, чтобы сообщить Вам почему SEO UX это лучший вариант продвижения мы вынуждены ознакомиться с сайтом.</p>
+                    <div class="lost-quest__content">
+                        <h3 class="h3 quest__head">Почему SEO UX это лучший вариант продвижения?</h3>
+                        <div class="quest__arr"></div>
+                        <p class="p3 lost-quest__answer">Варианты продвижения зависят от конкуренции в вашей нише, от количества продвигаемых запросов, от дополнительных запросов по работе над сайтом. Поэтому, чтобы сообщить Вам почему SEO UX это лучший вариант продвижения мы вынуждены ознакомиться с сайтом.</p>
+                    </div>
                 </div>
                 <div class="lost-quest scr11-lost-quest" onclick="showAnswer(this);">
                     <div class="quest__img"><div class="quest-quest"></div></div>
-                    <h3 class="h3 quest__head">Почему мы реализуем план 6 месяцев?</h3>
-                    <div class="quest__arr"></div>
-                    <p class="p3 lost-quest__answer">Сроки реализации зависят от конкуренции в вашей нише, от количества продвигаемых запросов, от дополнительных запросов по работе над сайтом. Поэтому, чтобы сообщить Вам почему мы реализуем план 6 месяце мы вынуждены ознакомиться с сайтом.</p>
+                    <div class="lost-quest__content">    
+                        <h3 class="h3 quest__head">Почему мы реализуем план 6 месяцев?</h3>
+                        <div class="quest__arr"></div>
+                        <p class="p3 lost-quest__answer">Сроки реализации зависят от конкуренции в вашей нише, от количества продвигаемых запросов, от дополнительных запросов по работе над сайтом. Поэтому, чтобы сообщить Вам почему мы реализуем план 6 месяце мы вынуждены ознакомиться с сайтом.</p>
+                    </div>
                 </div>
                 
                 <div class="blue-caption other-quest white">Есть другой вопрос? Звоните 8 (800)-555-35-35</div>

@@ -1,7 +1,7 @@
 var timOut;
 var scrNums = ['.scr2','.scr3','.scr7','.scr8','.scr10'];//Названия классов экранов, имеющих слайдеры
 var scrWid = [1366,1024,770,320];// Брейкпоинтсы экранов
-var scrSummary = [450,335,450,450,1070,800,800,800,740,550,660,660,40,40,65,75,320,240,320,278];
+var scrSummary = [450,335,450,450,1070,800,800,800,740,550,660,660,40,40,65,75,150,113,225,285];
 var scrResol = [];
 var k = 0;
 for (var i = 0 ; i < scrNums.length ; i++)//Формирование рабочего массива с набором данных под разные экраны
@@ -91,11 +91,11 @@ function expandTextboxBtnClick()// разворачивание полусвёр
 {
     var collapseStatus = $('.scr1-expand-textbox').data('toggle');
     var scrWidth = getWidthWindow();
-    var txtOpen = '1110px';
+    var txtOpen = '1120px';
     var txtClose = '760px';
     if (scrWidth < 770)
     {
-        txtOpen = '1080px';
+        txtOpen = '1180px';
         txtClose = '60em';
     }
     else if (scrWidth < 1024)
@@ -161,6 +161,12 @@ function setInput(el,maxVal,itemIndex)//Ввод значений непосре
 
 function showAnswer(el)// Разворачивание ответов в экране 11
 {
+    if ($(el).hasClass('quest_active')) 
+    {
+        $('.lost-quest').removeClass('quest_active');
+        return;
+        
+    }
     $('.lost-quest').removeClass('quest_active');
     $(el).addClass('quest_active');
 }
@@ -196,4 +202,14 @@ function checkPhone()// Первичная валидность введённо
 		el.removeClass('red');
 	}
     
+}
+
+function focusInput(el)// Установка обёрток input в form__divinput_active для обводки рамки при получении фокуса
+{
+    $(el).parent().addClass('form__divinput_active');
+}
+
+function blurInput(el)// Снятие form__divinput_active при потере фокуса
+{
+    $(el).parent().removeClass('form__divinput_active');
 }
