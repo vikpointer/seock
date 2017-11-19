@@ -91,7 +91,7 @@ function expandTextboxBtnClick()// разворачивание полусвёр
 {
     var collapseStatus = $('.scr1-expand-textbox').data('toggle');
     var scrWidth = getWidthWindow();
-    var txtOpen = '1120px';
+    var txtOpen = '1150px';
     var txtClose = '760px';
     if (scrWidth < 770)
     {
@@ -106,7 +106,7 @@ function expandTextboxBtnClick()// разворачивание полусвёр
     else if (scrWidth < 1366)
     {
         txtOpen = '920px';
-        txtClose = '600px';
+        txtClose = '620px';
     }
 
     if (collapseStatus)

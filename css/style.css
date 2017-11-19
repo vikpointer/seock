@@ -10,6 +10,7 @@ input {
     padding:0;
     margin:0;
 }
+
 .page-scr1 {
 }
 .page-scr2 {
@@ -139,11 +140,11 @@ input {
 }
 .scr-back-blue {
     background-color:#0f69d4;
-    box-shadow: -48px 6px 60px 0px rgba(17, 122, 247, 0.4);
+    box-shadow: -48px 6px 40px 0px rgba(17, 122, 247, 0.4);
     color:#fff;
 }
 .scr-back-right .scr-back-blue, .scr-back-right.scr-back-blue {
-    box-shadow: 48px 6px 60px 0px rgba(17, 122, 247, 0.4);
+    box-shadow: 48px 6px 40px 0px rgba(17, 122, 247, 0.4);
 }
 
 /*-- Scrhead --*/
@@ -195,8 +196,9 @@ input {
     color:#a8ccf7;
     font-family:latoregular;
     font-size:0.88em;
-    line-height:1.75;
+    line-height:1.7;
 }
+
 .p3 p{
     margin:0.1em 0;
 }
@@ -287,9 +289,9 @@ input {
     top: -7.15em;
 }
 .scr1__ux {
-    font-family: akrobatblack;
-    font-size: 5.1em;
-    text-transform: uppercase;
+    font-family:akrobatblack;
+    font-size:5.1em;
+    text-transform:uppercase;
     width:10%;
 }
 .scr1__grid{
@@ -811,7 +813,7 @@ input {
 
 /*--------------- Scr 5 ---------------------------*/
 .scr5 {
-    height:390px;
+    height:391px;
 }
 .scr5-inner{
     padding: 6.5em 0 0 7em;
@@ -859,7 +861,7 @@ input {
     cursor:url("../img/hand2.png"),pointer;
     display: inline-block;
     padding-bottom: 0.95em;
-    width: 7.2em;
+    width: 7.6em;
 }
 .payment_active, .payment:hover, .payment:focus {
     border-bottom:3px solid #06f;
@@ -992,15 +994,20 @@ input {
     float: left;
 }
 .advantage-card-head{
-    margin:0 0 0 4.7em;
+    margin:0 0 0 3.7em;
 }
 .advantage-card-content{
-    margin:1em 0 0 4.7em;
+    margin:1em 0 0 5.2em;
 }
 .scr6-abonent-inner .advantage-card:nth-child(4){ height:7.2em; }
-.scr6-abonent-inner .advantage-card:nth-child(5){ margin-left:31.2em; position:relative; top:-32.6em;}
-.scr6-abonent-inner .advantage-card:nth-child(6){ margin-left:31.2em; position:relative; top:-32.6em;}
+.scr6-abonent-inner .advantage-card:nth-child(5){ margin-left:31.2em; position:relative; top:-32.9em;}
+.scr6-abonent-inner .advantage-card:nth-child(6){ margin-left:31.2em; position:relative; top:-32.9em;}
 
+
+@-moz-document url-prefix() {
+.scr6-abonent-inner .advantage-card:nth-child(5){ margin-left:31.2em; position:relative; top:-33.5em;}
+.scr6-abonent-inner .advantage-card:nth-child(6){ margin-left:31.2em; position:relative; top:-33.5em;}
+}
 /* ------------------- Scr5 - Hours -------------------------*/
 .scr5-hours{
     height:829px;
@@ -1044,6 +1051,7 @@ input {
 
 .scr5h-inner  .hours-item:nth-child(5) .hours-item-divinput{   margin-left:0.4em; }
 .scr5h-inner  .hours-item:nth-child(5) .hours-item__divinput input{  width:3.6em; }
+.scr5h-inner  .hours-item:nth-child(5) .hours-item__head{  width:9.3em; }
 
 
 .scr5h-inner  .hours-item:nth-child(3) .range-bar{ 
@@ -1062,7 +1070,7 @@ input {
 .hours-item__head{
     color:#333;
     display: inline-block;
-    width:9.5em;
+    width:10em;
 }
 .hours-item-head{
     margin:0;
@@ -1074,7 +1082,7 @@ input {
     padding:0.6em 0.3em 0.6em 0.3em;
 }
 .hours-item-divinput{
-    margin-left:1.6em;
+    margin-left:0.8em;
 }
 .hours-item__divinput input{
     border:none;
@@ -1094,6 +1102,22 @@ input {
 }
 .hours-item__range input::-webkit-slider-thumb {
     -webkit-appearance: none;
+    background-color: #06f;
+    border-radius:2px;
+    cursor:url("../img/hand2.png"),pointer;
+    height: 15px;
+    width: 15px;
+}
+.hours-item__range input::-moz-range-thumb {
+    -moz-appearance: none;
+    background-color: #06f;
+    border-radius:2px;
+    cursor:url("../img/hand2.png"),pointer;
+    height: 15px;
+    width: 15px;
+}
+.hours-item__range input::-ms-thumb {
+    -ms-appearance: none;
     background-color: #06f;
     border-radius:2px;
     cursor:url("../img/hand2.png"),pointer;
@@ -1238,6 +1262,9 @@ input {
 .scr6-hours-inner .scr6-hours-card:nth-child(3){ height:7.5em; }
 .scr6-hours-inner .scr6-hours-card:nth-child(4){ margin-left:31.2em;top: -20.9em;position: relative;}
 
+@-moz-document url-prefix() {
+.scr6-hours-inner .scr6-hours-card:nth-child(4){ top: -21.1em;}
+}
 /*-------------------- Scr 7 -----------------------*/
 .scr7{
     height:37em;
@@ -1312,6 +1339,7 @@ input {
 .slider__bar{
     -webkit-appearance: none;
     -moz-apperance: none;
+    -ms-apperance: none;
     background-color: #e8e8e8;
     height: 0.25em;
     padding: 0;
@@ -1322,9 +1350,34 @@ input {
     background-color: #06f;
     border-radius:2px;
     cursor:url("../img/hand2.png"),pointer;
-    height: 0.25em;
+    height: 0.3em;
     width: 20%;
 }
+.slider__bar::-moz-range-thumb {    
+    -moz-appearance: none;
+    background-color: #06f;
+    border-radius:2px;
+    cursor:url("../img/hand2.png"),pointer;
+    height: 0.3em;
+    width: 20%;
+}
+.slider__bar::-ms-thumb {    
+    -ms-appearance: none;
+    background-color: #06f;
+    border-radius:2px;
+    cursor:url("../img/hand2.png"),pointer;
+    height: 0.3em;
+    width: 20%;
+}
+input[type=range]::-ms-fill-lower {
+	background-color: #06f;	
+}
+input[type=range]::-moz-range-progress {
+	background-color: #06f;	
+}
+/* input[type=range]::-moz-range-track { */
+	/* height:0.9em; */
+/* } */
 
 
 /*-------------- Scr 8 -----------------------------*/
@@ -1459,6 +1512,21 @@ input {
     height: 0.7em;
     width: 18%;
 }
+.scr8-slider-bar::-moz-range-thumb {    
+    background-color: #7ebaf9;
+    border-radius:5px;
+    height: 0.7em;
+    width: 18%;
+}
+.scr8-slider-bar::-ms-thumb {    
+    background-color: #7ebaf9;
+    border-radius:5px;
+    height: 0.7em;
+    width: 18%;
+}
+
+
+
 .scr8-head-result{
     margin:2.2em 0 0 0;
 }
@@ -1608,8 +1676,8 @@ input {
 }
 .form__divinput input {
     border: 1px solid transparent;
-    padding: 1.0em 2.9em;
-    width: calc(100% - 6em);
+    padding: 1.0em 1.9em;
+    width: calc(100% - 4em);
     border-radius: 5px;
 }
 .form__divinput::before, .form__divinput::after {
@@ -2002,6 +2070,23 @@ footer {
     overflow: hidden;
 }
 
+@media screen and (min-color-index:0) 
+ and(-webkit-min-device-pixel-ratio:0) { @media
+ {
+.safari_only{ /* Safary only css code here */ 
+.scr1__seo {
+    font-family: akrobatbold;
+}
+.scr1__ux {
+    font-family:akrobatbold;
+}
+.slide__bignumber{
+    font-family:akrobatbold;
+}
+
+
+ }}}
+
 
 /*****************************************   1024 - 1260   *************/
 @media only screen and (max-width: 1260px){
@@ -2045,7 +2130,7 @@ html {
 }
 /*--------- Scr 1    1024 ---------------------*/
 .scr1 {
-    height: 600px;
+    height: 620px;
 }
 .page-scr1{
     top:-8em;
@@ -2258,7 +2343,7 @@ html {
 
 /*---------------- Scr 5  1024 -------------------*/
 .scr5 {
-    height: 293px;
+    height: 295px;
 }
 .scr5-inner {
     padding-left: 84px;
@@ -2312,6 +2397,10 @@ html {
 }
 .scr6-abonent-inner .advantage-card:nth-child(5) {  margin-left: 31.2em; top: -32.3em;}
 .scr6-abonent-inner .advantage-card:nth-child(6) {  margin-left: 31.2em; top: -32.3em;}
+@-moz-document url-prefix() {
+.scr6-abonent-inner .advantage-card:nth-child(5) {  margin-left: 31.2em; top: -32.8em;}
+.scr6-abonent-inner .advantage-card:nth-child(6) {  margin-left: 31.2em; top: -32.8em;}
+}
 /*-------------Scr5 1024            Hours-----------------*/
 .scr5-hours {
     height: 600px;
@@ -2370,7 +2459,7 @@ html {
 }
 
 .movebtn__icon_treaty, .movebtn__icon_report {
-    background-size: 62%;
+    background-size: 56%;
 }
 /*------------ Scr 9  1024 -----------------------*/
 .scr9 {
@@ -2555,7 +2644,7 @@ html {
     top:-400px;
 }
 .expand-textbox_collapsed .expand-textbox__btn {
-    top:-520px;
+    top:-530px;
 }
 .scr1-whatseo {
     margin: 0 0 0 -82px;
@@ -2713,7 +2802,7 @@ html {
     width: 41em;
 }
 .scr5 {
-    height: 357px;
+    height: 360px;
 }
 .scr5-payments .scr5-payment:nth-child(3) {
     top: -68px;
@@ -2787,7 +2876,7 @@ html {
 .scr5h-inner {
     margin-left:5px;
     height:955px;
-    width:690px;
+    width:688px;
 }
 .scr5h-indoor {
     padding: 3.1em 0 0 0.7em;
@@ -2867,8 +2956,8 @@ html {
     margin: 0 0 0 36em;
 }
 .scr7-slider{
-    margin:0;
-    width:100%;
+    margin: 0px -3.5em 0 0;
+    width: calc(100% + 3.5em);
 }
 .scr7-slide{
     width:37em;
@@ -3497,6 +3586,10 @@ html {
 .scr3 .slide__content {
     width: 20em;
 }
+
+.scr3 .slide__caption {
+    padding: 0.8em 0 0 0;
+}
 .scr3 .slider-link {
     top: 20px;
 }
@@ -3542,7 +3635,7 @@ html {
 
 /*---------------- Scr 5             320 ---------------*/
 .scr5 {
-    height: 325px;
+    height: 326px;
 }
 .scr5-inner {
     padding: 40px 0 0 11px;
@@ -3652,7 +3745,7 @@ html {
 
 /*-------------Scr5h 320            Hours-----------------*/
 .scr5-hours {
-    height: 1200px;
+    height: 1250px;
 }
 .scr5-hours-txt {
     display:none;
@@ -3665,7 +3758,7 @@ html {
     width: 16.8em;
 }
 .hours-item-divinput {
-    margin-left: 4.4em;
+    margin-left: 3.9em;
 }
 .scr5h-inner {
     height: 1160px;

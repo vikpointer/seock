@@ -1,0 +1,73 @@
+.page {
+    background:#ff7af7;
+    padding:0;
+    margin:0;
+}
+
+.striped-txt{
+    background: none;
+    color:#4df;
+} 
+
+.scrhead {
+    color:#fff;
+    font-family:akrobatregular;
+    font-weight:300;
+    font-size:3em;
+    line-height: 1.3;
+    margin:0;
+    padding:0;
+}
+
+.h3 {
+    color:#fff;
+    font-family:akrobatregular;
+    font-size:20px;
+    margin-bottom:0;
+}
+
+
+/*-- Scr1 --*/
+.scr1-seo {
+    position:relative;
+    left:calc(50% - 1.6em);
+    top:0.25em;
+}
+.scr1__seo {
+    font-family: akrobatbold;
+    font-size:20.1em;
+    width:82%;
+}
+.scr1-ux {
+    position: relative;
+    left: calc(50% - 1.0em);
+    top: -7.15em;
+}
+.scr1__ux {
+    font-family:akrobatbold;
+    font-size:5.1em;
+    text-transform:uppercase;
+    width:10%;
+}
+
+
+.scr1__seotext {
+    font-family:akrobatregular;
+    padding: 3em 0 0 0;
+    width:36%;
+}
+
+
+.movebtn__text {
+    font-family:akrobatregular;
+}
+
+.expand-textbox__btn {
+    font-family: akrobatregular;
+}
+
+.pager {
+    font-family:akrobatregular;
+}
+
+
