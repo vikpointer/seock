@@ -308,7 +308,7 @@ input {
     width:390px;
 }
 .scr1__canvas{
-    border:1px solid red;
+    border:1px solid transparent;
     height:15em;
     width:29em;
 }
@@ -1588,10 +1588,10 @@ input {
 }
 
 .scr9-divinput{
-    margin:1.1em 0 0 24.1em;
+    margin:0.8em 0 0 24.1em;
 }
 .scr9-form-btn{
-    margin:1em 0 0 1.3em;
+    margin:0.8em 0 0 1.3em;
 }
 /* ============= Анимация обводки рамки туда-обратно ================== */
 .form__divinput{
@@ -1602,13 +1602,15 @@ input {
     color:#999;
     font-size: 0.9em;
     position: relative;
-    padding: 0.7em 1em;
+    padding: 0 0.1em;
     outline:none;
     width:15.3em;
 }
 .form__divinput input {
-    border:1px solid transparent;
-    width: 100%;
+    border: 1px solid transparent;
+    padding: 1.0em 2.9em;
+    width: calc(100% - 6em);
+    border-radius: 5px;
 }
 .form__divinput::before, .form__divinput::after {
     box-sizing: inherit;
@@ -1713,70 +1715,29 @@ input {
     box-shadow:0 0.8em 2em 0 rgba(0, 80, 128, 0.5);
 }
 
-/*---------------- Scr 12    --------------------*/
-.page-scr12{
-    margin:57em auto 0em;
-}
-.scr12{
-    height:53.75em;
-}
-.scr12-inner{
-    height:80%;
-    margin-top: 8.9em;
-    width: 1126px;
-}
-.scr12-scrhead{
-    margin:0;
-}
-.guarantee{
-    background:url("../img/shape.png") no-repeat left bottom;
-    background-size:16.88em 22.44em;
-    height:29em;
-    margin:7em 0 0 0em;
-    width:100%;
-}
 
-.flyphone{
-    background:url("../img/mokupbig2.png")no-repeat center center;
-    height:378px;
-    width:817px;
-    position:relative;
-    top: 300px;
-    left: -245px;
-}
-
-.guarantee .guarantee__item:nth-child(1){ background:url("../img/1g.png")no-repeat left top;}
-.guarantee .guarantee__item:nth-child(2){ background:url("../img/2g.png")no-repeat left top;}
-.guarantee .guarantee__item:nth-child(3){ background:url("../img/3g.png")no-repeat left top;}
-.guarantee .guarantee__item:nth-child(n){
-    color:#999;
-    background-size:4.62em 6.72em;
-    height:4.5em;
-    margin:2.7em 0 0 31.8em;
-    padding:2.2em 0 0 7.1em;
-    width:19em;
-}
 
 /*--------------------- Scr 11 ------------------------*/
 .scr11{
     position: relative;
+    width: calc(50% + 38.75em);
     z-index: 2;
 }
 .page-scr11{
-    margin:0 0 43em;
+
 }
 .scr11-inner{
     overflow:hidden;
     padding: 4.2em 0 0 7em;
-    width:92%;
+    width:91%;
 }
 .scr11-scrhead{
-
+    width:90%;
 }
 .lost-quest{
     cursor:url("../img/hand2.png"),pointer;
     padding: 0.62em 0 0.62em 0;
-    width:92%;
+    width:84%;
 }
 .scr11-inner .scr11-lost-quest:nth-child(n){
     margin:0 0 0 0.2em;
@@ -1846,16 +1807,95 @@ input {
     background-size:3em 3em;
 }
 
+
+/*---------------- Scr 12    --------------------*/
+.page-scr12{
+    position:relative;
+    top:-2.2em;
+}
+.scr12{
+    height:45.2em;
+}
+.scr12-inner{
+    height:80%;
+    left:0;
+    width: 1126px;
+}
+.scr12-scrhead{
+    margin:0;
+}
+.guarantee{
+    background:url("../img/shape.png") no-repeat left bottom;
+    background-size:16.88em 22.44em;
+    height:29.7em;
+    padding:6em 0 0 31.5em;
+    width:50%;
+}
+.scr12-guarantee{
+    margin:7em 0 0 0em;
+}
+.flyphone{
+    background:url("../img/mokupbig2.png")no-repeat center center;
+    height:378px;
+    width:817px;
+    position:relative;
+    top: -26em;
+    left: -24em;
+}
+
+/*=======*/
+.guarantee__digit{
+    display: inline-block;
+    font-family:latobold;
+    font-size: 150px;
+    background: repeating-linear-gradient(135deg, #f1f1f1, #f1f1f1 1px, transparent 2px, transparent 6px);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width:0.75em;
+}
+.dig1:after {
+    content: "1";
+}
+.dig2:after {
+    content: "2";
+}
+.dig3:after {
+    content: "3";
+}
+.guarantee__digit:after {
+    margin-left: -0.55em;
+    font-family: latothin;
+    font-size: 150px;
+    text-shadow: -0.05em -0.04em 0px #36f;
+}
+/*=======*/
+.guarantee__content {
+    display:inline-block;
+    line-height: 1.7;
+    position: relative;
+    top: -2.5em;
+    width: 18em;
+}
+
+.guarantee .guarantee__item:nth-child(n){ 
+    color:#999;
+    background-size:4.62em 6.72em;
+    height:9.3em;
+    width:26em;
+}
+
+
 /*----------- Footer ---------------------*/
 .page-footer {
     margin: 0 auto;
 }
 footer {
     height: 37em;
-    width: 77.8em;
+    padding: 3.2em 0 0 4.1em;
+    width: 67.8em;
 }
 .footer-inner{
-    margin-top:13.5em;
+
 }
 .footer-scrhead{
     margin:0;
@@ -1904,13 +1944,14 @@ footer {
     width:15em;
 }
 .footer-contacts{
-    margin:4em 0 0 0;
+    margin:3em 0 0 0;
 }
 .contacts__head{
-    margin:0.7em 0 0 0;
+    padding: 0.6em 0 0 0;
+    margin: 0;
 }
 .contacts__content{
-    margin:0em 0 0 0;
+
 }
 .social{
     height:1.5em;
@@ -1962,7 +2003,6 @@ footer {
 }
 
 
-.scr12, footer {display:none;}
 /*****************************************   1024 - 1260   *************/
 @media only screen and (max-width: 1260px){
 html {
@@ -2353,7 +2393,12 @@ html {
     margin: 1.1em 0 0 26.8em;
 }
 .form__divinput {
-    padding: 0.4em 1em;
+    padding: 0.1em 0.1em;
+}
+.form__divinput input {
+    border: 1px solid transparent;
+    padding: 0.35em 0.9em;
+    width: calc(100% - 2em);
 }
 /*----------- Scr 10 1024 ----------------------*/
 .scr10-inner{
@@ -2366,18 +2411,6 @@ html {
     width:calc(100% + 2em);
 }
 
-/*------------- Scr 12 1024 ---------------------*/
-.scr12-inner {
-    width: 841px;
-}
-.flyphone{
-    background:url("../img/mokuptable1024.png")no-repeat center center;
-    height:288px;
-    width:439px;
-    position:relative;
-    top: 221px;
-    left: -7px;
-}
 
 /*------------ Scr 11   1024  --------------*/
 .scr11{
@@ -2390,10 +2423,27 @@ html {
     width: 95%;
 }
    
-
+/*------------- Scr 12 1024 ---------------------*/
+.scr12 {
+    height: 45.2em;
+    padding: 8.4em 0 0 calc(50% - 31.7em);
+}
+.scr12-inner {
+    width: 841px;
+}
+.guarantee__digit, .guarantee__digit:after {
+    font-size: 106px;
+}
+.flyphone{
+    background:url("../img/mokuptable1024.png")no-repeat center center;
+    height:288px;
+    width:439px;
+    top: -26em;
+    left: -11em;
+}
 
    
-.scr12, footer {display:none;}
+
 }
 
 
@@ -2904,7 +2954,12 @@ html {
     width: 40.2em;
 }
 .form__divinput {
-    padding: 0.6em 1em;
+    padding: 0.1em 0.1em;
+}
+.form__divinput input {
+    border: 1px solid transparent;
+    padding: 0.68em 0.9em;
+    width: calc(100% - 2em);
 }
 
 /*------------ Scr 10 770 -------------------*/
@@ -2922,37 +2977,7 @@ html {
     width: calc(100% + 5.5em);
 }
 
-.s
-/*------------- Scr 12 770 ---------------------*/
-.page-scr12 {
-    margin: 57em auto 0em;
-}
-.scr12 {
-    height: 45.9em;
-}
-.scr12-inner {
-    width: 686px;
-    margin-top: 7.9em;
-}
-.flyphone{
-    background:url("../img/mokuptable720-2.png")no-repeat center center;
-    height:288px;
-    width:439px;
-    top: 205px;
-    left: -67px;
-}
-.guarantee .guarantee__item:nth-child(n) {
-    margin-left:19.2em;
-    padding-left:6.6em;
-    width: 15em;
-}
-.guarantee{
-    background-size:186px 250px;
-    background-position: 0% 39%;
-    height: 27em;
-    margin:4em 0 0 0em;
-    width:100%;
-}
+
 
 /*----------- Scr11  770 ----------------------*/
 .scr11{
@@ -2975,19 +3000,59 @@ html {
     /*margin-top: 3.2em;*/
 }
 
+/*------------- Scr 12 770 ---------------------*/
+.page-scr12 {
+
+}
+.scr12 {
+    height: 38.2em;
+    padding: 119px 0 0 calc(50% - 370px);
+    width: 738px;
+}
+.scr12-inner {
+    width: 686px;
+}
+.flyphone{
+    background:url("../img/mokuptable720-2.png")no-repeat center center;
+    height:288px;
+    width:439px;
+    top: -25.5em;
+    left: -4.5em;
+}
+.guarantee .guarantee__item:nth-child(n) {
+    padding-left:18.6em;
+    width: 24em;
+}
+.guarantee{
+    background-size:186px 250px;
+    background-position: 0% 55%;
+    height: 27em;
+    padding: 3.5em 0 0 0em;
+    width:100%;
+}
+.guarantee__digit, .guarantee__digit:after {
+    font-size: 150px;
+}
+.guarantee__content {
+    top: -1.5em;
+    width: 14em;
+}
+
 /*---------------------- Footer  770 -------------*/
 .page-footer {
 
 }
 footer {
     height: 54em;
-    width: 100%;
+    padding: 2.4em 0 0 calc(50% - 22.9em);
+    width: calc(50% + 17em);
 }
+
 .footer-scrhead {
     font-size: 3em;
 }
 .footer-inner {
-    margin-left: 3.3em;
+
 }
 .footer-map {
     float: none;
@@ -2997,33 +3062,39 @@ footer {
     height: 9em;
     width: 38em;
 }
+.contacts__head, .contacts__content {
+    position:relative;
+}
 .contacts .contacts__content:nth-child(4){
-    margin-bottom:0em;
+
 }
 .contacts .contacts__head:nth-child(5){
-    margin-left:17.6em;
+    margin-left:14em;
+    top:-6.6em;
 }
 .contacts .contacts__content:nth-child(6){
     margin-left:17.6em;
+    top:-8.2em;
 }
 .contacts-social {
     margin-left:17.3em;
+    position: relative;
+    top: -8.5em;
 }
 .footer-contacts {
-    margin: 2.7em 0 0em 0;
+    margin: 2.3em 0 0em 0;
 }
 .social{
     width:50%;
 }
 .footer__footer {
     font-size: 0.88em;
-    height: 6em;
+    height: 7em;
     margin: 2.5em 0 0 0;
-    width: 41em;
+    width: 46em;
 }
 
 
-.scr12, footer {display:none;}
 
 
 }
@@ -3899,7 +3970,7 @@ html {
 }
 .form__divinput {
     font-size: 1.15em;
-    padding: 1.1em 1em;
+    padding: 0.1em 0.1em;
     width: 20.0em;
 }
 
@@ -3929,46 +4000,10 @@ html {
     width:260px;
 }
 
-/*--------------- Scr12  320 ------------------------*/
-.page-scr12 {
-    margin: 59em auto 0em;
-}
-.scr12 {
-    height:79.4em;
-}
-.scr12-inner{   
-    height:94%; 
-    margin-top:4.3em;
-    width: 286px;
-}
-.guarantee {
-    background-position: 0% 0%;
-    height: 730px;
-    margin: 9.3em 0 0 0em;
-    padding-top: 1px;
-    width: 270px;
-}
-.guarantee .guarantee__item:nth-child(n) {
-    background-size: 5.5em 7.9em;
-    font-size: 1.15em;
-    line-height: 1.7;
-    margin-left: 0em;
-    margin-top: 3.3em;
-    padding: 6px 0 30px 6.6em;
-    width: 180px;
-}
-.guarantee .guarantee__item:nth-child(1) {
-    margin-top: 23.8em;
-}
-.flyphone {
-    width: 307px;
-    top: 169px;
-    left: -46px;
-}
 
 /*-------Scr11    320 ----------------*/
 .page-scr11 {
-    margin: 0 0 78em;
+
 }
 .scr11{
     width: calc(50% + 151px);
@@ -4010,26 +4045,74 @@ html {
     width: 10em;
 }
 
+/*--------------- Scr12  320 ------------------------*/
+.page-scr12 {
+
+}
+.scr12 {
+    height:79.4em;
+    padding: 24px 0 0 calc(50% - 123px);
+    width: calc(50% + 123px);
+}
+.scr12-inner{   
+    height:94%; 
+    margin-top:4.3em;
+    width: 286px;
+}
+.guarantee {
+    background-position: 0% 0%;
+    height: 688px;
+    margin: 7.8em 0 0 0;
+    padding-top: 1px;
+    width: 280px;
+}
+.guarantee__digit, .guarantee__digit:after {
+    font-size: 106px;
+}
+.guarantee__content {
+    line-height: 1.6;
+    top: -1.0em;
+}
+.guarantee .guarantee__item:nth-child(n) {
+    background-size: 5.5em 7.9em;
+    font-size: 1.15em;
+    line-height: 1.7;
+    padding: 0;
+    width: 280px;
+}
+.guarantee .guarantee__item:nth-child(1) {
+    margin-top: 18em;
+}
+.flyphone {
+    top: -65em;
+    left: -6em;
+    width: 307px;
+}
+
+
 /*---------------- Footer  320  ------------------*/
 footer {
     height:73em;
+    padding: 1.7em 0 0 calc(50% - 12.5em);
+    width: calc(50% + 10em);
 }
 .page-footer {
-    margin: 5em auto 0;
+
 }
 .footer-scrhead {
     font-size: 2.9em;
-    width: 20em;
+    width: 7em;
 }
 .footer-inner {
-    margin: 5.7em auto 0;
     width: 270px;
 }
 .footer-map {
     background-position-x: 0;
     float: none;
-    margin: 0.5em 0 0 0em;
-    overflow:hidden;
+    margin: 0;
+    position: relative;
+    top: -1em;
+    overflow: hidden;
     width: 23.8em;
 }
 .contacts {
@@ -4037,18 +4120,24 @@ footer {
     width: 100%;
 }
 .footer-contacts {
-    margin: 3.5em 0 0 0;
+    margin: 1em 0 0 0;
 }
 .contacts .contacts__head:nth-child(n){
     font-size: 1.6em;
     margin-left:0em;
 }    
 .contacts__head {
-    margin-top: 1.2em;
+    padding-top: 1.2em;
 }
 .contacts .contacts__content:nth-child(n){
     font-size: 1.3em;
     margin:0;
+}
+.contacts .contacts__head:nth-child(5) {
+    top: 0em;
+}
+.contacts .contacts__content:nth-child(6) {
+    top: 0em;
 }
 .social{
     width:100%;
@@ -4060,23 +4149,24 @@ footer {
 }
 .contacts-social {
     margin:2.4em 0 0 0;
+    top:0;
 }
 .agreement a:nth-child(2) {
-    margin: 2em 0 0 0;
+    margin: 0.7em 0 0 0;
 }
 .footer-agreement {
-    margin-top: 9.4em;
+    margin-top: 11em;
 }
 .agreement a {
+    border-bottom: 1px solid #fff;
     font-size: 1.5em;
-    padding-bottom: 4px;
+    padding-bottom: 0px;
 }
 .footer__footer {
     font-size: 0.83em;
-    height: 7em;
+    height: 8em;
     margin: 2.5em 0 0 0;
-    width: 23em;
+    width: 28em;
 }
 
-.scr12, footer {display:none;}
 }
